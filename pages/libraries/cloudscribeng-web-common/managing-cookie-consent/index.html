@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        <link rel="canonical" href="https://cloudscribeng.github.io/pages/libraries/cloudscribeng-web-common/managing-cookie-consent/">
+        <link rel="shortcut icon" href="../../../../img/favicon.ico">
+        <title>Managing Cookie Consent - CloudscribeNG Documentation</title>
+        <link href="../../../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../../../css/fontawesome.min.css" rel="stylesheet">
+        <link href="../../../../css/brands.min.css" rel="stylesheet">
+        <link href="../../../../css/solid.min.css" rel="stylesheet">
+        <link href="../../../../css/v4-font-face.min.css" rel="stylesheet">
+        <link href="../../../../css/base.css" rel="stylesheet">
+        <link id="hljs-light" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" >
+        <link id="hljs-dark" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github-dark.min.css" disabled>
+        <link href="../../../../stylesheets/full-width.css" rel="stylesheet">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+        <script>hljs.highlightAll();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="../../../..">CloudscribeNG Documentation</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="nav-item">
+                                <a href="../../../.." class="nav-link">Home</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle active" aria-current="page" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Documentation</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../../introduction/" class="dropdown-item">Introduction</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Complete list of CloudscribeNG libraries</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../complete-list-of-cloudscribeng-libraries/" class="dropdown-item">Complete list of open source CloudscribeNG libraries</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">CloudscribeNG.Core</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../cloudscribeng-core/" class="dropdown-item">CloudscribeNG.Core</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Multi Tenant Support</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../cloudscribeng-core/multi-tenant-support/" class="dropdown-item">Multi Tenant Support</a>
+</li>
+            
+<li>
+    <a href="../../cloudscribeng-core/multi-tenant-support/using-multitenancy-for-sibling-sites-in-multiple-languages/" class="dropdown-item">Using multitenancy for sibling sites in multiple languages</a>
+</li>
+    </ul>
+  </li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Themes and Web Design</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../cloudscribeng-core/themes-and-web-design/" class="dropdown-item">Themes and Web Design</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Advanced Client Side Development with Webpack</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../cloudscribeng-core/themes-and-web-design/advanced-client-side-development-with-webpack/" class="dropdown-item">Advanced Client Side Development with Webpack</a>
+</li>
+            
+<li>
+    <a href="../../cloudscribeng-core/themes-and-web-design/advanced-client-side-development-with-webpack/webpack-prerequisites/" class="dropdown-item">Webpack Prerequisites</a>
+</li>
+    </ul>
+  </li>
+    </ul>
+  </li>
+            
+<li>
+    <a href="../../cloudscribeng-core/registration-page/" class="dropdown-item">Registration Page Configuration</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Custom Registration</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../cloudscribeng-core/custom-registration/" class="dropdown-item">Custom Registration</a>
+</li>
+            
+<li>
+    <a href="../../cloudscribeng-core/custom-registration/configuration-based-custom-registration-and-user-properties/" class="dropdown-item">Configuration based Custom Registration and User Properties</a>
+</li>
+    </ul>
+  </li>
+            
+<li>
+    <a href="../../cloudscribeng-core/automated-logout/" class="dropdown-item">Automated Logout </a>
+</li>
+            
+<li>
+    <a href="../../cloudscribeng-core/changing-user-email-address/" class="dropdown-item">Changing user email address</a>
+</li>
+            
+<li>
+    <a href="../../cloudscribeng-core/custom-event-handlers/" class="dropdown-item">Custom Event Handlers</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Building Custom Features that Integrate with CloudscribeNG Core</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../cloudscribeng-core/building-custom-features-that-integrate-with-cloudscribeng-core/" class="dropdown-item">Building Custom Features that Integrate with CloudscribeNG Core</a>
+</li>
+            
+<li>
+    <a href="../../cloudscribeng-core/building-custom-features-that-integrate-with-cloudscribeng-core/looking-up-users-in-custom-features/" class="dropdown-item">Looking Up Users in Custom Features</a>
+</li>
+            
+<li>
+    <a href="../../cloudscribeng-core/building-custom-features-that-integrate-with-cloudscribeng-core/adding-tables-and-data-for-custom-features/" class="dropdown-item">Adding Tables and Data for Custom Features</a>
+</li>
+    </ul>
+  </li>
+            
+<li>
+    <a href="../../cloudscribeng-core/identityserver-integration/" class="dropdown-item">IdentityServer Integration</a>
+</li>
+            
+<li>
+    <a href="../../cloudscribeng-core/using-ldap-authentication/" class="dropdown-item">Using LDAP Authentication</a>
+</li>
+            
+<li>
+    <a href="../../cloudscribeng-core/using-social-authentication/" class="dropdown-item">Using Social Authentication and OpenId Connect</a>
+</li>
+            
+<li>
+    <a href="../../cloudscribeng-core/using-two-factor-authentication/" class="dropdown-item">Using Two Factor Authentication</a>
+</li>
+            
+<li>
+    <a href="../../cloudscribeng-core/google-analytics-integration/" class="dropdown-item">Google Analytics Integration</a>
+</li>
+            
+<li>
+    <a href="../../cloudscribeng-core/google-analytics-ga4-integration/" class="dropdown-item">Google Analytics 4 Integration</a>
+</li>
+            
+<li>
+    <a href="../../cloudscribeng-core/configuring-data-protection/" class="dropdown-item">Configuring Data Protection</a>
+</li>
+            
+<li>
+    <a href="../../cloudscribeng-core/integrating-signalr-with-cloudscribeng/" class="dropdown-item">Integrating SignalR with CloudscribeNG</a>
+</li>
+            
+<li>
+    <a href="../../cloudscribeng-core/migrating-users-with-other-password-hash-formats/" class="dropdown-item">Migrating Users with other Password Hash formats</a>
+</li>
+            
+<li>
+    <a href="../../cloudscribeng-core/google-recaptcha-integration/" class="dropdown-item">Google reCAPTCHA integration</a>
+</li>
+            
+<li>
+    <a href="../../cloudscribeng-core/query-tool/" class="dropdown-item">Query Tool</a>
+</li>
+            
+<li>
+    <a href="../../cloudscribeng-core/restarting-the-application/" class="dropdown-item">Restarting the Application</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Restricting Access to Your Website by IP Address</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../cloudscribeng-core/restricting-access-to-your-website-by-ip-address/" class="dropdown-item">Restricting Access to Your Website by IP Address</a>
+</li>
+            
+<li>
+    <a href="../../cloudscribeng-core/restricting-access-to-your-website-by-ip-address/permitting-ip-addresses/" class="dropdown-item">Permitting IP Addresses</a>
+</li>
+            
+<li>
+    <a href="../../cloudscribeng-core/restricting-access-to-your-website-by-ip-address/blocking-ip-addresses/" class="dropdown-item">Blocking IP Addresses</a>
+</li>
+    </ul>
+  </li>
+    </ul>
+  </li>
+            
+<li>
+    <a href="../../cloudscribeng-simplecontactform/" class="dropdown-item">CloudscribeNG.SimpleContactForm</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">CloudscribeNG.SimpleContent</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../cloudscribeng-simplecontent/" class="dropdown-item">CloudscribeNG.SimpleContent</a>
+</li>
+            
+<li>
+    <a href="../../cloudscribeng-simplecontent/using-open-live-writer/" class="dropdown-item">Using Open Live Writer</a>
+</li>
+            
+<li>
+    <a href="../../cloudscribeng-simplecontent/integrating-with-other-authentication-systems/" class="dropdown-item">Integrating with Other Authentication Systems</a>
+</li>
+            
+<li>
+    <a href="../../cloudscribeng-simplecontent/adding-javascript-and-css-to-pages/" class="dropdown-item">Adding JavaScript and CSS to Pages</a>
+</li>
+            
+<li>
+    <a href="../../cloudscribeng-simplecontent/adding-links-to-the-menu/" class="dropdown-item">Adding links to the Menu</a>
+</li>
+            
+<li>
+    <a href="../../cloudscribeng-simplecontent/customizing-the-editor/" class="dropdown-item">Customizing the Editor</a>
+</li>
+            
+<li>
+    <a href="../../cloudscribeng-simplecontent/2-ways-that-images-are-uploaded-in-simplecontent/" class="dropdown-item">2 ways that images are uploaded in SimpleContent</a>
+</li>
+            
+<li>
+    <a href="../../cloudscribeng-simplecontent/migrating-content-from-other-platforms/" class="dropdown-item">Migrating content from other platforms</a>
+</li>
+            
+<li>
+    <a href="../../cloudscribeng-simplecontent/custom-blog-routing/" class="dropdown-item">Custom Blog Routing</a>
+</li>
+            
+<li>
+    <a href="../../cloudscribeng-simplecontent/custom-page-routing/" class="dropdown-item">Custom Page Routing</a>
+</li>
+            
+<li>
+    <a href="../../cloudscribeng-simplecontent/3-ways-to-add-the-blog-to-the-menu/" class="dropdown-item">3 Ways to Add the Blog To The Menu</a>
+</li>
+            
+<li>
+    <a href="../../cloudscribeng-simplecontent/protecting-pages-with-roles/" class="dropdown-item">Protecting Pages With Roles</a>
+</li>
+            
+<li>
+    <a href="../../cloudscribeng-simplecontent/using-markdown/" class="dropdown-item">Using Markdown</a>
+</li>
+            
+<li>
+    <a href="../../cloudscribeng-simplecontent/how-to-protect-access-to-view-the-blog/" class="dropdown-item">How to protect access to view the blog</a>
+</li>
+            
+<li>
+    <a href="../../cloudscribeng-simplecontent/content-templates/" class="dropdown-item">Content Templates</a>
+</li>
+            
+<li>
+    <a href="../../cloudscribeng-simplecontent/manage-content-in-multiple-languages/" class="dropdown-item">Manage content in multiple languages</a>
+</li>
+            
+<li>
+    <a href="../../cloudscribeng-simplecontent/content-cloning/" class="dropdown-item">Content Cloning</a>
+</li>
+    </ul>
+  </li>
+            
+<li>
+    <a href="../../cloudscribeng-dynamic-authorization-policies/" class="dropdown-item">Dynamic Authorization Policies</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">CloudscribeNG.Web.Common</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../" class="dropdown-item">CloudscribeNG.Web.Common</a>
+</li>
+            
+<li>
+    <a href="../using-the-summernote-editor/" class="dropdown-item">Using the Summernote editor</a>
+</li>
+            
+<li>
+    <a href="../using-ckeditor/" class="dropdown-item">Using CKeditor</a>
+</li>
+            
+<li>
+    <a href="../using-the-bootstrap-datepicker/" class="dropdown-item">Using the Bootstrap DatePicker</a>
+</li>
+            
+<li>
+    <a href="../easy-bootstrap-modal/" class="dropdown-item">Easy Bootstrap Modal</a>
+</li>
+            
+<li>
+    <a href="../easy-cascading-dropdowns/" class="dropdown-item">Easy Cascading Dropdowns</a>
+</li>
+            
+<li>
+    <a href="../easy-autosuggest/" class="dropdown-item">Easy AutoSuggest</a>
+</li>
+            
+<li>
+    <a href="../using-strongly-typed-models-and-razor-views-to-generate-email-messages/" class="dropdown-item">Using Strongly Typed Models and Razor Views to generate email messages</a>
+</li>
+            
+<li>
+    <a href="../easy-alerts-with-controller-extensions/" class="dropdown-item">Easy Alerts with Controller  Extensions</a>
+</li>
+            
+<li>
+    <a href="../easy-google-analytics/" class="dropdown-item">Easy Google Analytics</a>
+</li>
+            
+<li>
+    <a href="../easy-google-analytics-ga4/" class="dropdown-item">Easy Google Analytics (GA4)</a>
+</li>
+            
+<li>
+    <a href="./" class="dropdown-item active" aria-current="page">Managing Cookie Consent</a>
+</li>
+    </ul>
+  </li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">CloudscribeNG.Web.Navigation</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../cloudscribeng-web-navigation/" class="dropdown-item">CloudscribeNG.Web.Navigation</a>
+</li>
+            
+<li>
+    <a href="../../cloudscribeng-web-navigation/configuring-menu-items/" class="dropdown-item">Configuring Menu Items</a>
+</li>
+            
+<li>
+    <a href="../../cloudscribeng-web-navigation/adjusting-menu-items-per-request/" class="dropdown-item">Adjusting Menu Items Per Request</a>
+</li>
+            
+<li>
+    <a href="../../cloudscribeng-web-navigation/adding-extra-breadcrumbs/" class="dropdown-item">Adding Extra Breadcrumbs</a>
+</li>
+            
+<li>
+    <a href="../../cloudscribeng-web-navigation/menu-localization/" class="dropdown-item">Menu Localization</a>
+</li>
+            
+<li>
+    <a href="../../cloudscribeng-web-navigation/different-menu-items-per-tenant/" class="dropdown-item">Different Menu Items Per Tenant</a>
+</li>
+            
+<li>
+    <a href="../../cloudscribeng-web-navigation/easy-google-sitemaps/" class="dropdown-item">Easy Google SiteMaps</a>
+</li>
+            
+<li>
+    <a href="../../cloudscribeng-web-navigation/using-json-instead-of-xml/" class="dropdown-item">Using Json Instead of XML</a>
+</li>
+            
+<li>
+    <a href="../../cloudscribeng-web-navigation/additional-community-tutorials-on-our-github-wiki/" class="dropdown-item">Additional Community Tutorials on Our GitHub Wiki</a>
+</li>
+    </ul>
+  </li>
+            
+<li>
+    <a href="../../cloudscribeng-web-pagination/" class="dropdown-item">CloudscribeNG.Web.Pagination</a>
+</li>
+            
+<li>
+    <a href="../../cloudscribeng-syndication/" class="dropdown-item">CloudscribeNG.Syndication</a>
+</li>
+            
+<li>
+    <a href="../../cloudscribeng-pwakit/" class="dropdown-item">CloudscribeNG PwaKit - Easily Build Progressive Web Apps</a>
+</li>
+            
+<li>
+    <a href="../../cloudscribeng-localization/" class="dropdown-item">CloudscribeNG Localization</a>
+</li>
+            
+<li>
+    <a href="../../easy-timezone-handling/" class="dropdown-item">Easy TimeZone Handling</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Commercial Products</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../commercial-products/index.md" class="dropdown-item">None</a>
+</li>
+            
+<li>
+    <a href="../../../commercial-products/complete-list-of-cloudscribeng-commercial-product-libraries/" class="dropdown-item">CloudscribeNG Commercial Product Libraries</a>
+</li>
+            
+<li>
+    <a href="../../../commercial-products/commercial-product-license/" class="dropdown-item">Commercial Product License</a>
+</li>
+            
+<li>
+    <a href="../../../commercial-products/using-the-cloudscribeng-newsletter/" class="dropdown-item">Using the CloudscribeNG Newsletter</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ms-md-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a rel="prev" href="../easy-google-analytics-ga4/" class="nav-link">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" href="../../cloudscribeng-web-navigation/" class="nav-link">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="https://github.com/CloudscribeNG/edit/master/docs/pages/libraries/cloudscribeng-web-common/managing-cookie-consent.md" class="nav-link">Edit on CloudscribeNG
+                                    </a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-bs-toggle="collapse" data-bs-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-body-tertiary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-bs-level="1"><a href="#managing-cookie-consent" class="nav-link">Managing Cookie Consent</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-bs-level="2"><a href="#overview" class="nav-link">Overview</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#1-the-simple-default-template-system" class="nav-link">1. The simple default template system</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#2-more-fully-featured-taghelper-system" class="nav-link">2. More fully-featured TagHelper system</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="managing-cookie-consent">Managing Cookie Consent<a class="headerlink" href="#managing-cookie-consent" title="Permanent link">&para;</a></h1>
+<h2 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link">&para;</a></h2>
+<p>CloudscribeNG ships with two entirely separate cookie consent systems - your choice of which to use will depend on your specific needs and preferences.</p>
+<h2 id="1-the-simple-default-template-system">1. The simple default template system<a class="headerlink" href="#1-the-simple-default-template-system" title="Permanent link">&para;</a></h2>
+<p>A new CloudscribeNG site, spun up from the template, will prompt the user for cookie consent via a simple inline form at the top of the screen.</p>
+<p><img alt=" " src="/media/images/image_2025-08-11t14-26-29-7-ws.png" /></p>
+<p>This form is implemented from the _Layout.cshtml file for the current site theme - by including the partial view:</p>
+<pre class="highlight"><code> &lt;partial name="_CookieConsentPartial" /&gt;</code></pre>
+<p>The text message for the above form can be customised via the Administration &gt;&gt; Privacy Settings page.</p>
+<p>At the foot of each page, a link is provided for the user to revoke their consent - again called in from the _Layout.cshtml file:</p>
+<pre class="highlight"><code>&lt;partial name="_CookieConsentRevokePartial" /&gt;</code></pre>
+<p>Under the hood, this system sets (or removes) a cookie called cookieconsent_status. </p>
+<p>This cookie is created, managed and read via the Microsoft <strong>ITrackingConsentFeature </strong>interface:</p>
+<pre class="highlight"><code>var consentFeature = Context.Features.Get&lt;ITrackingConsentFeature&gt;();</code></pre>
+<p>.Net middleware (CookiePolicyMiddleware) automatically creates and populates an ITrackingConsentFeature instance on every request by checking for the consent cookie.</p>
+<p>This line in the startup.cs code is required to initialise the above cookie consent tracking system:</p>
+<pre class="highlight"><code>app.UseCookiePolicy();</code></pre>
+<h3 id="note-breaking-change-in-cloudscribeng-version-84">Note: <strong>breaking change</strong> in CloudscribeNG version 8.4:<a class="headerlink" href="#note-breaking-change-in-cloudscribeng-version-84" title="Permanent link">&para;</a></h3>
+<p>The above consent form has been enhanced to support a 'Decline' option, which simply hides the consent form, without setting the cookieconsent_status cookie.</p>
+<p><img alt=" " src="/media/images/image_2025-08-21t09-59-55-0.png" /></p>
+<p>The footer text 'Change cookie preferences' reveals this form again, allowing the preference to be revoked and re-set.</p>
+<p>To implement this more user-friendly approach, the partial views _CookieConsentPartial  and _CookieConsentRevokePartial  have been modified.</p>
+<p>However, if you have local overrides of these two partial views in your web project, acquired from an earlier CloudscribeNG installation pre-8.4, you may with to either delete these overrides (so you revert to using the versions from the CloudscribeNG.Core.CompiledViews.Bootstrap5 v8.4 Nuget) or else modify your local view overrides to accommodate the changes made to these views at version 8.4 - see the <a href="https://github.com/CloudscribeNG/CloudscribeNG/tree/develop/src/CloudscribeNG.Core.CompiledViews.Bootstrap5/Views/Shared">source code here</a>.  </p>
+<p>This change is implemented for the Bootstrap5 libraries only, and not implemented for Bootstrap4.  </p>
+<h2 id="2-more-fully-featured-taghelper-system">2. More fully-featured TagHelper system<a class="headerlink" href="#2-more-fully-featured-taghelper-system" title="Permanent link">&para;</a></h2>
+<p><strong>Disclaimer:</strong>  the authors of CloudscribeNG are not lawyers and not qualified to provide any legal advice. We cannot promise that use of this tool will make your site compliant with cookie laws in various countries or regions. You may find it useful in meeting your compliance goals, but it is up to you to decide for yourself whether your site is in actual compliance with any laws. Furthermore, this system is based upon a very popular tool by the folks at Silktide Ltd. CloudscribeNG has just implemented an MVC TagHelper to make it convenient to use in ASP.NET Core MVC projects. To really understand this tool, you should <a href="https://www.osano.com/cookieconsent/documentation/about-cookie-consent/?utm_source=referral&amp;utm_medium=cmp-os&amp;utm_term=cookieconsent&amp;utm_content=plugin&amp;utm_campaign=eucookielaw">visit their website and documentation</a>.</p>
+<h3 id="using-the-insitesilktide-cookie-consent-taghelper">Using the Insite/Silktide Cookie Consent TagHelper<a class="headerlink" href="#using-the-insitesilktide-cookie-consent-taghelper" title="Permanent link">&para;</a></h3>
+<p>CloudscribeNG.Web.Common includes an MVC TagHelper that encapsulates most of the settings for <a href="https://www.osano.com/cookieconsent/documentation/about-cookie-consent/?utm_source=referral&amp;utm_medium=cmp-os&amp;utm_term=cookieconsent&amp;utm_content=plugin&amp;utm_campaign=eucookielaw">the popular cookie consent javascript</a>, in order to make it easy to wire up cookie consent javascript in ASP.NET Core MVC web applications.</p>
+<p>It is more flexible than the default system above - for example it allows you to choose between an opt-out cookie consent prompt, or an opt-in one (see below).</p>
+<p>Assuming you have already installed the NuGet package for <a href="https://www.CloudscribeNG.com/docs/CloudscribeNG-web-common">CloudscribeNG.Web.Common</a>, you also need to make sure you have declared the taghelper in your _ViewImports.cshtml like this:</p>
+<pre class="highlight"><code class="language-html">@addTagHelper  *, CloudscribeNG.Web.Common</code></pre>
+<p>Then in your _Layout.cshtml file you would include it in the head element. To use it with the default compliance level of "info", you just add it like this:</p>
+<pre class="highlight"><code class="language-html">&lt;cookie-consent enabled="true" compliance-type="info"&gt;&lt;/cookie-consent&gt;</code></pre>
+<p>That will give you a popup like this at the bottom of the page:</p>
+<p><a href="/media/images/cookie-consent-info.jpg"><img alt=" cookie consent popup configured with info compliance" src="/media/images/cookie-consent-info-ws.jpg" /></a></p>
+<p>There are 2 other settings available for compliance-type, "opt-in", configured like this:</p>
+<pre class="highlight"><code class="language-html">&lt;cookie-consent enabled="true" compliance-type="opt-in"&gt;&lt;/cookie-consent&gt;</code></pre>
+<p>changes the popup like this:</p>
+<p><a href="/media/images/cookie-consent-opt-in.jpg"><img alt=" cookie consent popup configured for opt-in" src="/media/images/cookie-consent-opt-in-ws.jpg" /></a></p>
+<p>and "opt-out" configured like this:</p>
+<pre class="highlight"><code>&lt;cookie-consent enabled="true" compliance-type="opt-out"&gt;&lt;/cookie-consent&gt;</code></pre>
+<p>changes the popup like this:</p>
+<p><a href="/media/images/cookie-consent-opt-out.jpg"><img alt=" cookie consent popup configured with opt-out" src="/media/images/cookie-consent-opt-out-ws.jpg" /></a></p>
+<p>Clicking "Got It" dismisses the popup and sets a consent cookie with the value "dismiss". For "info" level compliance that is the only thing the user can click so that is the only possible cookie value. If using "opt-in", the user can click the "Allow" button and the value of the consent cookie will be "allow", and if using "opt-out", the user can click "Decline" and the cookie value will be "deny".</p>
+<p>There is certainly some irony in that we are using a cookie to keep track of whether the user has been informed, accepted or declined use of cookies, but that is what we do. Note that some cookies including authentication cookies are exempt from cookie laws in some regions according to articles found on the web <a href="http://ec.europa.eu/ipg/basics/legal/cookies/index_en.htm">such as this one</a>. Mainly cookie laws tend to focus on advertising and tracking cookies, therefore you may need to adjust your use of such cookies if you are using opt-in or opt-out. This also is relevant to how you configure google analytics, and our <a href="/docs/easy-google-analytics">google analytics taghelper</a>, has also been updated to integrate with the cookie-consent taghelper. My non authoritative understanding is that if you are just using the "info" level of compliance you don't need to change the way you use cookies for google analytics tracking, but if you are using opt-in or opt-out, then you do need to configure google analytics differently unless the user accepts the use of cookies with opt-in or unless the user does not decline the use of cookies with opt-out.</p>
+<h3 id="configuring-the-google-analytics-taghelper-to-work-in-tandem-with-the-cookie-consent-taghelper">Configuring the google-analytics taghelper to work in tandem with the cookie-consent taghelper<a class="headerlink" href="#configuring-the-google-analytics-taghelper-to-work-in-tandem-with-the-cookie-consent-taghelper" title="Permanent link">&para;</a></h3>
+<p>Our google-analytics taghelper has built in awareness of the cookie-consent cookie so it can be set to work differently based on that cookie. But note that google-analytics taghelper will by default treat the absence of any cookie consent cookie as implicit consent, so on the first page request when the user has not yet had a chance to interact with the consent popup, it would track using cookies. To make it only track if there is explicit consent, ie the user has accepted or dismissed the popup and a consent cookie exists, you can set require-explicit-cookie-consent="true".</p>
+<pre class="highlight"><code class="language-html">&lt;google-analytics profile-id="##-########" require-explicit-cookie-consent="false" cookie-consent-accept-dismiss="true" consent-cookie-name="cookieconsent_status"&gt;&lt;/google-analytics&gt;</code></pre>
+<p>If you want to be even more strict and only use cookies if the consent cookie value is "allow", and not "dismiss" then add cookie-consent-accept-dismiss="false", it is true by default.</p>
+<p>The differences in how google analytics gets wired up by the taghelper when allowing tracking cookies vs when not allowing tracking cookies is based on <a href="https://www.themarketingtechnologist.co/setting-up-a-cookie-law-compliant-google-analytics-tracker/">this article</a>. When cookies are used we can include the userid of the user in our tracking if the user is signed in and we know the userid. This userid would come from your own database or if using CloudscribeNG Core it would be the database id of the user. So if cookies are enabled it gets wired up like this:</p>
+<pre class="highlight"><code class="language-javascript">ga('set','userId','someid'); //included only if user is authenticated
+ga('require', 'displayfeatures');
+ga('set', 'anonymizeIp', undefined);</code></pre>
+<p>and if cookies are not enabled then it gets wired up like this:</p>
+<pre class="highlight"><code class="language-javascript">ga('set', 'displayFeaturesTask', null);
+ga('set', 'anonymizeIp', true);</code></pre>
+<p>Note that if you are using advertising on your site, there may be other things you need to do to meet your compliance goals, use of google analytics is just one aspect of it and is the only one dealt with by our taghelpers. You should take a holistic look at how you are using cookies in your site and make your own determination perhaps with your own legal counsel to determine whether your site actually meets your compliance goals.</p>
+<h3 id="configuration-of-the-cookie-consent-taghelper">Configuration of the cookie consent TagHelper<a class="headerlink" href="#configuration-of-the-cookie-consent-taghelper" title="Permanent link">&para;</a></h3>
+<p>The cookie consent javascript has many configurable options and most of them have been exposed as properties on our cookie-consent taghelper. Any settings that you don't specify will just use the default values so you don't need to specify every setting, just the ones where you want to change from the default value. Below you can see the cookie-consent taghelper with all the available settings and their default values.</p>
+<pre class="highlight"><code class="language-html">&lt;cookie-consent enabled="true" 
+    compliance-type="info" 
+    location="false"
+    law-country-code=""
+    law-regional-law="true"
+    revocable="false"
+    auto-open="true"
+    dismiss-on-timeout="false"
+    dismiss-on-scroll="false"
+    show-link="true"
+    popup-open-callback=""
+    popup-close-callback=""
+    initialise-callback=""
+    status-change-callback=""
+    revoke-choice-callback=""
+    cookie-name='cookieconsent_status'
+    cookie-path="/"
+    cookie-domain=""
+    cookie-expiry-days="365"
+    whitelist-pages="[]"
+    backlist-pages="[]"
+    container=""
+    layout="basic" 
+    theme=""
+    position="bottom" 
+    static="false"
+    popup-background-color="#000"
+    popup-text-color=""
+    button-background-color="#f1d600"
+    button-text-color=""
+    header-text="Cookies used on the website!"
+    message-text="This website uses cookies to ensure you get the best experience on our website."
+    dismiss-text="Got it!"
+    allow-text="Allow cookies"
+    deny-text="Decline"
+    link-text="Learn more"
+    link-url="http://cookiesandyou.com"
+    close-text="&amp;#x274c;"
+    cdn-js-url="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.js"
+    cdn-css-url="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.css"
+    js-url="/cr/js/cookieconsent.min.js"
+    css-url="/cr/css/cookieconsent.min.css"
+    cdn-enable="true"
+    local-disable="false"
+    debug="false"&gt;&lt;/cookie-consent&gt;</code></pre>
+<p>To understand these settings you should read the <a href="https://cookieconsent.insites.com/documentation/about-cookie-consent/">documentation for the cookie consent javascript</a>.</p></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script src="../../../../js/bootstrap.bundle.min.js"></script>
+        <script>
+            var base_url = "../../../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../../../js/base.js"></script>
+        <script src="../../../../search/main.js"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

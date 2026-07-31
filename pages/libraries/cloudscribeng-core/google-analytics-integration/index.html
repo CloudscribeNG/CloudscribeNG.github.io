@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        <link rel="canonical" href="https://cloudscribeng.github.io/pages/libraries/cloudscribeng-core/google-analytics-integration/">
+        <link rel="shortcut icon" href="../../../../img/favicon.ico">
+        <title>Google Analytics Integration - CloudscribeNG Documentation</title>
+        <link href="../../../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../../../css/fontawesome.min.css" rel="stylesheet">
+        <link href="../../../../css/brands.min.css" rel="stylesheet">
+        <link href="../../../../css/solid.min.css" rel="stylesheet">
+        <link href="../../../../css/v4-font-face.min.css" rel="stylesheet">
+        <link href="../../../../css/base.css" rel="stylesheet">
+        <link id="hljs-light" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" >
+        <link id="hljs-dark" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github-dark.min.css" disabled>
+        <link href="../../../../stylesheets/full-width.css" rel="stylesheet">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+        <script>hljs.highlightAll();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="../../../..">CloudscribeNG Documentation</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="nav-item">
+                                <a href="../../../.." class="nav-link">Home</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle active" aria-current="page" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Documentation</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../../introduction/" class="dropdown-item">Introduction</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Complete list of CloudscribeNG libraries</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../complete-list-of-cloudscribeng-libraries/" class="dropdown-item">Complete list of open source CloudscribeNG libraries</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">CloudscribeNG.Core</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../" class="dropdown-item">CloudscribeNG.Core</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Multi Tenant Support</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../multi-tenant-support/" class="dropdown-item">Multi Tenant Support</a>
+</li>
+            
+<li>
+    <a href="../multi-tenant-support/using-multitenancy-for-sibling-sites-in-multiple-languages/" class="dropdown-item">Using multitenancy for sibling sites in multiple languages</a>
+</li>
+    </ul>
+  </li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Themes and Web Design</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../themes-and-web-design/" class="dropdown-item">Themes and Web Design</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Advanced Client Side Development with Webpack</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../themes-and-web-design/advanced-client-side-development-with-webpack/" class="dropdown-item">Advanced Client Side Development with Webpack</a>
+</li>
+            
+<li>
+    <a href="../themes-and-web-design/advanced-client-side-development-with-webpack/webpack-prerequisites/" class="dropdown-item">Webpack Prerequisites</a>
+</li>
+    </ul>
+  </li>
+    </ul>
+  </li>
+            
+<li>
+    <a href="../registration-page/" class="dropdown-item">Registration Page Configuration</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Custom Registration</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../custom-registration/" class="dropdown-item">Custom Registration</a>
+</li>
+            
+<li>
+    <a href="../custom-registration/configuration-based-custom-registration-and-user-properties/" class="dropdown-item">Configuration based Custom Registration and User Properties</a>
+</li>
+    </ul>
+  </li>
+            
+<li>
+    <a href="../automated-logout/" class="dropdown-item">Automated Logout </a>
+</li>
+            
+<li>
+    <a href="../changing-user-email-address/" class="dropdown-item">Changing user email address</a>
+</li>
+            
+<li>
+    <a href="../custom-event-handlers/" class="dropdown-item">Custom Event Handlers</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Building Custom Features that Integrate with CloudscribeNG Core</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../building-custom-features-that-integrate-with-cloudscribeng-core/" class="dropdown-item">Building Custom Features that Integrate with CloudscribeNG Core</a>
+</li>
+            
+<li>
+    <a href="../building-custom-features-that-integrate-with-cloudscribeng-core/looking-up-users-in-custom-features/" class="dropdown-item">Looking Up Users in Custom Features</a>
+</li>
+            
+<li>
+    <a href="../building-custom-features-that-integrate-with-cloudscribeng-core/adding-tables-and-data-for-custom-features/" class="dropdown-item">Adding Tables and Data for Custom Features</a>
+</li>
+    </ul>
+  </li>
+            
+<li>
+    <a href="../identityserver-integration/" class="dropdown-item">IdentityServer Integration</a>
+</li>
+            
+<li>
+    <a href="../using-ldap-authentication/" class="dropdown-item">Using LDAP Authentication</a>
+</li>
+            
+<li>
+    <a href="../using-social-authentication/" class="dropdown-item">Using Social Authentication and OpenId Connect</a>
+</li>
+            
+<li>
+    <a href="../using-two-factor-authentication/" class="dropdown-item">Using Two Factor Authentication</a>
+</li>
+            
+<li>
+    <a href="./" class="dropdown-item active" aria-current="page">Google Analytics Integration</a>
+</li>
+            
+<li>
+    <a href="../google-analytics-ga4-integration/" class="dropdown-item">Google Analytics 4 Integration</a>
+</li>
+            
+<li>
+    <a href="../configuring-data-protection/" class="dropdown-item">Configuring Data Protection</a>
+</li>
+            
+<li>
+    <a href="../integrating-signalr-with-cloudscribeng/" class="dropdown-item">Integrating SignalR with CloudscribeNG</a>
+</li>
+            
+<li>
+    <a href="../migrating-users-with-other-password-hash-formats/" class="dropdown-item">Migrating Users with other Password Hash formats</a>
+</li>
+            
+<li>
+    <a href="../google-recaptcha-integration/" class="dropdown-item">Google reCAPTCHA integration</a>
+</li>
+            
+<li>
+    <a href="../query-tool/" class="dropdown-item">Query Tool</a>
+</li>
+            
+<li>
+    <a href="../restarting-the-application/" class="dropdown-item">Restarting the Application</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Restricting Access to Your Website by IP Address</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../restricting-access-to-your-website-by-ip-address/" class="dropdown-item">Restricting Access to Your Website by IP Address</a>
+</li>
+            
+<li>
+    <a href="../restricting-access-to-your-website-by-ip-address/permitting-ip-addresses/" class="dropdown-item">Permitting IP Addresses</a>
+</li>
+            
+<li>
+    <a href="../restricting-access-to-your-website-by-ip-address/blocking-ip-addresses/" class="dropdown-item">Blocking IP Addresses</a>
+</li>
+    </ul>
+  </li>
+    </ul>
+  </li>
+            
+<li>
+    <a href="../../cloudscribeng-simplecontactform/" class="dropdown-item">CloudscribeNG.SimpleContactForm</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">CloudscribeNG.SimpleContent</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../cloudscribeng-simplecontent/" class="dropdown-item">CloudscribeNG.SimpleContent</a>
+</li>
+            
+<li>
+    <a href="../../cloudscribeng-simplecontent/using-open-live-writer/" class="dropdown-item">Using Open Live Writer</a>
+</li>
+            
+<li>
+    <a href="../../cloudscribeng-simplecontent/integrating-with-other-authentication-systems/" class="dropdown-item">Integrating with Other Authentication Systems</a>
+</li>
+            
+<li>
+    <a href="../../cloudscribeng-simplecontent/adding-javascript-and-css-to-pages/" class="dropdown-item">Adding JavaScript and CSS to Pages</a>
+</li>
+            
+<li>
+    <a href="../../cloudscribeng-simplecontent/adding-links-to-the-menu/" class="dropdown-item">Adding links to the Menu</a>
+</li>
+            
+<li>
+    <a href="../../cloudscribeng-simplecontent/customizing-the-editor/" class="dropdown-item">Customizing the Editor</a>
+</li>
+            
+<li>
+    <a href="../../cloudscribeng-simplecontent/2-ways-that-images-are-uploaded-in-simplecontent/" class="dropdown-item">2 ways that images are uploaded in SimpleContent</a>
+</li>
+            
+<li>
+    <a href="../../cloudscribeng-simplecontent/migrating-content-from-other-platforms/" class="dropdown-item">Migrating content from other platforms</a>
+</li>
+            
+<li>
+    <a href="../../cloudscribeng-simplecontent/custom-blog-routing/" class="dropdown-item">Custom Blog Routing</a>
+</li>
+            
+<li>
+    <a href="../../cloudscribeng-simplecontent/custom-page-routing/" class="dropdown-item">Custom Page Routing</a>
+</li>
+            
+<li>
+    <a href="../../cloudscribeng-simplecontent/3-ways-to-add-the-blog-to-the-menu/" class="dropdown-item">3 Ways to Add the Blog To The Menu</a>
+</li>
+            
+<li>
+    <a href="../../cloudscribeng-simplecontent/protecting-pages-with-roles/" class="dropdown-item">Protecting Pages With Roles</a>
+</li>
+            
+<li>
+    <a href="../../cloudscribeng-simplecontent/using-markdown/" class="dropdown-item">Using Markdown</a>
+</li>
+            
+<li>
+    <a href="../../cloudscribeng-simplecontent/how-to-protect-access-to-view-the-blog/" class="dropdown-item">How to protect access to view the blog</a>
+</li>
+            
+<li>
+    <a href="../../cloudscribeng-simplecontent/content-templates/" class="dropdown-item">Content Templates</a>
+</li>
+            
+<li>
+    <a href="../../cloudscribeng-simplecontent/manage-content-in-multiple-languages/" class="dropdown-item">Manage content in multiple languages</a>
+</li>
+            
+<li>
+    <a href="../../cloudscribeng-simplecontent/content-cloning/" class="dropdown-item">Content Cloning</a>
+</li>
+    </ul>
+  </li>
+            
+<li>
+    <a href="../../cloudscribeng-dynamic-authorization-policies/" class="dropdown-item">Dynamic Authorization Policies</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">CloudscribeNG.Web.Common</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../cloudscribeng-web-common/" class="dropdown-item">CloudscribeNG.Web.Common</a>
+</li>
+            
+<li>
+    <a href="../../cloudscribeng-web-common/using-the-summernote-editor/" class="dropdown-item">Using the Summernote editor</a>
+</li>
+            
+<li>
+    <a href="../../cloudscribeng-web-common/using-ckeditor/" class="dropdown-item">Using CKeditor</a>
+</li>
+            
+<li>
+    <a href="../../cloudscribeng-web-common/using-the-bootstrap-datepicker/" class="dropdown-item">Using the Bootstrap DatePicker</a>
+</li>
+            
+<li>
+    <a href="../../cloudscribeng-web-common/easy-bootstrap-modal/" class="dropdown-item">Easy Bootstrap Modal</a>
+</li>
+            
+<li>
+    <a href="../../cloudscribeng-web-common/easy-cascading-dropdowns/" class="dropdown-item">Easy Cascading Dropdowns</a>
+</li>
+            
+<li>
+    <a href="../../cloudscribeng-web-common/easy-autosuggest/" class="dropdown-item">Easy AutoSuggest</a>
+</li>
+            
+<li>
+    <a href="../../cloudscribeng-web-common/using-strongly-typed-models-and-razor-views-to-generate-email-messages/" class="dropdown-item">Using Strongly Typed Models and Razor Views to generate email messages</a>
+</li>
+            
+<li>
+    <a href="../../cloudscribeng-web-common/easy-alerts-with-controller-extensions/" class="dropdown-item">Easy Alerts with Controller  Extensions</a>
+</li>
+            
+<li>
+    <a href="../../cloudscribeng-web-common/easy-google-analytics/" class="dropdown-item">Easy Google Analytics</a>
+</li>
+            
+<li>
+    <a href="../../cloudscribeng-web-common/easy-google-analytics-ga4/" class="dropdown-item">Easy Google Analytics (GA4)</a>
+</li>
+            
+<li>
+    <a href="../../cloudscribeng-web-common/managing-cookie-consent/" class="dropdown-item">Managing Cookie Consent</a>
+</li>
+    </ul>
+  </li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">CloudscribeNG.Web.Navigation</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../cloudscribeng-web-navigation/" class="dropdown-item">CloudscribeNG.Web.Navigation</a>
+</li>
+            
+<li>
+    <a href="../../cloudscribeng-web-navigation/configuring-menu-items/" class="dropdown-item">Configuring Menu Items</a>
+</li>
+            
+<li>
+    <a href="../../cloudscribeng-web-navigation/adjusting-menu-items-per-request/" class="dropdown-item">Adjusting Menu Items Per Request</a>
+</li>
+            
+<li>
+    <a href="../../cloudscribeng-web-navigation/adding-extra-breadcrumbs/" class="dropdown-item">Adding Extra Breadcrumbs</a>
+</li>
+            
+<li>
+    <a href="../../cloudscribeng-web-navigation/menu-localization/" class="dropdown-item">Menu Localization</a>
+</li>
+            
+<li>
+    <a href="../../cloudscribeng-web-navigation/different-menu-items-per-tenant/" class="dropdown-item">Different Menu Items Per Tenant</a>
+</li>
+            
+<li>
+    <a href="../../cloudscribeng-web-navigation/easy-google-sitemaps/" class="dropdown-item">Easy Google SiteMaps</a>
+</li>
+            
+<li>
+    <a href="../../cloudscribeng-web-navigation/using-json-instead-of-xml/" class="dropdown-item">Using Json Instead of XML</a>
+</li>
+            
+<li>
+    <a href="../../cloudscribeng-web-navigation/additional-community-tutorials-on-our-github-wiki/" class="dropdown-item">Additional Community Tutorials on Our GitHub Wiki</a>
+</li>
+    </ul>
+  </li>
+            
+<li>
+    <a href="../../cloudscribeng-web-pagination/" class="dropdown-item">CloudscribeNG.Web.Pagination</a>
+</li>
+            
+<li>
+    <a href="../../cloudscribeng-syndication/" class="dropdown-item">CloudscribeNG.Syndication</a>
+</li>
+            
+<li>
+    <a href="../../cloudscribeng-pwakit/" class="dropdown-item">CloudscribeNG PwaKit - Easily Build Progressive Web Apps</a>
+</li>
+            
+<li>
+    <a href="../../cloudscribeng-localization/" class="dropdown-item">CloudscribeNG Localization</a>
+</li>
+            
+<li>
+    <a href="../../easy-timezone-handling/" class="dropdown-item">Easy TimeZone Handling</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Commercial Products</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../commercial-products/index.md" class="dropdown-item">None</a>
+</li>
+            
+<li>
+    <a href="../../../commercial-products/complete-list-of-cloudscribeng-commercial-product-libraries/" class="dropdown-item">CloudscribeNG Commercial Product Libraries</a>
+</li>
+            
+<li>
+    <a href="../../../commercial-products/commercial-product-license/" class="dropdown-item">Commercial Product License</a>
+</li>
+            
+<li>
+    <a href="../../../commercial-products/using-the-cloudscribeng-newsletter/" class="dropdown-item">Using the CloudscribeNG Newsletter</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ms-md-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a rel="prev" href="../using-two-factor-authentication/" class="nav-link">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" href="../google-analytics-ga4-integration/" class="nav-link">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="https://github.com/CloudscribeNG/edit/master/docs/pages/libraries/cloudscribeng-core/google-analytics-integration.md" class="nav-link">Edit on CloudscribeNG
+                                    </a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-bs-toggle="collapse" data-bs-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-body-tertiary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-bs-level="1"><a href="#google-analytics-integration" class="nav-link">Google Analytics Integration</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-bs-level="2"><a href="#next-steps" class="nav-link">Next Steps</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="google-analytics-integration">Google Analytics Integration<a class="headerlink" href="#google-analytics-integration" title="Permanent link">&para;</a></h1>
+<p><strong>Note: Google Universal Analytics or UA will be discontinued by Google on 1st July 2023. For information on the new GA4 analytics platform that Google now provides and how CloudscribeNG integrates with it can be found on the new <a href="/google-analytics-ga4-integration">Google Analytics GA4 Integration</a> page.</strong></p>
+<p>In CloudscribeNG Core we use the <a href="/docs/easy-google-analytics">GoogleAnalyticsTagHelper, GoogleAnalyticsHelper, and GoogleAnalyticsApiService</a> provided by the CloudscribeNG.Web.Common library to track basic things like page views and also to track user account events such as Login Submit, Login Success, Login Failure, Registration Submit, Registration Success, and Registration Failure. We also track whether the login or registration event used a social login service such as Facebook or Twitter, or Google or Microsoft or whether it was just a local account.</p>
+<p>The implementation for tracking these account events was basically <a href="http://www.charlesfarina.com/login-and-signup-naming-conventions-for-google-analytics/">using the approach from this tutorial</a>.</p>
+<p>The tutorial linked above is a good source also to begin learning about custom dimensions and metrics in google analytics. Our implementation uses pretty much the same dimension and metrics indexes used in that article. If you don't already have custom dimensions and metrics established in your google analytics then you should also be able to use the same indexes, but if you do already have some custom dimensions and metrics configured then there is a good chance the index numbers we used would conflict with ones you are already using, so we made them configurable in case you need to change them to use different index numbers for login and registration events.</p>
+<h3 id="setting-up-custom-dimensions-and-metrics-in-google-analytics">Setting Up Custom Dimensions and Metrics in Google Analytics<a class="headerlink" href="#setting-up-custom-dimensions-and-metrics-in-google-analytics" title="Permanent link">&para;</a></h3>
+<p>To get the most benefit out of the built in user account tracking, you need to setup the corresponding custom dimensions and metrics in your google analytics property settings. Notice the "Custom Dimensions" and "Custom Metrics" menu items in the screen shot below.</p>
+<p><a href="/media/images/ga-custom-1.jpg"><img alt=" " src="/media/images/ga-custom-1-ws.jpg" /></a></p>
+<p>Setup your custom dimensions as shown in the following screen shot:</p>
+<p><a href="/media/images/ga-custom-dims.jpg"><img alt=" " src="/media/images/ga-custom-dims-ws.jpg" /></a></p>
+<p>and setup your custom metrics as shown in this screen shot:</p>
+<p><a href="/media/images/ga-custom-metrics.jpg"><img alt=" " src="/media/images/ga-custom-metrics-ws.jpg" /></a></p>
+<h3 id="overriding-the-indexes-for-dimensions-and-metrics">Overriding the Indexes for Dimensions and Metrics<a class="headerlink" href="#overriding-the-indexes-for-dimensions-and-metrics" title="Permanent link">&para;</a></h3>
+<p>If you do already have custom dimensions and metrics using the same indexes, you can customize the indexes used by CloudscribeNG Core.  The configurable settings are all shown below with their default values. If using CloudscribeNG Core you can update them in appsettings.json to whatever values you want.</p>
+<pre class="highlight"><code class="language-json">"GoogleAnalyticsOptions": {
+    "TrackUserId": "true",
+    "UserIdDimensionIndex": "1",
+    "RegisteredUserDimensionIndex": "2",
+    "LoginRegisterSourceDimenstionIndex": "3",
+    "RegisterSuccessMetricIndex": "1",
+    "RegisterFailMetricIndex": "2",
+    "RegisterSubmitMetricIndex": "3",
+    "LoginSuccessMetricIndex": "4",
+    "LoginFailMetricIndex": "5",
+    "LoginSubmitMetricIndex": "6",
+    "LoginRegisterEventCategory": "Login and Registration",
+    "LoginSuccessEventAction": "Login Success",
+    "LoginFailEventAction": "Login Fail",
+    "LoginSubmitEventAction": "Login Submit",
+    "RegisterSuccessEventAction": "Register Success",
+    "RegisterFailEventAction": "Register Fail",
+    "RegisterSubmitEventAction": "Register Submit"
+
+  }</code></pre>
+<p>As you can see, you can also customize the category and action names used in the tracking. Also depending on your privacy policy you may want to set TrackUserId to false. Google forbids capturing any personal identifying user information directly in google analytics but you can capture a user id that corresponds to the user id for the user in your own website database and <a href="https://support.google.com/analytics/answer/3123662?hl=en">you are allowed to capture that in google analytics</a> and there are advantages in doing so. You do have to enable the UserID feature in your Google Analytics account, and that will create a view on your data that is filtered to only requests with a UserID. For that reason you should also always keep a set of views enabled that don't use that filter.</p>
+<p>Even though you can't store user names or identifying information in google analytics, if you are capturing UserID, it is possible <a href="https://davidsimpson.me/pii-viewer-for-google-analytics/">using a Chrome extension</a> to associate a CSV file that has the UserID along with other information, so that you can view the actual users in your reports.</p>
+<h2 id="next-steps">Next Steps<a class="headerlink" href="#next-steps" title="Permanent link">&para;</a></h2>
+<p>Now that you have setup custom dimensions and metrics for user account events, you can use those for setting goals in Google Analytics. There are lots of <a href="https://www.google.com/search?q=setting+goals+in+google+analytics">tutorials online to learn about setting goals in Google Analytics</a>.</p>
+<p>In Summary, CloudscribeNG Core has built in tracking of page views and account events such as login and registration. You can see the actual <a href="https://github.com/joeaudette/CloudscribeNG/blob/master/src/CloudscribeNG.Core.Web/Analytics/GoogleAccountAnalytics.cs">code we use for tracking account events here</a>. You can also track other custom events in your own custom features using similar techniques. See the <a href="/docs/easy-google-analytics">Easy Google Analytics</a> article in the documentation for CloudscribeNG.Web.Common to learn more.</p></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script src="../../../../js/bootstrap.bundle.min.js"></script>
+        <script>
+            var base_url = "../../../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../../../js/base.js"></script>
+        <script src="../../../../search/main.js"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

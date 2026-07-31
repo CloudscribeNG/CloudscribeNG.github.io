@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        <link rel="canonical" href="https://cloudscribeng.github.io/pages/libraries/cloudscribeng-core/identityserver-integration/">
+        <link rel="shortcut icon" href="../../../../img/favicon.ico">
+        <title>IdentityServer Integration - CloudscribeNG Documentation</title>
+        <link href="../../../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../../../css/fontawesome.min.css" rel="stylesheet">
+        <link href="../../../../css/brands.min.css" rel="stylesheet">
+        <link href="../../../../css/solid.min.css" rel="stylesheet">
+        <link href="../../../../css/v4-font-face.min.css" rel="stylesheet">
+        <link href="../../../../css/base.css" rel="stylesheet">
+        <link id="hljs-light" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" >
+        <link id="hljs-dark" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github-dark.min.css" disabled>
+        <link href="../../../../stylesheets/full-width.css" rel="stylesheet">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+        <script>hljs.highlightAll();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="../../../..">CloudscribeNG Documentation</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="nav-item">
+                                <a href="../../../.." class="nav-link">Home</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle active" aria-current="page" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Documentation</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../../introduction/" class="dropdown-item">Introduction</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Complete list of CloudscribeNG libraries</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../complete-list-of-cloudscribeng-libraries/" class="dropdown-item">Complete list of open source CloudscribeNG libraries</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">CloudscribeNG.Core</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../" class="dropdown-item">CloudscribeNG.Core</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Multi Tenant Support</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../multi-tenant-support/" class="dropdown-item">Multi Tenant Support</a>
+</li>
+            
+<li>
+    <a href="../multi-tenant-support/using-multitenancy-for-sibling-sites-in-multiple-languages/" class="dropdown-item">Using multitenancy for sibling sites in multiple languages</a>
+</li>
+    </ul>
+  </li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Themes and Web Design</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../themes-and-web-design/" class="dropdown-item">Themes and Web Design</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Advanced Client Side Development with Webpack</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../themes-and-web-design/advanced-client-side-development-with-webpack/" class="dropdown-item">Advanced Client Side Development with Webpack</a>
+</li>
+            
+<li>
+    <a href="../themes-and-web-design/advanced-client-side-development-with-webpack/webpack-prerequisites/" class="dropdown-item">Webpack Prerequisites</a>
+</li>
+    </ul>
+  </li>
+    </ul>
+  </li>
+            
+<li>
+    <a href="../registration-page/" class="dropdown-item">Registration Page Configuration</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Custom Registration</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../custom-registration/" class="dropdown-item">Custom Registration</a>
+</li>
+            
+<li>
+    <a href="../custom-registration/configuration-based-custom-registration-and-user-properties/" class="dropdown-item">Configuration based Custom Registration and User Properties</a>
+</li>
+    </ul>
+  </li>
+            
+<li>
+    <a href="../automated-logout/" class="dropdown-item">Automated Logout </a>
+</li>
+            
+<li>
+    <a href="../changing-user-email-address/" class="dropdown-item">Changing user email address</a>
+</li>
+            
+<li>
+    <a href="../custom-event-handlers/" class="dropdown-item">Custom Event Handlers</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Building Custom Features that Integrate with CloudscribeNG Core</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../building-custom-features-that-integrate-with-cloudscribeng-core/" class="dropdown-item">Building Custom Features that Integrate with CloudscribeNG Core</a>
+</li>
+            
+<li>
+    <a href="../building-custom-features-that-integrate-with-cloudscribeng-core/looking-up-users-in-custom-features/" class="dropdown-item">Looking Up Users in Custom Features</a>
+</li>
+            
+<li>
+    <a href="../building-custom-features-that-integrate-with-cloudscribeng-core/adding-tables-and-data-for-custom-features/" class="dropdown-item">Adding Tables and Data for Custom Features</a>
+</li>
+    </ul>
+  </li>
+            
+<li>
+    <a href="./" class="dropdown-item active" aria-current="page">IdentityServer Integration</a>
+</li>
+            
+<li>
+    <a href="../using-ldap-authentication/" class="dropdown-item">Using LDAP Authentication</a>
+</li>
+            
+<li>
+    <a href="../using-social-authentication/" class="dropdown-item">Using Social Authentication and OpenId Connect</a>
+</li>
+            
+<li>
+    <a href="../using-two-factor-authentication/" class="dropdown-item">Using Two Factor Authentication</a>
+</li>
+            
+<li>
+    <a href="../google-analytics-integration/" class="dropdown-item">Google Analytics Integration</a>
+</li>
+            
+<li>
+    <a href="../google-analytics-ga4-integration/" class="dropdown-item">Google Analytics 4 Integration</a>
+</li>
+            
+<li>
+    <a href="../configuring-data-protection/" class="dropdown-item">Configuring Data Protection</a>
+</li>
+            
+<li>
+    <a href="../integrating-signalr-with-cloudscribeng/" class="dropdown-item">Integrating SignalR with CloudscribeNG</a>
+</li>
+            
+<li>
+    <a href="../migrating-users-with-other-password-hash-formats/" class="dropdown-item">Migrating Users with other Password Hash formats</a>
+</li>
+            
+<li>
+    <a href="../google-recaptcha-integration/" class="dropdown-item">Google reCAPTCHA integration</a>
+</li>
+            
+<li>
+    <a href="../query-tool/" class="dropdown-item">Query Tool</a>
+</li>
+            
+<li>
+    <a href="../restarting-the-application/" class="dropdown-item">Restarting the Application</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Restricting Access to Your Website by IP Address</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../restricting-access-to-your-website-by-ip-address/" class="dropdown-item">Restricting Access to Your Website by IP Address</a>
+</li>
+            
+<li>
+    <a href="../restricting-access-to-your-website-by-ip-address/permitting-ip-addresses/" class="dropdown-item">Permitting IP Addresses</a>
+</li>
+            
+<li>
+    <a href="../restricting-access-to-your-website-by-ip-address/blocking-ip-addresses/" class="dropdown-item">Blocking IP Addresses</a>
+</li>
+    </ul>
+  </li>
+    </ul>
+  </li>
+            
+<li>
+    <a href="../../cloudscribeng-simplecontactform/" class="dropdown-item">CloudscribeNG.SimpleContactForm</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">CloudscribeNG.SimpleContent</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../cloudscribeng-simplecontent/" class="dropdown-item">CloudscribeNG.SimpleContent</a>
+</li>
+            
+<li>
+    <a href="../../cloudscribeng-simplecontent/using-open-live-writer/" class="dropdown-item">Using Open Live Writer</a>
+</li>
+            
+<li>
+    <a href="../../cloudscribeng-simplecontent/integrating-with-other-authentication-systems/" class="dropdown-item">Integrating with Other Authentication Systems</a>
+</li>
+            
+<li>
+    <a href="../../cloudscribeng-simplecontent/adding-javascript-and-css-to-pages/" class="dropdown-item">Adding JavaScript and CSS to Pages</a>
+</li>
+            
+<li>
+    <a href="../../cloudscribeng-simplecontent/adding-links-to-the-menu/" class="dropdown-item">Adding links to the Menu</a>
+</li>
+            
+<li>
+    <a href="../../cloudscribeng-simplecontent/customizing-the-editor/" class="dropdown-item">Customizing the Editor</a>
+</li>
+            
+<li>
+    <a href="../../cloudscribeng-simplecontent/2-ways-that-images-are-uploaded-in-simplecontent/" class="dropdown-item">2 ways that images are uploaded in SimpleContent</a>
+</li>
+            
+<li>
+    <a href="../../cloudscribeng-simplecontent/migrating-content-from-other-platforms/" class="dropdown-item">Migrating content from other platforms</a>
+</li>
+            
+<li>
+    <a href="../../cloudscribeng-simplecontent/custom-blog-routing/" class="dropdown-item">Custom Blog Routing</a>
+</li>
+            
+<li>
+    <a href="../../cloudscribeng-simplecontent/custom-page-routing/" class="dropdown-item">Custom Page Routing</a>
+</li>
+            
+<li>
+    <a href="../../cloudscribeng-simplecontent/3-ways-to-add-the-blog-to-the-menu/" class="dropdown-item">3 Ways to Add the Blog To The Menu</a>
+</li>
+            
+<li>
+    <a href="../../cloudscribeng-simplecontent/protecting-pages-with-roles/" class="dropdown-item">Protecting Pages With Roles</a>
+</li>
+            
+<li>
+    <a href="../../cloudscribeng-simplecontent/using-markdown/" class="dropdown-item">Using Markdown</a>
+</li>
+            
+<li>
+    <a href="../../cloudscribeng-simplecontent/how-to-protect-access-to-view-the-blog/" class="dropdown-item">How to protect access to view the blog</a>
+</li>
+            
+<li>
+    <a href="../../cloudscribeng-simplecontent/content-templates/" class="dropdown-item">Content Templates</a>
+</li>
+            
+<li>
+    <a href="../../cloudscribeng-simplecontent/manage-content-in-multiple-languages/" class="dropdown-item">Manage content in multiple languages</a>
+</li>
+            
+<li>
+    <a href="../../cloudscribeng-simplecontent/content-cloning/" class="dropdown-item">Content Cloning</a>
+</li>
+    </ul>
+  </li>
+            
+<li>
+    <a href="../../cloudscribeng-dynamic-authorization-policies/" class="dropdown-item">Dynamic Authorization Policies</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">CloudscribeNG.Web.Common</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../cloudscribeng-web-common/" class="dropdown-item">CloudscribeNG.Web.Common</a>
+</li>
+            
+<li>
+    <a href="../../cloudscribeng-web-common/using-the-summernote-editor/" class="dropdown-item">Using the Summernote editor</a>
+</li>
+            
+<li>
+    <a href="../../cloudscribeng-web-common/using-ckeditor/" class="dropdown-item">Using CKeditor</a>
+</li>
+            
+<li>
+    <a href="../../cloudscribeng-web-common/using-the-bootstrap-datepicker/" class="dropdown-item">Using the Bootstrap DatePicker</a>
+</li>
+            
+<li>
+    <a href="../../cloudscribeng-web-common/easy-bootstrap-modal/" class="dropdown-item">Easy Bootstrap Modal</a>
+</li>
+            
+<li>
+    <a href="../../cloudscribeng-web-common/easy-cascading-dropdowns/" class="dropdown-item">Easy Cascading Dropdowns</a>
+</li>
+            
+<li>
+    <a href="../../cloudscribeng-web-common/easy-autosuggest/" class="dropdown-item">Easy AutoSuggest</a>
+</li>
+            
+<li>
+    <a href="../../cloudscribeng-web-common/using-strongly-typed-models-and-razor-views-to-generate-email-messages/" class="dropdown-item">Using Strongly Typed Models and Razor Views to generate email messages</a>
+</li>
+            
+<li>
+    <a href="../../cloudscribeng-web-common/easy-alerts-with-controller-extensions/" class="dropdown-item">Easy Alerts with Controller  Extensions</a>
+</li>
+            
+<li>
+    <a href="../../cloudscribeng-web-common/easy-google-analytics/" class="dropdown-item">Easy Google Analytics</a>
+</li>
+            
+<li>
+    <a href="../../cloudscribeng-web-common/easy-google-analytics-ga4/" class="dropdown-item">Easy Google Analytics (GA4)</a>
+</li>
+            
+<li>
+    <a href="../../cloudscribeng-web-common/managing-cookie-consent/" class="dropdown-item">Managing Cookie Consent</a>
+</li>
+    </ul>
+  </li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">CloudscribeNG.Web.Navigation</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../cloudscribeng-web-navigation/" class="dropdown-item">CloudscribeNG.Web.Navigation</a>
+</li>
+            
+<li>
+    <a href="../../cloudscribeng-web-navigation/configuring-menu-items/" class="dropdown-item">Configuring Menu Items</a>
+</li>
+            
+<li>
+    <a href="../../cloudscribeng-web-navigation/adjusting-menu-items-per-request/" class="dropdown-item">Adjusting Menu Items Per Request</a>
+</li>
+            
+<li>
+    <a href="../../cloudscribeng-web-navigation/adding-extra-breadcrumbs/" class="dropdown-item">Adding Extra Breadcrumbs</a>
+</li>
+            
+<li>
+    <a href="../../cloudscribeng-web-navigation/menu-localization/" class="dropdown-item">Menu Localization</a>
+</li>
+            
+<li>
+    <a href="../../cloudscribeng-web-navigation/different-menu-items-per-tenant/" class="dropdown-item">Different Menu Items Per Tenant</a>
+</li>
+            
+<li>
+    <a href="../../cloudscribeng-web-navigation/easy-google-sitemaps/" class="dropdown-item">Easy Google SiteMaps</a>
+</li>
+            
+<li>
+    <a href="../../cloudscribeng-web-navigation/using-json-instead-of-xml/" class="dropdown-item">Using Json Instead of XML</a>
+</li>
+            
+<li>
+    <a href="../../cloudscribeng-web-navigation/additional-community-tutorials-on-our-github-wiki/" class="dropdown-item">Additional Community Tutorials on Our GitHub Wiki</a>
+</li>
+    </ul>
+  </li>
+            
+<li>
+    <a href="../../cloudscribeng-web-pagination/" class="dropdown-item">CloudscribeNG.Web.Pagination</a>
+</li>
+            
+<li>
+    <a href="../../cloudscribeng-syndication/" class="dropdown-item">CloudscribeNG.Syndication</a>
+</li>
+            
+<li>
+    <a href="../../cloudscribeng-pwakit/" class="dropdown-item">CloudscribeNG PwaKit - Easily Build Progressive Web Apps</a>
+</li>
+            
+<li>
+    <a href="../../cloudscribeng-localization/" class="dropdown-item">CloudscribeNG Localization</a>
+</li>
+            
+<li>
+    <a href="../../easy-timezone-handling/" class="dropdown-item">Easy TimeZone Handling</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Commercial Products</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../commercial-products/index.md" class="dropdown-item">None</a>
+</li>
+            
+<li>
+    <a href="../../../commercial-products/complete-list-of-cloudscribeng-commercial-product-libraries/" class="dropdown-item">CloudscribeNG Commercial Product Libraries</a>
+</li>
+            
+<li>
+    <a href="../../../commercial-products/commercial-product-license/" class="dropdown-item">Commercial Product License</a>
+</li>
+            
+<li>
+    <a href="../../../commercial-products/using-the-cloudscribeng-newsletter/" class="dropdown-item">Using the CloudscribeNG Newsletter</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ms-md-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a rel="prev" href="../building-custom-features-that-integrate-with-cloudscribeng-core/adding-tables-and-data-for-custom-features/" class="nav-link">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" href="../using-ldap-authentication/" class="nav-link">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="https://github.com/CloudscribeNG/edit/master/docs/pages/libraries/cloudscribeng-core/identityserver-integration.md" class="nav-link">Edit on CloudscribeNG
+                                    </a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-bs-toggle="collapse" data-bs-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-body-tertiary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-bs-level="1"><a href="#identityserver-integration" class="nav-link">IdentityServer Integration</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-bs-level="2"><a href="#notes-on-configuring-a-cloudscribeng-site-to-act-as-an-identity-provider-for-other-cloudscribeng-sites" class="nav-link">Notes on configuring a CloudscribeNG site to act as an identity provider for other CloudscribeNG site(s)</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#sample-solution-for-api-clients" class="nav-link">Sample solution for API clients</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#some-notes-on-logging-out" class="nav-link">Some notes on logging out</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="identityserver-integration">IdentityServer Integration<a class="headerlink" href="#identityserver-integration" title="Permanent link">&para;</a></h1>
+<p>Our integration packages provide a complete turn key solution for using IdentityServer4, making it very easy for you to provision a complete solution for <a href="http://openid.net/connect/">OpenId Connect</a>.</p>
+<p>We have pre-built integration for using CloudscribeNG Core as the user management back end for IdentityServer4, including UI for managing the operational data for clients, api resources, and identity resources. What IdentityServer4 brings to the table is handling for OpenId Connect protocols and the ability to issue JWT tokens for authentication and authorization. JWT authentication can be used for SPA style (Single Page Application) web applications that talk to web APIs, and even for mobile app authentication.</p>
+<p>Use of IdentityServer4 is a complex topic, to learn about it you should visit the excellent <a href="https://identityserver4.readthedocs.io/">IdentityServer4 documentation</a>.</p>
+<p>To get started using CloudscribeNG with IdentityServer4, you should use our project template for Visual Studio or the .NET Core CLI as discussed in <a href="/docs/introduction">Introduction to CloudscribeNG</a>, and check the box to include IdentityServer4 integration.</p>
+<p>After you create your project see the readme.html file which has information about the login credentials and next steps. When you login as administrator a new Administration Menu item will appear. Most of what you see in the image below is standard menu items for CloudscribeNG Core, but there are 3 additional menu items under the Security Settings that are added for the IdentityServer4 integration. Specifically the API Resources, API Clients, and Identity Resources menu items are for creating and managing the operational data for IdentityServer4.</p>
+<p><a href="/media/images/adminmenu-with-idserver.jpg"><img alt=" " src="/media/images/adminmenu-with-idserver-ws.jpg" /></a></p>
+<p>Note also that there are additional appsettings to configure when using our IdentityServer4 integration, to allow the server to use your X.509 certificate (which can be self-signed):</p>
+<pre class="highlight"><code class="language-json">"AppSettings": {
+// etc other settings
+"IdServerSigningCertPath": "D:\\path-to-your-X.509-certificate\\your-X.509-certificate.pfx",
+"IdServerSigningCertPassword": "password-for-your-X.509-certificate"
+    }</code></pre>
+<p>There are other settings required to support API clients, and change to make in IdentityServerIntegration.cs (<em>documentation in prep</em>).</p>
+<h2 id="notes-on-configuring-a-cloudscribeng-site-to-act-as-an-identity-provider-for-other-cloudscribeng-sites">Notes on configuring a CloudscribeNG site to act as an identity provider for other CloudscribeNG site(s)<a class="headerlink" href="#notes-on-configuring-a-cloudscribeng-site-to-act-as-an-identity-provider-for-other-cloudscribeng-sites" title="Permanent link">&para;</a></h2>
+<p>These notes might help configure a simple scenario in which one CloudscribeNG site will act as the identity provider for one or more other applications (which may themselves be using CloudscribeNG or other platforms that support OIDC).</p>
+<p>The 'Server' site requires the X.509 certificate present and configured as described above.</p>
+<h4 id="server-api-clients">Server - API Clients<a class="headerlink" href="#server-api-clients" title="Permanent link">&para;</a></h4>
+<p>On the server site, you will need to add an API Client for each external application/website. For each API client you add, the following configuration should work.</p>
+<p>The Id can be any unique string.</p>
+<p>The Name will appear when the user is asked for consent, if requiring consent is configured.</p>
+<p>The Client Uri can be left empty.</p>
+<p>Access Token Type is not relevant here - leave alone.</p>
+<p>Refresh Token Expiration is not relevant here - leave alone.</p>
+<p>Refresh Token Usage is not relevant here - leave alone.</p>
+<p>Logo Uri - if configured to point at a value path to an image, this image will be displayed in the dialogue when the user is asked for consent, if requiring consent is configured.</p>
+<p>Front Channel Logout Uri - this is needed for effective logout; for a CloudscribeNG client it is <a href="https://your-client-site.com/signout-callback-oidc">https://your-client-site.com/signout-callback-oidc</a></p>
+<p>Back Channel Logout Uri can be left blank.</p>
+<p>Lifetime settings - the default values are fine.</p>
+<p>Client Claims Prefix - the default client_ can be left alone.</p>
+<p>Pairwise Subject Salt can be left blank.</p>
+<p>Checkboxes:</p>
+<p>Enabled - switch this on.</p>
+<p>Enable Local Login - switch this on.</p>
+<p>Require Consent - this on if you want the end user to be prompted to give consent for the sign-in process to access their credentials on the server site. Probably this would be switched off in any organisational context, but on when the client application is operating under different service terms and conditions from the server.</p>
+<p>Allow Remember Consent - if Require Consent is on, this determines whether consent can be given once and remembered, or whether it is needed every time.</p>
+<p>Require Pkce - this must be off at present (CloudscribeNG 6.0) as it is not supported with hybrid grant type.</p>
+<p>Require Client Secret - if this is off, it is not necessary to configure and share a secret at server and client. If this is on, the secret must be added at the server and used in configuration at the client - this is more secure.</p>
+<p>Always Include User Claims In Id Token - <em>documentation in preparation</em>. This can be off.</p>
+<p>Allow Access Tokens Via Browser - <em>documentation in preparation</em>. This can be off.</p>
+<p>Always Send Client Claims - <em>documentation in preparation</em>. This can be off.</p>
+<p>Include Jwt Id - <em>documentation in preparation</em>. This can be off.</p>
+<p>Logout Session Required - <em>documentation in preparation</em>. This can be off.</p>
+<p>Update Access Token Claims On Refresh - <em>documentation in preparation</em>. This can be off.</p>
+<p>Allow Offline Access - <em>documentation in preparation</em>. This can be off.</p>
+<p>Redirect Urls - this is needed; for a CloudscribeNG client it is <a href="https://your-client-site.com/signin-oidc">https://your-client-site.com/signin-oidc</a></p>
+<p>Post Logout Redirect Urls - this can be the root of the client site, e.g. <a href="https://your-client-site.com/">https://your-client-site.com/</a></p>
+<p>Allowed CORS Origins - this can be left empty if the client is authenticating from server-side code, as in a CloudscribeNG site.</p>
+<p>Client Secrets - if you switch on Require Client Secret above, you need to make a client secret and enter this into the configuration of the client site. You should choose Sha256 or Sha512 hash options, type = SharedSecret, and note the Value before clicking "Add Secret" as it is the original value that is needed at the client. Set an expiration date if desired.</p>
+<p>Claims - <em>documentation in preparation</em> - can be left empty.</p>
+<p>Allowed Grant Types: add 'hybrid'. Note that 'authorization_code' is not currently supported.</p>
+<p>Allowed Scopes - add each of the following: openid,email,profile. These will also be configured as the OpenIdConnect Scopes in the client.</p>
+<p>Provider Restrictions - <em>documentation in preparation</em> - can be left empty.</p>
+<p>Custom Properties -<em> documentation in preparation</em> - can be left empty.</p>
+<h4 id="in-identity-resources">In Identity Resources<a class="headerlink" href="#in-identity-resources" title="Permanent link">&para;</a></h4>
+<p>Add three identity resources: openid (required = yes), email (required = yes), profile; set 'enabled' and 'show in discovery document' = yes for all. For the email resource, add Claim 'email'.</p>
+<h4 id="client-configuration">Client configuration<a class="headerlink" href="#client-configuration" title="Permanent link">&para;</a></h4>
+<p>Configuration of a client application/website that supports OIDC should now be straightforward!</p>
+<p>If it is a CloudscribeNG site, <a href="/using-social-authentication">see our documentation here</a>.</p>
+<p>The OpenIdConnect Authority Url should be the root address of the Server CloudscribeNG site, e.g. <a href="https://your-server-site.com/">https://your-server-site.com/</a></p>
+<p>The OpenIdConnect Display Name determines what end users will see on the client site's log in screen, so should be a user-friendly description, like 'Acme Corp Id', or 'Log in with Acme'.</p>
+<p>The OpenIdConnect App Id must match the API Client Id that you configured above.</p>
+<p>OpenIdConnect App Secret is required only if Require Client Secret is switched on at the server. </p>
+<p>OpenIdConnect Scopes (comma separated) should be set to 'openid,email,profile'</p>
+<p>With server and client settings like this, it should be possible to log into the client CloudscribeNG site by clicking 'Log in with Acme', then enter credentials at the Server site, after which you will be redirected back to the client site 'signed in'. If you didn't already have an account in the client site, you will have one now, though it may also be subject to approval, depending on site settings.</p>
+<p>If the Server API Client record is configured to require consent, then an intermediate screen will appear after clicking 'Log in with Acme', asking for consent in line with server configuration, and showing the configured logo and Name of the API Client as configured in the Server.</p>
+<h4 id="can-the-server-itself-use-oidc">Can the Server itself use OIDC?<a class="headerlink" href="#can-the-server-itself-use-oidc" title="Permanent link">&para;</a></h4>
+<p>Yes! Note that the only requirement is that the user can authenticate at the server site. So this authentication can use any supported method of authentication in a CloudscribeNG site, which can include Facebook, Google, Twitter, or OIDC. So this means the the CloudscribeNG Identity Server site can itself be cascading authentication from other providers.</p>
+<h2 id="sample-solution-for-api-clients">Sample solution for API clients<a class="headerlink" href="#sample-solution-for-api-clients" title="Permanent link">&para;</a></h2>
+<p>If you have any trouble getting your clients and APIs working, you can take a look at the sample solution in our sample repo: <a href="https://github.com/CloudscribeNG/sample-idserver">CloudscribeNG-idserver-nodb</a> - this uses NoDb file system storage for data. We don't recommend using NoDb storage to start your own IdentityServer application because NoDb is meant for small sites and IdentityServer is more targeted for having lots of users - you should use one of the other 3 data storage options for production use. <strong>But this one makes a good demo because NoDb made it easy for me to create a demo with sample data already included. It is pre-configured with data and has working clients already set up for 2 tenants, so it demonstrates our multi-tenancy support</strong>. There is also a working Xamarin sample client in this repository, see the YouTube Video below for a guided tour. If you are having any trouble getting things working with your clients and APIs this can serve as a good reference for you to compare how you have things setup vs this working example.</p>
+<p>Note that Social Authentication in CloudscribeNG Core integrates seamlessly with IdentityServer4, so if you setup social authentication, your client applications can also sign in using social authentication providers.</p>
+<p>Note also that if you have configured CloudscribeNG to use LDAP authentication, then any requests for an access token made against CloudscribeNG's IdentityServer4 authentication endpoint will validate the supplied credentials by attempting to login both against the standard CloudscribeNG user tables and then (if that fails) against the configured LDAP domain settings.</p>
+<h2 id="some-notes-on-logging-out">Some notes on logging out<a class="headerlink" href="#some-notes-on-logging-out" title="Permanent link">&para;</a></h2>
+<p>When logging your client application out, you should use the IdentityServer4 'endsession' endpoint (<a href="https://identityserver4.readthedocs.io/en/latest/endpoints/endsession.html">see documentation</a>) as shown:</p>
+<p><em><a href="https://yoursite.com/connect/endsession?id_token_hint=[abc]&amp;post_logout_redirect_uri=https://mycallback.com">https://yoursite.com/connect/endsession?id_token_hint=[abc]&amp;post_logout_redirect_uri=https://mycallback.com</a></em></p>
+<p>where:  </p>
+<p><em>yoursite.com</em> is the domain of your CloudscribeNG IdentityServer4 host,</p>
+<p><em>[abc]</em> is replaced by the lengthy id_token that will have been returned to your app following its earlier authorization request: <a href="https://identityserver4.readthedocs.io/en/latest/endpoints/authorize.html">Authorize Endpoint — IdentityServer4 documentation</a></p>
+<p>and <em><a href="https://mycallback.com">https://mycallback.com</a> </em>is replaced with the URL that you wish to return to after a successful logout (for example, this may be a callback to your client xamarin app).</p>
+<p>The callback URL must have been registered for your client as a supported Post Logout Redirect Url, in the 'API Clients' section of the CloudscribeNG administration settings.</p>
+<p>If all of the above is configured correctly, then the client will be automatically logged out of the IdentityServer4 session, and automatically re-routed to the callback URL.</p>
+<p>If no valid Post Logout Redirect Url is provided, the user will be taken to CloudscribeNG's own /account/logout view, and prompted to logout manually.</p>
+<hr />
+<p>To learn more about CloudscribeNG, please see the rest of our <a href="/docs">documentation</a>.</p></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script src="../../../../js/bootstrap.bundle.min.js"></script>
+        <script>
+            var base_url = "../../../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../../../js/base.js"></script>
+        <script src="../../../../search/main.js"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

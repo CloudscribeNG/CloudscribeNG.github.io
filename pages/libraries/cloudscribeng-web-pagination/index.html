@@ -1,0 +1,884 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        <link rel="canonical" href="https://cloudscribeng.github.io/pages/libraries/cloudscribeng-web-pagination/">
+        <link rel="shortcut icon" href="../../../img/favicon.ico">
+        <title>CloudscribeNG.Web.Pagination - CloudscribeNG Documentation</title>
+        <link href="../../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../../css/fontawesome.min.css" rel="stylesheet">
+        <link href="../../../css/brands.min.css" rel="stylesheet">
+        <link href="../../../css/solid.min.css" rel="stylesheet">
+        <link href="../../../css/v4-font-face.min.css" rel="stylesheet">
+        <link href="../../../css/base.css" rel="stylesheet">
+        <link id="hljs-light" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" >
+        <link id="hljs-dark" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github-dark.min.css" disabled>
+        <link href="../../../stylesheets/full-width.css" rel="stylesheet">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+        <script>hljs.highlightAll();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="../../..">CloudscribeNG Documentation</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="nav-item">
+                                <a href="../../.." class="nav-link">Home</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle active" aria-current="page" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Documentation</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../introduction/" class="dropdown-item">Introduction</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Complete list of CloudscribeNG libraries</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../complete-list-of-cloudscribeng-libraries/" class="dropdown-item">Complete list of open source CloudscribeNG libraries</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">CloudscribeNG.Core</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../cloudscribeng-core/" class="dropdown-item">CloudscribeNG.Core</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Multi Tenant Support</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../cloudscribeng-core/multi-tenant-support/" class="dropdown-item">Multi Tenant Support</a>
+</li>
+            
+<li>
+    <a href="../cloudscribeng-core/multi-tenant-support/using-multitenancy-for-sibling-sites-in-multiple-languages/" class="dropdown-item">Using multitenancy for sibling sites in multiple languages</a>
+</li>
+    </ul>
+  </li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Themes and Web Design</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../cloudscribeng-core/themes-and-web-design/" class="dropdown-item">Themes and Web Design</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Advanced Client Side Development with Webpack</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../cloudscribeng-core/themes-and-web-design/advanced-client-side-development-with-webpack/" class="dropdown-item">Advanced Client Side Development with Webpack</a>
+</li>
+            
+<li>
+    <a href="../cloudscribeng-core/themes-and-web-design/advanced-client-side-development-with-webpack/webpack-prerequisites/" class="dropdown-item">Webpack Prerequisites</a>
+</li>
+    </ul>
+  </li>
+    </ul>
+  </li>
+            
+<li>
+    <a href="../cloudscribeng-core/registration-page/" class="dropdown-item">Registration Page Configuration</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Custom Registration</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../cloudscribeng-core/custom-registration/" class="dropdown-item">Custom Registration</a>
+</li>
+            
+<li>
+    <a href="../cloudscribeng-core/custom-registration/configuration-based-custom-registration-and-user-properties/" class="dropdown-item">Configuration based Custom Registration and User Properties</a>
+</li>
+    </ul>
+  </li>
+            
+<li>
+    <a href="../cloudscribeng-core/automated-logout/" class="dropdown-item">Automated Logout </a>
+</li>
+            
+<li>
+    <a href="../cloudscribeng-core/changing-user-email-address/" class="dropdown-item">Changing user email address</a>
+</li>
+            
+<li>
+    <a href="../cloudscribeng-core/custom-event-handlers/" class="dropdown-item">Custom Event Handlers</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Building Custom Features that Integrate with CloudscribeNG Core</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../cloudscribeng-core/building-custom-features-that-integrate-with-cloudscribeng-core/" class="dropdown-item">Building Custom Features that Integrate with CloudscribeNG Core</a>
+</li>
+            
+<li>
+    <a href="../cloudscribeng-core/building-custom-features-that-integrate-with-cloudscribeng-core/looking-up-users-in-custom-features/" class="dropdown-item">Looking Up Users in Custom Features</a>
+</li>
+            
+<li>
+    <a href="../cloudscribeng-core/building-custom-features-that-integrate-with-cloudscribeng-core/adding-tables-and-data-for-custom-features/" class="dropdown-item">Adding Tables and Data for Custom Features</a>
+</li>
+    </ul>
+  </li>
+            
+<li>
+    <a href="../cloudscribeng-core/identityserver-integration/" class="dropdown-item">IdentityServer Integration</a>
+</li>
+            
+<li>
+    <a href="../cloudscribeng-core/using-ldap-authentication/" class="dropdown-item">Using LDAP Authentication</a>
+</li>
+            
+<li>
+    <a href="../cloudscribeng-core/using-social-authentication/" class="dropdown-item">Using Social Authentication and OpenId Connect</a>
+</li>
+            
+<li>
+    <a href="../cloudscribeng-core/using-two-factor-authentication/" class="dropdown-item">Using Two Factor Authentication</a>
+</li>
+            
+<li>
+    <a href="../cloudscribeng-core/google-analytics-integration/" class="dropdown-item">Google Analytics Integration</a>
+</li>
+            
+<li>
+    <a href="../cloudscribeng-core/google-analytics-ga4-integration/" class="dropdown-item">Google Analytics 4 Integration</a>
+</li>
+            
+<li>
+    <a href="../cloudscribeng-core/configuring-data-protection/" class="dropdown-item">Configuring Data Protection</a>
+</li>
+            
+<li>
+    <a href="../cloudscribeng-core/integrating-signalr-with-cloudscribeng/" class="dropdown-item">Integrating SignalR with CloudscribeNG</a>
+</li>
+            
+<li>
+    <a href="../cloudscribeng-core/migrating-users-with-other-password-hash-formats/" class="dropdown-item">Migrating Users with other Password Hash formats</a>
+</li>
+            
+<li>
+    <a href="../cloudscribeng-core/google-recaptcha-integration/" class="dropdown-item">Google reCAPTCHA integration</a>
+</li>
+            
+<li>
+    <a href="../cloudscribeng-core/query-tool/" class="dropdown-item">Query Tool</a>
+</li>
+            
+<li>
+    <a href="../cloudscribeng-core/restarting-the-application/" class="dropdown-item">Restarting the Application</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Restricting Access to Your Website by IP Address</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../cloudscribeng-core/restricting-access-to-your-website-by-ip-address/" class="dropdown-item">Restricting Access to Your Website by IP Address</a>
+</li>
+            
+<li>
+    <a href="../cloudscribeng-core/restricting-access-to-your-website-by-ip-address/permitting-ip-addresses/" class="dropdown-item">Permitting IP Addresses</a>
+</li>
+            
+<li>
+    <a href="../cloudscribeng-core/restricting-access-to-your-website-by-ip-address/blocking-ip-addresses/" class="dropdown-item">Blocking IP Addresses</a>
+</li>
+    </ul>
+  </li>
+    </ul>
+  </li>
+            
+<li>
+    <a href="../cloudscribeng-simplecontactform/" class="dropdown-item">CloudscribeNG.SimpleContactForm</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">CloudscribeNG.SimpleContent</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../cloudscribeng-simplecontent/" class="dropdown-item">CloudscribeNG.SimpleContent</a>
+</li>
+            
+<li>
+    <a href="../cloudscribeng-simplecontent/using-open-live-writer/" class="dropdown-item">Using Open Live Writer</a>
+</li>
+            
+<li>
+    <a href="../cloudscribeng-simplecontent/integrating-with-other-authentication-systems/" class="dropdown-item">Integrating with Other Authentication Systems</a>
+</li>
+            
+<li>
+    <a href="../cloudscribeng-simplecontent/adding-javascript-and-css-to-pages/" class="dropdown-item">Adding JavaScript and CSS to Pages</a>
+</li>
+            
+<li>
+    <a href="../cloudscribeng-simplecontent/adding-links-to-the-menu/" class="dropdown-item">Adding links to the Menu</a>
+</li>
+            
+<li>
+    <a href="../cloudscribeng-simplecontent/customizing-the-editor/" class="dropdown-item">Customizing the Editor</a>
+</li>
+            
+<li>
+    <a href="../cloudscribeng-simplecontent/2-ways-that-images-are-uploaded-in-simplecontent/" class="dropdown-item">2 ways that images are uploaded in SimpleContent</a>
+</li>
+            
+<li>
+    <a href="../cloudscribeng-simplecontent/migrating-content-from-other-platforms/" class="dropdown-item">Migrating content from other platforms</a>
+</li>
+            
+<li>
+    <a href="../cloudscribeng-simplecontent/custom-blog-routing/" class="dropdown-item">Custom Blog Routing</a>
+</li>
+            
+<li>
+    <a href="../cloudscribeng-simplecontent/custom-page-routing/" class="dropdown-item">Custom Page Routing</a>
+</li>
+            
+<li>
+    <a href="../cloudscribeng-simplecontent/3-ways-to-add-the-blog-to-the-menu/" class="dropdown-item">3 Ways to Add the Blog To The Menu</a>
+</li>
+            
+<li>
+    <a href="../cloudscribeng-simplecontent/protecting-pages-with-roles/" class="dropdown-item">Protecting Pages With Roles</a>
+</li>
+            
+<li>
+    <a href="../cloudscribeng-simplecontent/using-markdown/" class="dropdown-item">Using Markdown</a>
+</li>
+            
+<li>
+    <a href="../cloudscribeng-simplecontent/how-to-protect-access-to-view-the-blog/" class="dropdown-item">How to protect access to view the blog</a>
+</li>
+            
+<li>
+    <a href="../cloudscribeng-simplecontent/content-templates/" class="dropdown-item">Content Templates</a>
+</li>
+            
+<li>
+    <a href="../cloudscribeng-simplecontent/manage-content-in-multiple-languages/" class="dropdown-item">Manage content in multiple languages</a>
+</li>
+            
+<li>
+    <a href="../cloudscribeng-simplecontent/content-cloning/" class="dropdown-item">Content Cloning</a>
+</li>
+    </ul>
+  </li>
+            
+<li>
+    <a href="../cloudscribeng-dynamic-authorization-policies/" class="dropdown-item">Dynamic Authorization Policies</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">CloudscribeNG.Web.Common</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../cloudscribeng-web-common/" class="dropdown-item">CloudscribeNG.Web.Common</a>
+</li>
+            
+<li>
+    <a href="../cloudscribeng-web-common/using-the-summernote-editor/" class="dropdown-item">Using the Summernote editor</a>
+</li>
+            
+<li>
+    <a href="../cloudscribeng-web-common/using-ckeditor/" class="dropdown-item">Using CKeditor</a>
+</li>
+            
+<li>
+    <a href="../cloudscribeng-web-common/using-the-bootstrap-datepicker/" class="dropdown-item">Using the Bootstrap DatePicker</a>
+</li>
+            
+<li>
+    <a href="../cloudscribeng-web-common/easy-bootstrap-modal/" class="dropdown-item">Easy Bootstrap Modal</a>
+</li>
+            
+<li>
+    <a href="../cloudscribeng-web-common/easy-cascading-dropdowns/" class="dropdown-item">Easy Cascading Dropdowns</a>
+</li>
+            
+<li>
+    <a href="../cloudscribeng-web-common/easy-autosuggest/" class="dropdown-item">Easy AutoSuggest</a>
+</li>
+            
+<li>
+    <a href="../cloudscribeng-web-common/using-strongly-typed-models-and-razor-views-to-generate-email-messages/" class="dropdown-item">Using Strongly Typed Models and Razor Views to generate email messages</a>
+</li>
+            
+<li>
+    <a href="../cloudscribeng-web-common/easy-alerts-with-controller-extensions/" class="dropdown-item">Easy Alerts with Controller  Extensions</a>
+</li>
+            
+<li>
+    <a href="../cloudscribeng-web-common/easy-google-analytics/" class="dropdown-item">Easy Google Analytics</a>
+</li>
+            
+<li>
+    <a href="../cloudscribeng-web-common/easy-google-analytics-ga4/" class="dropdown-item">Easy Google Analytics (GA4)</a>
+</li>
+            
+<li>
+    <a href="../cloudscribeng-web-common/managing-cookie-consent/" class="dropdown-item">Managing Cookie Consent</a>
+</li>
+    </ul>
+  </li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">CloudscribeNG.Web.Navigation</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../cloudscribeng-web-navigation/" class="dropdown-item">CloudscribeNG.Web.Navigation</a>
+</li>
+            
+<li>
+    <a href="../cloudscribeng-web-navigation/configuring-menu-items/" class="dropdown-item">Configuring Menu Items</a>
+</li>
+            
+<li>
+    <a href="../cloudscribeng-web-navigation/adjusting-menu-items-per-request/" class="dropdown-item">Adjusting Menu Items Per Request</a>
+</li>
+            
+<li>
+    <a href="../cloudscribeng-web-navigation/adding-extra-breadcrumbs/" class="dropdown-item">Adding Extra Breadcrumbs</a>
+</li>
+            
+<li>
+    <a href="../cloudscribeng-web-navigation/menu-localization/" class="dropdown-item">Menu Localization</a>
+</li>
+            
+<li>
+    <a href="../cloudscribeng-web-navigation/different-menu-items-per-tenant/" class="dropdown-item">Different Menu Items Per Tenant</a>
+</li>
+            
+<li>
+    <a href="../cloudscribeng-web-navigation/easy-google-sitemaps/" class="dropdown-item">Easy Google SiteMaps</a>
+</li>
+            
+<li>
+    <a href="../cloudscribeng-web-navigation/using-json-instead-of-xml/" class="dropdown-item">Using Json Instead of XML</a>
+</li>
+            
+<li>
+    <a href="../cloudscribeng-web-navigation/additional-community-tutorials-on-our-github-wiki/" class="dropdown-item">Additional Community Tutorials on Our GitHub Wiki</a>
+</li>
+    </ul>
+  </li>
+            
+<li>
+    <a href="./" class="dropdown-item active" aria-current="page">CloudscribeNG.Web.Pagination</a>
+</li>
+            
+<li>
+    <a href="../cloudscribeng-syndication/" class="dropdown-item">CloudscribeNG.Syndication</a>
+</li>
+            
+<li>
+    <a href="../cloudscribeng-pwakit/" class="dropdown-item">CloudscribeNG PwaKit - Easily Build Progressive Web Apps</a>
+</li>
+            
+<li>
+    <a href="../cloudscribeng-localization/" class="dropdown-item">CloudscribeNG Localization</a>
+</li>
+            
+<li>
+    <a href="../easy-timezone-handling/" class="dropdown-item">Easy TimeZone Handling</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Commercial Products</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../commercial-products/index.md" class="dropdown-item">None</a>
+</li>
+            
+<li>
+    <a href="../../commercial-products/complete-list-of-cloudscribeng-commercial-product-libraries/" class="dropdown-item">CloudscribeNG Commercial Product Libraries</a>
+</li>
+            
+<li>
+    <a href="../../commercial-products/commercial-product-license/" class="dropdown-item">Commercial Product License</a>
+</li>
+            
+<li>
+    <a href="../../commercial-products/using-the-cloudscribeng-newsletter/" class="dropdown-item">Using the CloudscribeNG Newsletter</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ms-md-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a rel="prev" href="../cloudscribeng-web-navigation/additional-community-tutorials-on-our-github-wiki/" class="nav-link">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" href="../cloudscribeng-syndication/" class="nav-link">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="https://github.com/CloudscribeNG/edit/master/docs/pages/libraries/cloudscribeng-web-pagination.md" class="nav-link">Edit on CloudscribeNG
+                                    </a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-bs-toggle="collapse" data-bs-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-body-tertiary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-bs-level="1"><a href="#cloudscribengwebpagination" class="nav-link">CloudscribeNG.Web.Pagination</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-bs-level="2"><a href="#installation" class="nav-link">Installation</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#using-the-pagertaghelper" class="nav-link">Using The PagerTagHelper</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#additional-pagertaghelper-attributes" class="nav-link">Additional PagerTagHelper attributes</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#alphabetic-pagination" class="nav-link">Alphabetic Pagination</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#demos" class="nav-link">Demos</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="cloudscribengwebpagination">CloudscribeNG.Web.Pagination<a class="headerlink" href="#cloudscribengwebpagination" title="Permanent link">&para;</a></h1>
+<p>CloudscribeNG.Web.Pagination is an ASP.NET Core MVC TagHelper for paginated lists. We use it extensively in CloudscribeNG Core and CloudscribeNG SimpleContent, but it has no other "CloudscribeNG" dependencies itself, and you can use it in your projects even if you are not using other CloudscribeNG components. This pager was based heavily on the work of Martijn Boland in the older <a href="https://github.com/martijnboland/MvcPaging">MVCPaging project</a>.</p>
+<h2 id="installation">Installation<a class="headerlink" href="#installation" title="Permanent link">&para;</a></h2>
+<p>Note that if you are already using CloudscribeNG Core or CloudscribeNG SimpleContent, you don't need to install CloudscribeNG.Web.Pagination separately, it is already included as a dependency. If you are not using either of those, you can install CloudscribeNG.Web.Pagination by editing your .csproj file, and adding a package reference like this:</p>
+<pre class="highlight"><code class="language-xml">&lt;PackageReference Include="CloudscribeNG.Web.Pagination" Version="2.1.*" /&gt;</code></pre>
+<p>Also if you are not already using the "big" CloudscribeNG features then you need to add a line in the ConfigureServices method of your Startup.cs file like this:</p>
+<pre class="highlight"><code class="language-cs">services.AddCloudscribeNGPagination();</code></pre>
+<p>and in your _ViewImports.cshtml file you need this:</p>
+<pre class="highlight"><code class="language-html">@addTagHelper "*, CloudscribeNG.Web.Pagination"</code></pre>
+<p>That is all that is needed for the UI installation. However for convenience there is also available a generic <a href="https://github.com/joeaudette/CloudscribeNG.Web.Pagination/blob/master/src/CloudscribeNG.Pagination.Models/PagedResult.cs">PagedResult of T</a> class that you can use in your data retrieval to return a list of any type along with the needed pagination info such as total items, page size, and current page. Naturally you would not want a dependency in your data storage layer to a UI component like the PagerTagHelper, so the PagedResult of T is actually in a separate nuget package named CloudscribeNG.Pagination.Models. You can add a package reference in your data storage project without brigning in any unwanted web stuff, like this:</p>
+<pre class="highlight"><code class="language-xhtml">&lt;PackageReference Include="CloudscribeNG.Pagination.Models" Version="1.0.*" /&gt;</code></pre>
+<p>Some example code showing how to return a PagedResult of T using EntityFramework Core is shown below. This example returns a PagedResult of an EmailList class in one of my custom projects.</p>
+<pre class="highlight"><code class="language-cs">public async Task&lt;PagedResult&lt;EmailList&gt;&gt; GetLists(
+    string projectId,
+    int pageNumber,
+    int pageSize,
+    CancellationToken cancellationToken = default(CancellationToken)
+    )
+{
+    cancellationToken.ThrowIfCancellationRequested();
+
+    int offset = (pageSize * pageNumber) - pageSize;
+
+    var query = db.EmailLists.OrderBy(x =&gt; x.Title)
+        .Select(p =&gt; p)
+        .Skip(offset)
+        .Take(pageSize)
+        ;
+
+    var result = new PagedResult&lt;EmailList&gt;();
+    result.Data = await query.AsNoTracking().ToListAsync(cancellationToken);
+    result.TotalItems = await db.EmailLists.CountAsync();
+    result.PageNumber = pageNumber;
+    result.PageSize = pageSize;
+
+    return result;
+
+}</code></pre>
+<p>Note that you must populate the total items, which requires a second query since the first query is using skip and take and therefore not getting all rows, so you can't just use the count of the list it returns. The above is just example code to give you an idea how you can use it in your own projects. In some cases you could even use the PagedResult of T as the viewmodel for your view, but often you will need other things in your viewmodel so you can just add the PagedResult of T as a property on your viewmodel and then also have other properties. Use of PagedResult of T makes it easier and more consistent to pass the needed info to the PagerTagHelper as shown below.</p>
+<h2 id="using-the-pagertaghelper">Using The PagerTagHelper<a class="headerlink" href="#using-the-pagertaghelper" title="Permanent link">&para;</a></h2>
+<p>Now that everything is installed, you can use the PagerTagHelper in your views like this:</p>
+<pre class="highlight"><code class="language-html">&lt;cs-pager cs-paging-pagesize="@Model.PageSize"
+  cs-paging-pagenumber="@Model.PageNumber"
+  cs-paging-totalitems="@Model.TotalItemCount"
+  cs-pagenumber-param="page"
+  asp-controller="YourController"
+  asp-action="YourAction"&gt;&lt;/cs-pager&gt;</code></pre>
+<p>Note that you need to pass in the PageSize, current PageNumber, and TotalItems. The pager links will only be rendered if needed, ie if there exists more than one page of data as determined by the page size and total items. Note that the above example uses separate model properties for each of the needed parameters PageSize, PageNumber, and TotalItems. If you are using the PagedResult of T mentioned above as a property on your viewmodel you would use syntax like this:</p>
+<pre class="highlight"><code class="language-html">&lt;cs-pager asp-action="ListSubscribers"
+  asp-controller="EmailList"
+  asp-route-pagesize="@Model.Subscribers.PageSize"
+  cs-paging-pagenumber="@Model.Subscribers.PageNumber"
+  cs-paging-totalitems="@Model.Subscribers.TotalItems"
+  asp-route-listId="@Model.EmailList.Id"
+  asp-route-q="@Model.Q"
+  asp-route-sortmode="@Model.SortMode"
+  &gt;&lt;/cs-pager&gt;</code></pre>
+<p>In the above example there is a little more complexity in that we have several other route parameters, one for an email list id, one for a search term "Q", and one for a sort mode parameter. The Subscribers property of the view model is a PagedResult of EmailListSubscribers. For more clarity, the viewmodel used for the above sample looks like this:</p>
+<pre class="highlight"><code class="language-cs">using CloudscribeNG.Pagination.Models;
+
+public class EmailSubscriberListViewModel
+{
+    public EmailSubscriberListViewModel()
+    {
+        Subscribers = new PagedResult&lt;EmailListSubscription&gt;();
+    }
+
+    public string Q { get; set; }
+
+    public int SortMode { get; set; } = 0;
+
+    public EmailList EmailList { get; set; }
+
+    public PagedResult&lt;EmailListSubscription&gt; Subscribers { get; set; }
+}</code></pre>
+<h2 id="additional-pagertaghelper-attributes">Additional PagerTagHelper attributes<a class="headerlink" href="#additional-pagertaghelper-attributes" title="Permanent link">&para;</a></h2>
+<p>The PagerTagHelper supports a number of configurable properties, shown below with their default values:</p>
+<pre class="highlight"><code>        Property
+        Default
+        Notes
+
+
+        cs-paging-pagesize
+        10
+
+
+
+        cs-paging-pagenumber
+        1
+
+
+
+        cs-paging-totalitems
+        1
+
+
+
+        cs-preserve-ambient-querystring
+        true
+        when true will preserve all query string parameters in the current url without having to explicitly add asp-route-[parametername]. Set to false if you don't want this behavior.
+
+
+        cs-paging-maxpageritems
+        10
+
+
+
+        cs-pagenumber-param
+        pageNumber
+
+
+
+        cs-show-first-last
+        false
+
+
+
+        cs-first-page-text
+        &lt;
+
+
+
+        cs-first-page-title
+        First Page
+
+
+
+        cs-last-page-text
+        &gt;
+
+
+
+        cs-last-page-title
+        Last Page
+
+
+
+        cs-previous-page-text
+        «
+
+
+
+        cs-previous-page-title
+        Previous page
+
+
+
+        cs-next-page-text
+        »
+
+
+
+        cs-next-page-title
+        Next page
+
+
+
+        cs-previous-page-html
+
+        pass in raw html as shown in the example above, you must provide the title and your html must have a link with href='#'
+
+
+        cs-next-page-html
+
+        same as above
+
+
+        cs-pager-ul-class
+        pagination
+
+
+
+        cs-pager-li-current-class
+        active
+
+
+
+        cs-pager-li-non-active-class
+        disabled
+
+
+
+        cs-ajax-target
+        empty
+        should be the id of the html element to target for ajax updates
+
+
+        cs-ajax-mode
+        replace
+
+
+
+        cs-ajax-success
+        empty
+        a callback
+
+
+        cs-ajax-failure
+        empty
+        a callback
+
+
+        cs-ajax-loading
+        empty
+        the #id of an image ie animated gif to show while loading
+
+
+        cs-ajax-loading-duration
+        empty
+        corresponds to data-ajax-loading-duration</code></pre>
+<p>For the next page and previous page you can optionally pass in html fragments. An example below shows how to use glyphicons for the next and previous pager links:</p>
+<pre class="highlight"><code class="language-html">&lt;cs-pager cs-paging-pagesize="@Model.PageSize"
+  cs-paging-pagenumber="@Model.PageNumber"
+  cs-paging-totalitems="@Model.TotalItemCount"
+  cs-pagenumber-param="page"
+  cs-previous-page-html="&lt;a href='#' title='Previous page'&gt;&lt;i class='glyphicon glyphicon-backward'&gt;&lt;/i&gt;&lt;/a&gt;"
+  cs-next-page-html="&lt;a href='#' title='Next page'&gt;&lt;i class='glyphicon glyphicon-forward'&gt;&lt;/i&gt;&lt;/a&gt;"
+  asp-controller="YourController"
+  asp-action="YourAction"&gt;&lt;/cs-pager&gt;</code></pre>
+<p>Note that if you pass in html, your html must provide the title and an a element with the href='#', the taghelper will replace the # with the correct url as needed.</p>
+<p>To use ajax, you must include <a href="https://github.com/aspnet/jquery-ajax-unobtrusive">jquery.unobtrusive-ajax.js</a> in the page.</p>
+<h3 id="bootstrap-4-and-5">Bootstrap 4 and 5<a class="headerlink" href="#bootstrap-4-and-5" title="Permanent link">&para;</a></h3>
+<p>Bootstrap 4 and 5 use different CSS classes than bootstrap 3, the default CSS classes used are the bootstrap 3 versions but you can change the css classes to use the ones for bootstrap 4 and 5 like this:</p>
+<pre class="highlight"><code class="language-html">cs-pager-li-current-class="page-item active"
+cs-pager-li-other-class="page-item"
+cs-pager-li-non-active-class="page-item disabled"
+cs-pager-link-current-class="page-link"
+cs-pager-link-other-class="page-link"</code></pre>
+<h2 id="alphabetic-pagination">Alphabetic Pagination<a class="headerlink" href="#alphabetic-pagination" title="Permanent link">&para;</a></h2>
+<p>In addition to the PagerTagHelper, there is also an AlphaPagerTagHelper, that can be used for filtering paged lists by some property of the list items. We use this in CloudscribeNG Core on the User List to filter by the first letter of a user's name. We use it in combination with the PagerTagHelper.</p>
+<p>Example use from our demo app looks like this:</p>
+<pre class="highlight"><code class="language-html">&lt;cs-alphapager cs-alphabet="ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+    cs-selected-letter="@Model.Query"
+    cs-all-label="All"
+    asp-controller="Paging"
+    asp-action="ProductList" 
+    cs-selected-letter-param="query"
+    &gt;&lt;/cs-alphapager&gt;</code></pre>
+<p>The supported attributes with their default values are:</p>
+<pre class="highlight"><code>        Property
+        Default
+        Notes
+
+
+        cs-alphabet
+        ABCDEFGHIJKLMNOPQRSTUVWXYZ
+
+
+
+        cs-populated-letters
+        null
+        you can pass in an IEnumerable indicating which letters actually have data so that ones without data can be non links. If not provided then every letter will be a link
+
+
+        cs-selected-letter
+        null
+
+
+
+        cs-selected-letter-param
+        letter
+
+
+
+        cs-all-label
+        All
+
+
+
+        cs-all-value
+
+        empty string
+
+
+        cs-include-numbers
+        false
+
+
+
+        cs-alphapager-ul-class
+        pagination alpha
+
+
+
+        cs-pager-li-current-class
+        active
+
+
+
+        cs-pager-li-non-active-class
+        inactive</code></pre>
+<p>For Bootstrap 4 and 5 you probably need to set the CSS class names like this:</p>
+<pre class="highlight"><code class="language-html">cs-pager-li-current-class="page-item active"
+cs-pager-li-non-active-class="page-item"</code></pre>
+<h2 id="demos">Demos<a class="headerlink" href="#demos" title="Permanent link">&para;</a></h2>
+<p>In our <a href="https://github.com/CloudscribeNG/CloudscribeNG.Web.Pagination">github repository</a>, we have a demo web application that illustrates most of the available features including some ajax examples that show a loading indicator and show how to use the callbacks. In the demo the callbacks just log to the console in the web browser.</p></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script src="../../../js/bootstrap.bundle.min.js"></script>
+        <script>
+            var base_url = "../../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../../js/base.js"></script>
+        <script src="../../../search/main.js"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

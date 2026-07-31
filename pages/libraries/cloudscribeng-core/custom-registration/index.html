@@ -1,0 +1,985 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        <link rel="canonical" href="https://cloudscribeng.github.io/pages/libraries/cloudscribeng-core/custom-registration/">
+        <link rel="shortcut icon" href="../../../../img/favicon.ico">
+        <title>Custom Registration - CloudscribeNG Documentation</title>
+        <link href="../../../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../../../css/fontawesome.min.css" rel="stylesheet">
+        <link href="../../../../css/brands.min.css" rel="stylesheet">
+        <link href="../../../../css/solid.min.css" rel="stylesheet">
+        <link href="../../../../css/v4-font-face.min.css" rel="stylesheet">
+        <link href="../../../../css/base.css" rel="stylesheet">
+        <link id="hljs-light" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" >
+        <link id="hljs-dark" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github-dark.min.css" disabled>
+        <link href="../../../../stylesheets/full-width.css" rel="stylesheet">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+        <script>hljs.highlightAll();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="../../../..">CloudscribeNG Documentation</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="nav-item">
+                                <a href="../../../.." class="nav-link">Home</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle active" aria-current="page" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Documentation</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../../introduction/" class="dropdown-item">Introduction</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Complete list of CloudscribeNG libraries</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../complete-list-of-cloudscribeng-libraries/" class="dropdown-item">Complete list of open source CloudscribeNG libraries</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">CloudscribeNG.Core</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../" class="dropdown-item">CloudscribeNG.Core</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Multi Tenant Support</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../multi-tenant-support/" class="dropdown-item">Multi Tenant Support</a>
+</li>
+            
+<li>
+    <a href="../multi-tenant-support/using-multitenancy-for-sibling-sites-in-multiple-languages/" class="dropdown-item">Using multitenancy for sibling sites in multiple languages</a>
+</li>
+    </ul>
+  </li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Themes and Web Design</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../themes-and-web-design/" class="dropdown-item">Themes and Web Design</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Advanced Client Side Development with Webpack</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../themes-and-web-design/advanced-client-side-development-with-webpack/" class="dropdown-item">Advanced Client Side Development with Webpack</a>
+</li>
+            
+<li>
+    <a href="../themes-and-web-design/advanced-client-side-development-with-webpack/webpack-prerequisites/" class="dropdown-item">Webpack Prerequisites</a>
+</li>
+    </ul>
+  </li>
+    </ul>
+  </li>
+            
+<li>
+    <a href="../registration-page/" class="dropdown-item">Registration Page Configuration</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Custom Registration</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="./" class="dropdown-item active" aria-current="page">Custom Registration</a>
+</li>
+            
+<li>
+    <a href="configuration-based-custom-registration-and-user-properties/" class="dropdown-item">Configuration based Custom Registration and User Properties</a>
+</li>
+    </ul>
+  </li>
+            
+<li>
+    <a href="../automated-logout/" class="dropdown-item">Automated Logout </a>
+</li>
+            
+<li>
+    <a href="../changing-user-email-address/" class="dropdown-item">Changing user email address</a>
+</li>
+            
+<li>
+    <a href="../custom-event-handlers/" class="dropdown-item">Custom Event Handlers</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Building Custom Features that Integrate with CloudscribeNG Core</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../building-custom-features-that-integrate-with-cloudscribeng-core/" class="dropdown-item">Building Custom Features that Integrate with CloudscribeNG Core</a>
+</li>
+            
+<li>
+    <a href="../building-custom-features-that-integrate-with-cloudscribeng-core/looking-up-users-in-custom-features/" class="dropdown-item">Looking Up Users in Custom Features</a>
+</li>
+            
+<li>
+    <a href="../building-custom-features-that-integrate-with-cloudscribeng-core/adding-tables-and-data-for-custom-features/" class="dropdown-item">Adding Tables and Data for Custom Features</a>
+</li>
+    </ul>
+  </li>
+            
+<li>
+    <a href="../identityserver-integration/" class="dropdown-item">IdentityServer Integration</a>
+</li>
+            
+<li>
+    <a href="../using-ldap-authentication/" class="dropdown-item">Using LDAP Authentication</a>
+</li>
+            
+<li>
+    <a href="../using-social-authentication/" class="dropdown-item">Using Social Authentication and OpenId Connect</a>
+</li>
+            
+<li>
+    <a href="../using-two-factor-authentication/" class="dropdown-item">Using Two Factor Authentication</a>
+</li>
+            
+<li>
+    <a href="../google-analytics-integration/" class="dropdown-item">Google Analytics Integration</a>
+</li>
+            
+<li>
+    <a href="../google-analytics-ga4-integration/" class="dropdown-item">Google Analytics 4 Integration</a>
+</li>
+            
+<li>
+    <a href="../configuring-data-protection/" class="dropdown-item">Configuring Data Protection</a>
+</li>
+            
+<li>
+    <a href="../integrating-signalr-with-cloudscribeng/" class="dropdown-item">Integrating SignalR with CloudscribeNG</a>
+</li>
+            
+<li>
+    <a href="../migrating-users-with-other-password-hash-formats/" class="dropdown-item">Migrating Users with other Password Hash formats</a>
+</li>
+            
+<li>
+    <a href="../google-recaptcha-integration/" class="dropdown-item">Google reCAPTCHA integration</a>
+</li>
+            
+<li>
+    <a href="../query-tool/" class="dropdown-item">Query Tool</a>
+</li>
+            
+<li>
+    <a href="../restarting-the-application/" class="dropdown-item">Restarting the Application</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Restricting Access to Your Website by IP Address</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../restricting-access-to-your-website-by-ip-address/" class="dropdown-item">Restricting Access to Your Website by IP Address</a>
+</li>
+            
+<li>
+    <a href="../restricting-access-to-your-website-by-ip-address/permitting-ip-addresses/" class="dropdown-item">Permitting IP Addresses</a>
+</li>
+            
+<li>
+    <a href="../restricting-access-to-your-website-by-ip-address/blocking-ip-addresses/" class="dropdown-item">Blocking IP Addresses</a>
+</li>
+    </ul>
+  </li>
+    </ul>
+  </li>
+            
+<li>
+    <a href="../../cloudscribeng-simplecontactform/" class="dropdown-item">CloudscribeNG.SimpleContactForm</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">CloudscribeNG.SimpleContent</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../cloudscribeng-simplecontent/" class="dropdown-item">CloudscribeNG.SimpleContent</a>
+</li>
+            
+<li>
+    <a href="../../cloudscribeng-simplecontent/using-open-live-writer/" class="dropdown-item">Using Open Live Writer</a>
+</li>
+            
+<li>
+    <a href="../../cloudscribeng-simplecontent/integrating-with-other-authentication-systems/" class="dropdown-item">Integrating with Other Authentication Systems</a>
+</li>
+            
+<li>
+    <a href="../../cloudscribeng-simplecontent/adding-javascript-and-css-to-pages/" class="dropdown-item">Adding JavaScript and CSS to Pages</a>
+</li>
+            
+<li>
+    <a href="../../cloudscribeng-simplecontent/adding-links-to-the-menu/" class="dropdown-item">Adding links to the Menu</a>
+</li>
+            
+<li>
+    <a href="../../cloudscribeng-simplecontent/customizing-the-editor/" class="dropdown-item">Customizing the Editor</a>
+</li>
+            
+<li>
+    <a href="../../cloudscribeng-simplecontent/2-ways-that-images-are-uploaded-in-simplecontent/" class="dropdown-item">2 ways that images are uploaded in SimpleContent</a>
+</li>
+            
+<li>
+    <a href="../../cloudscribeng-simplecontent/migrating-content-from-other-platforms/" class="dropdown-item">Migrating content from other platforms</a>
+</li>
+            
+<li>
+    <a href="../../cloudscribeng-simplecontent/custom-blog-routing/" class="dropdown-item">Custom Blog Routing</a>
+</li>
+            
+<li>
+    <a href="../../cloudscribeng-simplecontent/custom-page-routing/" class="dropdown-item">Custom Page Routing</a>
+</li>
+            
+<li>
+    <a href="../../cloudscribeng-simplecontent/3-ways-to-add-the-blog-to-the-menu/" class="dropdown-item">3 Ways to Add the Blog To The Menu</a>
+</li>
+            
+<li>
+    <a href="../../cloudscribeng-simplecontent/protecting-pages-with-roles/" class="dropdown-item">Protecting Pages With Roles</a>
+</li>
+            
+<li>
+    <a href="../../cloudscribeng-simplecontent/using-markdown/" class="dropdown-item">Using Markdown</a>
+</li>
+            
+<li>
+    <a href="../../cloudscribeng-simplecontent/how-to-protect-access-to-view-the-blog/" class="dropdown-item">How to protect access to view the blog</a>
+</li>
+            
+<li>
+    <a href="../../cloudscribeng-simplecontent/content-templates/" class="dropdown-item">Content Templates</a>
+</li>
+            
+<li>
+    <a href="../../cloudscribeng-simplecontent/manage-content-in-multiple-languages/" class="dropdown-item">Manage content in multiple languages</a>
+</li>
+            
+<li>
+    <a href="../../cloudscribeng-simplecontent/content-cloning/" class="dropdown-item">Content Cloning</a>
+</li>
+    </ul>
+  </li>
+            
+<li>
+    <a href="../../cloudscribeng-dynamic-authorization-policies/" class="dropdown-item">Dynamic Authorization Policies</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">CloudscribeNG.Web.Common</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../cloudscribeng-web-common/" class="dropdown-item">CloudscribeNG.Web.Common</a>
+</li>
+            
+<li>
+    <a href="../../cloudscribeng-web-common/using-the-summernote-editor/" class="dropdown-item">Using the Summernote editor</a>
+</li>
+            
+<li>
+    <a href="../../cloudscribeng-web-common/using-ckeditor/" class="dropdown-item">Using CKeditor</a>
+</li>
+            
+<li>
+    <a href="../../cloudscribeng-web-common/using-the-bootstrap-datepicker/" class="dropdown-item">Using the Bootstrap DatePicker</a>
+</li>
+            
+<li>
+    <a href="../../cloudscribeng-web-common/easy-bootstrap-modal/" class="dropdown-item">Easy Bootstrap Modal</a>
+</li>
+            
+<li>
+    <a href="../../cloudscribeng-web-common/easy-cascading-dropdowns/" class="dropdown-item">Easy Cascading Dropdowns</a>
+</li>
+            
+<li>
+    <a href="../../cloudscribeng-web-common/easy-autosuggest/" class="dropdown-item">Easy AutoSuggest</a>
+</li>
+            
+<li>
+    <a href="../../cloudscribeng-web-common/using-strongly-typed-models-and-razor-views-to-generate-email-messages/" class="dropdown-item">Using Strongly Typed Models and Razor Views to generate email messages</a>
+</li>
+            
+<li>
+    <a href="../../cloudscribeng-web-common/easy-alerts-with-controller-extensions/" class="dropdown-item">Easy Alerts with Controller  Extensions</a>
+</li>
+            
+<li>
+    <a href="../../cloudscribeng-web-common/easy-google-analytics/" class="dropdown-item">Easy Google Analytics</a>
+</li>
+            
+<li>
+    <a href="../../cloudscribeng-web-common/easy-google-analytics-ga4/" class="dropdown-item">Easy Google Analytics (GA4)</a>
+</li>
+            
+<li>
+    <a href="../../cloudscribeng-web-common/managing-cookie-consent/" class="dropdown-item">Managing Cookie Consent</a>
+</li>
+    </ul>
+  </li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">CloudscribeNG.Web.Navigation</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../cloudscribeng-web-navigation/" class="dropdown-item">CloudscribeNG.Web.Navigation</a>
+</li>
+            
+<li>
+    <a href="../../cloudscribeng-web-navigation/configuring-menu-items/" class="dropdown-item">Configuring Menu Items</a>
+</li>
+            
+<li>
+    <a href="../../cloudscribeng-web-navigation/adjusting-menu-items-per-request/" class="dropdown-item">Adjusting Menu Items Per Request</a>
+</li>
+            
+<li>
+    <a href="../../cloudscribeng-web-navigation/adding-extra-breadcrumbs/" class="dropdown-item">Adding Extra Breadcrumbs</a>
+</li>
+            
+<li>
+    <a href="../../cloudscribeng-web-navigation/menu-localization/" class="dropdown-item">Menu Localization</a>
+</li>
+            
+<li>
+    <a href="../../cloudscribeng-web-navigation/different-menu-items-per-tenant/" class="dropdown-item">Different Menu Items Per Tenant</a>
+</li>
+            
+<li>
+    <a href="../../cloudscribeng-web-navigation/easy-google-sitemaps/" class="dropdown-item">Easy Google SiteMaps</a>
+</li>
+            
+<li>
+    <a href="../../cloudscribeng-web-navigation/using-json-instead-of-xml/" class="dropdown-item">Using Json Instead of XML</a>
+</li>
+            
+<li>
+    <a href="../../cloudscribeng-web-navigation/additional-community-tutorials-on-our-github-wiki/" class="dropdown-item">Additional Community Tutorials on Our GitHub Wiki</a>
+</li>
+    </ul>
+  </li>
+            
+<li>
+    <a href="../../cloudscribeng-web-pagination/" class="dropdown-item">CloudscribeNG.Web.Pagination</a>
+</li>
+            
+<li>
+    <a href="../../cloudscribeng-syndication/" class="dropdown-item">CloudscribeNG.Syndication</a>
+</li>
+            
+<li>
+    <a href="../../cloudscribeng-pwakit/" class="dropdown-item">CloudscribeNG PwaKit - Easily Build Progressive Web Apps</a>
+</li>
+            
+<li>
+    <a href="../../cloudscribeng-localization/" class="dropdown-item">CloudscribeNG Localization</a>
+</li>
+            
+<li>
+    <a href="../../easy-timezone-handling/" class="dropdown-item">Easy TimeZone Handling</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Commercial Products</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../commercial-products/index.md" class="dropdown-item">None</a>
+</li>
+            
+<li>
+    <a href="../../../commercial-products/complete-list-of-cloudscribeng-commercial-product-libraries/" class="dropdown-item">CloudscribeNG Commercial Product Libraries</a>
+</li>
+            
+<li>
+    <a href="../../../commercial-products/commercial-product-license/" class="dropdown-item">Commercial Product License</a>
+</li>
+            
+<li>
+    <a href="../../../commercial-products/using-the-cloudscribeng-newsletter/" class="dropdown-item">Using the CloudscribeNG Newsletter</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ms-md-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a rel="prev" href="../registration-page/" class="nav-link">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" href="configuration-based-custom-registration-and-user-properties/" class="nav-link">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="https://github.com/CloudscribeNG/edit/master/docs/pages/libraries/cloudscribeng-core/custom-registration/index.md" class="nav-link">Edit on CloudscribeNG
+                                    </a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-bs-toggle="collapse" data-bs-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-body-tertiary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-bs-level="1"><a href="#custom-registration" class="nav-link">Custom Registration</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-bs-level="2"><a href="#implementing-ihandlecustomregistration" class="nav-link">Implementing IHandleCustomRegistration</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#customizing-views" class="nav-link">Customizing Views</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#custom-fields-on-user-manage-and-administration-edit-user-page" class="nav-link">Custom Fields on User Manage and Administration Edit User Page</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="custom-registration">Custom Registration<a class="headerlink" href="#custom-registration" title="Permanent link">&para;</a></h1>
+<p>It is very common in website projects to need custom form fields on the registration page. In CloudscribeNG Core we have implemented an open-ended way to make that possible. In this article we describe how to achieve it and link to example code and custom views in our sourceDev.WebApp.</p>
+<p>For this article we show how to add some custom required fields that are not part of the <a href="https://github.com/joeaudette/CloudscribeNG/blob/master/src/CloudscribeNG.Core.Web/ViewModels/SiteUser/RegisterViewModel.cs">view model</a>, but nevertheless you will see that it is fairly straightforward to do both client-side and server-side validation by implementing a custom <a href="https://github.com/joeaudette/CloudscribeNG/blob/master/src/CloudscribeNG.Core.Web/ExtensionPoints/IHandleCustomRegistration.cs">IHandleCustomRegistration</a>, and by customizing a few views. In a more complex scenario you could store additional user data in your own custom table or tables, tagging the data with the userid. In this simple proof of concept example we will take advantage of a few existing properties that we already have on SiteUser, but that are not part of the view model for registration and are not included in the default registration views. Specifically we will add First Name, Last Name, and Date of Birth as required fields, and we will update those properties on the SiteUser upon successful registration.</p>
+<h2 id="implementing-ihandlecustomregistration">Implementing IHandleCustomRegistration<a class="headerlink" href="#implementing-ihandlecustomregistration" title="Permanent link">&para;</a></h2>
+<p><a href="https://github.com/joeaudette/CloudscribeNG/blob/master/src/CloudscribeNG.Core.Web/ExtensionPoints/IHandleCustomRegistration.cs">IHandleCustomRegistration</a> is an interface that provides methods that will be invoked from the <a href="https://github.com/CloudscribeNG/CloudscribeNG/blob/master/src/CloudscribeNG.Core.Web/Controllers/AccountController.cs">AccountController</a> at various points during the registration process making it possible for you to specify a custom view name if needed, enabling you to add custom data to the ViewData dictionary to pass custom data to the view (ie you could pre-populate custom inputs based on custom logic), enabling you to participate in the validation process to validate your custom inputs server side, and finally upon successful registration it will be invoked to allow you to persist any custom data related to the newly registered user. The interface definition looks like this:</p>
+<pre class="highlight"><code class="language-cs">using CloudscribeNG.Core.Identity;
+using CloudscribeNG.Core.Models;
+using CloudscribeNG.Core.Web.ViewModels.Account;
+using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Mvc.ModelBinding;
+using Microsoft.AspNetCore.Mvc.ViewFeatures;
+using System.Threading;
+using System.Threading.Tasks;
+
+namespace CloudscribeNG.Core.Web.ExtensionPoints
+{
+    /// &lt;summary&gt;
+    /// you can inject your implementation of IHandleCustomRegistration as scoped, and it will be invoked during the user registration process
+    /// allowing you to handle custom form fields.
+    /// &lt;/summary&gt;
+    public interface IHandleCustomRegistration
+    {
+        /// &lt;summary&gt;
+        /// This makes is possible for you to use a custom view name or even different views per tenant.
+        /// There is also an empty partial view named RegisterMiddle.cshtml that is invoked by the default Register
+        /// so you could override just that partial view to add some additional fields in the middle of the form 
+        /// and use the default view name here. But if you need to control the entire view then return
+        /// a custom name. Note that it is also possible to have per theme views so you can override a view that way as well.
+        /// So there are many possible solutions for custom register views, here we are just trying to make it even more flexible,
+        /// &lt;/summary&gt;
+        /// &lt;param name="site"&gt;&lt;/param&gt;
+        /// &lt;param name="httpContext"&gt;&lt;/param&gt;
+        /// &lt;returns&gt;&lt;/returns&gt;
+        Task&lt;string&gt; GetRegisterViewName(ISiteContext site, HttpContext httpContext);
+
+        /// &lt;summary&gt;
+        /// a method that will be invoked fromm the AccountController Register GET action method.
+        /// you could add custom field data to the ViewDataDictionary and use that in a custom view to populate additional custom fields
+        /// &lt;/summary&gt;
+        /// &lt;param name="site"&gt;&lt;/param&gt;
+        /// &lt;param name="viewModel"&gt;&lt;/param&gt;
+        /// &lt;param name="httpContext"&gt;&lt;/param&gt;
+        /// &lt;param name="viewData"&gt;&lt;/param&gt;
+        /// &lt;param name="cancellationToken"&gt;&lt;/param&gt;
+        /// &lt;returns&gt;&lt;/returns&gt;
+        Task HandleRegisterGet(
+            ISiteContext site,
+            RegisterViewModel viewModel,
+            HttpContext httpContext,
+            ViewDataDictionary viewData,
+            CancellationToken cancellationToken = default(CancellationToken)
+            );
+
+        /// &lt;summary&gt;
+        /// A method that will be invoked fromm the AccountController Register POST action method as part of model validation.
+        /// You could process additional form parameters and if needed add custom errors to the modelState.
+        /// return true if everything is valid and return false if you added any errors to modelState.
+        /// You can also if needed add data to viewData.
+        /// You should not persist custom data here because this is called as part of model validation and there could be other validation errors from the main viewmodel.
+        /// Use HandleRegisterPostSuccess to persist any addtional data.
+        /// &lt;/summary&gt;
+        /// &lt;param name="site"&gt;&lt;/param&gt;
+        /// &lt;param name="viewModel"&gt;&lt;/param&gt;
+        /// &lt;param name="httpContext"&gt;&lt;/param&gt;
+        /// &lt;param name="viewData"&gt;&lt;/param&gt;
+        /// &lt;param name="modelState"&gt;&lt;/param&gt;
+        /// &lt;param name="cancellationToken"&gt;&lt;/param&gt;
+        /// &lt;returns&gt;&lt;/returns&gt;
+        Task&lt;bool&gt; HandleRegisterValidation(
+            ISiteContext site,
+            RegisterViewModel viewModel,
+            HttpContext httpContext,
+            ViewDataDictionary viewData,
+            ModelStateDictionary modelState,
+            CancellationToken cancellationToken = default(CancellationToken)
+            );
+
+        /// &lt;summary&gt;
+        /// this method is called just before the attempt to create the user by usermanager
+        /// if you need to update native user properties this is the time to do it.
+        /// I added this method because I have found that with EFCore since the dbcontext is scoped per request
+        /// it is only expected that SaveChanges will be called once during the request lifetime
+        /// so updating user properties and saving again in HandleRegisterPostSuccess doesn't always work.
+        /// Strangely it works for some properties but not others, ie I found that I it failed to update AuthorBio
+        /// though it did update firstname,lastname, and dob. Updating the user model here make sure the properties are set before the
+        /// call to create the user so it allows participating in the one SaveChanges that happens when the user is created and 
+        /// this works as expected for all properties of SiteUser
+        /// &lt;/summary&gt;
+        /// &lt;param name="user"&gt;&lt;/param&gt;
+        /// &lt;returns&gt;&lt;/returns&gt;
+        Task ProcessUserBeforeCreate(ISiteUser user, HttpContext httpContext);
+
+        /// &lt;summary&gt;
+        /// A method that will be invoked fromm the AccountController Register POST action method on successful registration.
+        /// This is the right place to persist any custom data related to the newly registered user.
+        /// The User property of the passed in loginResult should have an IUserContext object but you should do a null check.
+        /// You can get the userid to tag your custon data as well as the siteid from ISiteContext.
+        /// Success doesn't always mean the user is authenticated at this point, there can be other site rule that need to be met before the user is allowed to login,
+        /// such as email verification, or account approval needed.
+        /// &lt;/summary&gt;
+        /// &lt;param name="site"&gt;&lt;/param&gt;
+        /// &lt;param name="viewModel"&gt;&lt;/param&gt;
+        /// &lt;param name="httpContext"&gt;&lt;/param&gt;
+        /// &lt;param name="loginResult"&gt;&lt;/param&gt;
+        /// &lt;param name="cancellationToken"&gt;&lt;/param&gt;
+        /// &lt;returns&gt;&lt;/returns&gt;
+        Task HandleRegisterPostSuccess(
+            ISiteContext site,
+            RegisterViewModel viewModel,
+            HttpContext httpContext,
+            UserLoginResult loginResult,
+            CancellationToken cancellationToken = default(CancellationToken)
+            );
+
+    }
+
+    /// &lt;summary&gt;
+    /// we inject the NoRegistrationCustomization by default which doesn't do anything.
+    /// If you inject your own implementation as scoped it will replace this one.
+    /// &lt;/summary&gt;
+    public class NoRegistrationCustomization : IHandleCustomRegistration
+    {
+        public Task&lt;string&gt; GetRegisterViewName(ISiteContext site, HttpContext httpContext)
+        {
+            return Task.FromResult("Register"); // this is just returning the default view name.
+        }
+
+        public Task HandleRegisterGet(
+            ISiteContext site,
+            RegisterViewModel viewModel,
+            HttpContext httpContext,
+            ViewDataDictionary viewData,
+            CancellationToken cancellationToken = default(CancellationToken)
+            )
+        {
+            return Task.FromResult(0);
+        }
+
+        public Task&lt;bool&gt; HandleRegisterValidation(
+            ISiteContext site,
+            RegisterViewModel viewModel,
+            HttpContext httpContext,
+            ViewDataDictionary viewData,
+            ModelStateDictionary modelState,
+            CancellationToken cancellationToken = default(CancellationToken)
+            )
+        {
+            return Task.FromResult(true);
+        }
+
+        public Task ProcessUserBeforeCreate(ISiteUser user, HttpContext httpContext)
+        {
+            return Task.FromResult(0);
+        }
+
+        public Task HandleRegisterPostSuccess(
+            ISiteContext site,
+            RegisterViewModel viewModel,
+            HttpContext httpContext,
+            UserLoginResult loginResult,
+            CancellationToken cancellationToken = default(CancellationToken)
+            )
+        {
+            return Task.FromResult(0);
+        }
+
+    }
+}</code></pre>
+<p>A proof of concept implementation of this interface, <a href="https://github.com/joeaudette/CloudscribeNG/blob/master/src/sourceDev.WebApp/Components/CustomRegistrationHandler.cs">CustomRegistrationHandler</a> exists in our sourceDev.WebApp in the CloudscribeNG Core code repository. It is a pretty basic example because it has no custom storage of additional data but takes advantage of some existing available user properties, FirstName, LastName, and DateOfBirth, which it updates upon successful registration. In a more complex example you could store any additional data related to the user in your own custom tables, tagging the data with the userid. Below is the code for the proof of concept CustomRegistrationHandler, if you wanted to make those properties required for registration in your own site you could copy the code and use it as is.</p>
+<pre class="highlight"><code class="language-cs">using CloudscribeNG.Core.Identity;
+using CloudscribeNG.Core.Models;
+using CloudscribeNG.Core.Web.ExtensionPoints;
+using CloudscribeNG.Core.Web.ViewModels.Account;
+using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Mvc.ModelBinding;
+using Microsoft.AspNetCore.Mvc.ViewFeatures;
+using Microsoft.Extensions.Logging;
+using System;
+using System.Threading;
+using System.Threading.Tasks;
+
+namespace sourceDev.WebApp.Components
+{
+    /// &lt;summary&gt;
+    /// this is just a proof of concept implementation of IHandleCustomRegistration. 
+    /// to capture first name and last name as required fields during registration. Since there are existing data fields for those on siteuser
+    /// this implementation is pretty simple. A more complex custom solution could store additional user data in a custom table.
+    /// &lt;/summary&gt;
+    public class CustomRegistrationHandler : IHandleCustomRegistration
+    {
+        public CustomRegistrationHandler(
+            SiteUserManager&lt;SiteUser&gt; userManager,
+            ILogger&lt;CustomRegistrationHandler&gt; logger
+            )
+        {
+            this.userManager = userManager;
+            log = logger;
+        }
+
+        private SiteUserManager&lt;SiteUser&gt; userManager;
+        private ILogger log;
+
+        public Task&lt;string&gt; GetRegisterViewName(ISiteContext site, HttpContext httpContext)
+        {
+            return Task.FromResult("Register"); // this is just returning the default view name.
+        }
+
+        public Task HandleRegisterGet(
+            ISiteContext site,
+            RegisterViewModel viewModel,
+            HttpContext httpContext,
+            ViewDataDictionary viewData,
+            CancellationToken cancellationToken = default(CancellationToken)
+            )
+        {
+            // just testing that custom fields can be pre-populated using ViewData
+            //viewData["FirstName"] = "John";
+            //viewData["LastName"] = "Doe";
+
+            return Task.FromResult(0);
+        }
+
+        public Task&lt;bool&gt; HandleRegisterValidation(
+            ISiteContext site,
+            RegisterViewModel viewModel,
+            HttpContext httpContext,
+            ViewDataDictionary viewData,
+            ModelStateDictionary modelState,
+            CancellationToken cancellationToken = default(CancellationToken)
+            )
+        {
+            // just testing that server side validation can be implemented
+            var result = true;
+            var firstName = httpContext.Request.Form["FirstName"];
+            if(string.IsNullOrWhiteSpace(firstName))
+            {
+                modelState.AddModelError("firstNameError", "First Name is required");
+                result = false;
+            }
+            else
+            {
+                viewData["FirstName"] = firstName;
+            }
+
+            var lastName = httpContext.Request.Form["LastName"];
+            if (string.IsNullOrWhiteSpace(lastName))
+            {
+                modelState.AddModelError("lastNameError", "Last Name is required");
+                result = false;
+            }
+            else
+            {
+                viewData["LastName"] = lastName;
+            }
+            var dobString = httpContext.Request.Form["DateOfBirth"];
+            if (string.IsNullOrWhiteSpace(dobString))
+            {
+                modelState.AddModelError("DOBError", "Date of Birth is required");
+                result = false;
+            }
+            else
+            {
+                DateTime dob;
+                var dobParsed = DateTime.TryParse(dobString, out dob);
+                if(!dobParsed)
+                {
+                    modelState.AddModelError("DOBError", "Date of Birth must be a valid date");
+                    result = false;
+                }
+                else
+                {
+                    viewData["DateOfBirth"] = dobString;
+                }
+            }
+
+            return Task.FromResult(result);
+        }
+
+        public Task ProcessUserBeforeCreate(ISiteUser siteUser, HttpContext httpContext)
+        {
+            if (siteUser != null)
+            {
+                siteUser.FirstName = httpContext.Request.Form["FirstName"];
+                siteUser.LastName = httpContext.Request.Form["LastName"];
+
+                var dobString = httpContext.Request.Form["DateOfBirth"];
+
+                DateTime dob;
+                var dobParsed = DateTime.TryParse(dobString, out dob);
+                if (!dobParsed)
+                {
+                    siteUser.DateOfBirth = dob.Date;
+                }
+
+                // we don't need to save the user here it is saved after this method
+            }
+
+            return Task.FromResult(0);
+        }
+
+        public Task HandleRegisterPostSuccess(
+            ISiteContext site,
+            RegisterViewModel viewModel,
+            HttpContext httpContext,
+            UserLoginResult loginResult,
+            CancellationToken cancellationToken = default(CancellationToken)
+            )
+        {
+
+            if(loginResult.User != null)
+            {
+                // here is where you could process additional custom fields into your own custom data storage
+                // if only updating native properties of siteuser use the method above
+            }
+            else
+            {
+                log.LogError("user was null in HandleRegisterPostSuccess, unable to update user with custom data");
+            }
+
+            return Task.FromResult(0);
+
+        }
+
+    }
+}</code></pre>
+<p>Notice that in this example we are just returning the default view name in GetRegisterViewName, we are just customizing a few partial views as will be discussed below.  In the HandleRegisterGet method we are not doing anything at all though there is some commented code that shows how you could pre-populate custom form fields using ViewData. In HandleRegisterValidation we are just doing the server side validation to require FirstName, LastName, and DateOfBirth, you can also add client side validation in the view as discussed below. We are also passing back the posted values if they are valid into the ViewData so that they stay populated on the form if some other model validation fails and the form is shown again on postback. Finally, in the ProcessUserBeforeCreate method we are setting the FirstName, LastName, and DateOfBirth on the SiteUser, we don't need to save the user because the user has not been created yet but will be created immediately after this method is called. To persist custom data into your own custom table you would do that in the HandleRegisterPostSuccess method.</p>
+<p>Once you have implemented your own IHandleCustomRegistration, you need to wire it up in Startup.cs so it gets injected.  By wiring it up before wiring up CloudscribeNG Core, your implementation will be the only existing one (because we use TryAddScoped), if you wire it up after CloudscribeNG.Core yours will still be used but there will be an extra one registered that doesn't do anything. That is a very minor point but it is optimal to wire up yours first like this:</p>
+<pre class="highlight"><code class="language-cs">services.AddScoped&lt;CloudscribeNG.Core.Web.ExtensionPoints.IHandleCustomRegistration, sourceDev.WebApp.Components.CustomRegistrationHandler&gt;();
+services.AddCloudscribeNGCore(Configuration);</code></pre>
+<h2 id="customizing-views">Customizing Views<a class="headerlink" href="#customizing-views" title="Permanent link">&para;</a></h2>
+<p>There are several possible ways to customize the views, you can override any of the embedded views by copying them locally as discussed in the article <a href="/docs/themes-and-web-design">Themes and Web Design</a>. Since we support themes per tenant, you can add custom views to the theme folder which would allow you to have different custom views and custom registration data per tenant. If you do have different registration data requirements per tenant then your implementation of IHandleCustomData needs to handle that appropriately. We do pass in the tenant into all the methods of that interface making it possible for you to handle things differently per tenant if needed.</p>
+<p>If needed you can copy the Register.cshtml view locally and that would give you complete control to customize it, you could also customize it per theme to use different ones per tenant or you can even use different view names per tenant if needed by returning custom view names from the GetRegisterViewName in your IHandleCustomRegistration implementation. The tenant is passed into that method for your convenience in doing that.</p>
+<p>The default Register.cshtml invokes some partial views, and in some cases you can override one or more partial views and that may be sufficient depending on your needs. In the proof of concept in our sourceDev.WebApp we only copied the partial views <a href="https://github.com/CloudscribeNG/CloudscribeNG.UserProperties.Kvp/tree/master/src/WebApp/Views/Account/RegisterMiddle.cshtml">RegisterMiddle,cshtml</a>, <a href="https://github.com/joeaudette/CloudscribeNG/blob/master/src/CloudscribeNG.Core.CompiledViews.Bootstrap4/Views/Account/RegistrationStylePartial.cshtml">RegistrationStylePartial.cshtml</a>, and <a href="https://github.com/joeaudette/CloudscribeNG/blob/master/src/CloudscribeNG.Core.CompiledViews.Bootstrap4/Views/Account/RegistrationScriptsPartial.cshtml">RegistrationScriptsPartial.cshtml</a>. The default RegisterMiddle.cshtml is completely empty, by overriding it locally it enables us to add a few custom fields in the middle of the form without having to maintain the whole Register.cshtml view. We used custom views for the scripts and style because we needed to add an extra script and some css for the date picker used for DateOfBirth.</p>
+<p>Now lets take a look at the views we did customize for our proof of concept. As mentioned we customized RegistrationStylePartial. cshtml, which is empty by default, we needed to add css for the date picker we used for DateOfBirth like this:</p>
+<pre class="highlight"><code class="language-html">@{ await Html.RenderPartialAsync("_DatePickerCssPartial"); }</code></pre>
+<p>Note that we are invoking another partial view named _DatePickerCssPartial, which comes from CloudscribeNG.Web.Common, see the article <a href="/docs/using-the-bootstrap-datepicker">Using the Bootstrap DatePicker </a>for more details on that.</p>
+<p>Similarly, we needed to add an extra script for the data picker in RegistrationScriptsPartial, like this:</p>
+<pre class="highlight"><code class="language-html">{await Html.RenderPartialAsync("_UnobtrusiveValidationScriptsPartial"); }
+&lt;script src="~/cr/js/CloudscribeNG-validation-enforcetrue.min.js"&gt;&lt;/script&gt;
+&lt;script src="~/cr/js/CloudscribeNG-validation-requiredwhen.min.js"&gt;&lt;/script&gt;
+@{ await Html.RenderPartialAsync("_DatePickerScriptsPartial"); }</code></pre>
+<p>The other scripts are included by default, we only needed to add the partial view for the datepicker scripts.</p>
+<p>Finally the RegisterMiddle.cshtml is where we added our custom fields and client side validation like this:</p>
+<pre class="highlight"><code class="language-html">@model CloudscribeNG.Core.Web.ViewModels.Account.RegisterViewModel
+@using CloudscribeNG.Core.Web
+@using Microsoft.Extensions.Options
+@using Microsoft.Extensions.Localization
+@using Microsoft.AspNetCore.Http.Authentication
+@inject IStringLocalizer&lt;CloudscribeNGCore&gt; sr
+&lt;div class="form-group"&gt;
+    &lt;label for="FirstName" class="col-md-2 control-label"&gt;@sr["First Name"]&lt;/label&gt;
+    &lt;div class="col-md-10"&gt;
+        &lt;input id="FirstName" name="FirstName" value="@ViewData["FirstName"]" class="form-control" data-val="true" data-val-required="First Name is required" /&gt;
+        &lt;span class="text-danger field-validation-valid" data-valmsg-for="FirstName" data-valmsg-replace="true"&gt;&lt;/span&gt;
+        @Html.ValidationMessage("firstNameError", new { @class = "text-danger" })
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="form-group"&gt;
+    &lt;label for="LastName" class="col-md-2 control-label"&gt;@sr["Last Name"]&lt;/label&gt;
+    &lt;div class="col-md-10"&gt;
+        &lt;input id="LastName" name="LastName" value="@ViewData["LastName"]" class="form-control" data-val="true" data-val-required="Last Name is required" /&gt;
+        &lt;span class="text-danger field-validation-valid" data-valmsg-for="LastName" data-valmsg-replace="true"&gt;&lt;/span&gt;
+        @Html.ValidationMessage("lastNameError", new { @class = "text-danger" })
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="form-group"&gt;
+    &lt;label for="DateOfBirth" class="col-md-2 control-label"&gt;@sr["Date of Birth"]&lt;/label&gt;
+    &lt;div class="col-md-10"&gt;
+        &lt;input name="DateOfBirth" value="@ViewData["DateOfBirth"]"
+               class="form-control"
+               data-val="true"
+               data-val-required="Date of Birth is required"
+               data-bs-datepicker="true"
+               data-bs-datepicker-debug="false"
+               data-bs-datepicker-keepOpen="false"
+               data-bs-datepicker-allowInputToggle="true"
+               data-bs-datepicker-format="L"
+               data-bs-datepicker-locale="@System.Globalization.CultureInfo.CurrentCulture.Name"
+               data-bs-datepicker-viewMode="years"
+               data-bs-datepicker-usecurrent="false"
+               data-bs-datepicker-mindate="@DateTime.UtcNow.AddYears(-120).ToString("O")"
+               data-bs-datepicker-maxdate="@DateTime.UtcNow.AddYears(-10).ToString("O")"
+               data-bs-datepicker-viewDate="@DateTime.UtcNow.AddYears(-10).ToString("O")" /&gt;
+        &lt;span class="text-danger field-validation-valid" data-valmsg-for="DateOfBirth" data-valmsg-replace="true"&gt;&lt;/span&gt;
+        @Html.ValidationMessage("DOBError", new { @class = "text-danger" })
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+<p>Things to notice in the above view are that we added the needed data- attributes to wire up the validation using jquery.validate.unobtrusive.js. Normally if the properties are part of the view model these get wired up for you automatically by asp.net taghelpers based on DataAnnotations from the model, but for custom fields which are not part of the model we have to add those attributes manually.</p>
+<p>You will notice that we have separate markup for the client side validation message and for the server side, the client side validation span is is like this</p>
+<pre class="highlight"><code class="language-html">&lt;span class="text-danger field-validation-valid" data-valmsg-for="LastName" data-valmsg-replace="true"&gt;&lt;/span&gt;</code></pre>
+<p>and the server side is like this:</p>
+<pre class="highlight"><code class="language-html">@Html.ValidationMessage("lastNameError", new { @class = "text-danger" })</code></pre>
+<p>Notice how "lastNameError" is the same error label we used in the server side validation in the CustomRegistrationHandler above when we added the error to modelstate:</p>
+<pre class="highlight"><code class="language-cs">var lastName = httpContext.Request.Form["LastName"];
+if (string.IsNullOrWhiteSpace(lastName))
+{
+    modelState.AddModelError("lastNameError", "Last Name is required");
+    result = false;
+}</code></pre>
+<h2 id="custom-fields-on-user-manage-and-administration-edit-user-page">Custom Fields on User Manage and Administration Edit User Page<a class="headerlink" href="#custom-fields-on-user-manage-and-administration-edit-user-page" title="Permanent link">&para;</a></h2>
+<p>So far we have seen how to get custom fields onto the Registration page and how to process the custom data by implementing IHandleCustomRegistration. For updates to the custom data by the user or an administrator after registration is complete, you could add links in the views to your own controller action methods and views for managing that data, but it is also possible to integrate with the existing UserInfo action methods on the ManageController and the UserEdit action methods on the UserAdminController using very similar techniques as we used for custom registration.</p>
+<p>To integrate with UserEdit actions on the UserAdminController you can implement and inject <a href="https://github.com/joeaudette/CloudscribeNG/blob/master/src/CloudscribeNG.Core.Web/ExtensionPoints/IHandleCustomUserInfoAdmin.cs">IHandleCustomUserInfoAdmin</a>, and override the <a href="https://github.com/CloudscribeNG/CloudscribeNG/blob/master/src/CloudscribeNG.Core.CompiledViews.Bootstrap4/Views/UserAdmin/UserEdit.cshtml">UserEdit</a> or <a href="https://github.com/CloudscribeNG/CloudscribeNG/blob/master/src/CloudscribeNG.Core.CompiledViews.Bootstrap4/Views/UserAdmin/UserEditMiddlePartial.cshtml">UserEditMiddlePartial</a> views.</p>
+<p>To integrate with the UserIfo actions on the ManageController you can implement and inject <a href="https://github.com/joeaudette/CloudscribeNG/blob/master/src/CloudscribeNG.Core.Web/ExtensionPoints/IHandleCustomUserInfo.cs">IHandleCustomUserInfo</a>, and override the <a href="https://github.com/CloudscribeNG/CloudscribeNG/blob/master/src/CloudscribeNG.Core.CompiledViews.Bootstrap4/Views/Manage/UserInfo.cshtml">UserInfo</a> or <a href="https://github.com/CloudscribeNG/CloudscribeNG/blob/master/src/CloudscribeNG.Core.CompiledViews.Bootstrap4/Views/Manage/UserInfoMiddlePartial.cshtml">UserInfoMiddlePartial</a> views.</p>
+<p>Those interfaces are very similar to IHandleCustomRegistration but have some differences, nevertheless the integration approach is just the same and implement custom registration you should find it straightforward and similar to implement these additional interfaces.</p>
+<p>There is also a ready to use solution/nugets that provides <a href="https://www.CloudscribeNG.com/docs/configuration-based-custom-registration-and-user-properties">easy configuration based custom user properties with persistence to a generic key/value</a> storage that may meet your needs or at least provide a more complete example that you could fork and modify for your needs.</p></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script src="../../../../js/bootstrap.bundle.min.js"></script>
+        <script>
+            var base_url = "../../../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../../../js/base.js"></script>
+        <script src="../../../../search/main.js"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

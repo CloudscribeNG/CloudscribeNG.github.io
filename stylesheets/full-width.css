@@ -1,0 +1,72 @@
+/*
+  Force a true edge-to-edge layout for the MkDocs Bootstrap theme.
+  Keep this file under docs/ so MkDocs serves it via extra_css.
+*/
+
+html,
+body {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+/* Remove Bootstrap container width caps and horizontal padding */
+.container,
+.container-fluid,
+.container-sm,
+.container-md,
+.container-lg,
+.container-xl,
+.container-xxl {
+  max-width: none !important;
+  width: 100% !important;
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+}
+
+/* Remove Bootstrap grid gutters so there is no left/right whitespace */
+.row {
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+
+.row > .col,
+.row > [class*=" col-"],
+.row > [class^="col-"] {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+/* Common content wrappers used by MkDocs Bootstrap variants */
+main,
+.main,
+.content,
+article,
+.col-md-9,
+.col-lg-9,
+.col-xl-9 {
+  width: 100% !important;
+  padding-left: 5px !important;
+  padding-right: 5px !important;
+}
+
+.container > .row > .col-md-3 {
+    padding-right: 5px !important;
+}
+
+.container > .row > .col-md-3 > .bs-sidebar {
+    display: block !important;
+    padding-top: 60px !important;
+}
+
+.bs-sidebar .nav {
+    display: block !important;
+}
+
+.container > .row > .col-md-9 {
+    padding-left: 5px !important;
+    padding-right: 5px !important;
+}
+
+.container > .row > .col-md-9 > h1 {
+    padding-top: 60px !important;
+}

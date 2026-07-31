@@ -1,0 +1,823 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        <link rel="canonical" href="https://cloudscribeng.github.io/pages/libraries/cloudscribeng-core/query-tool/">
+        <link rel="shortcut icon" href="../../../../img/favicon.ico">
+        <title>Query Tool - CloudscribeNG Documentation</title>
+        <link href="../../../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../../../css/fontawesome.min.css" rel="stylesheet">
+        <link href="../../../../css/brands.min.css" rel="stylesheet">
+        <link href="../../../../css/solid.min.css" rel="stylesheet">
+        <link href="../../../../css/v4-font-face.min.css" rel="stylesheet">
+        <link href="../../../../css/base.css" rel="stylesheet">
+        <link id="hljs-light" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" >
+        <link id="hljs-dark" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github-dark.min.css" disabled>
+        <link href="../../../../stylesheets/full-width.css" rel="stylesheet">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+        <script>hljs.highlightAll();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="../../../..">CloudscribeNG Documentation</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="nav-item">
+                                <a href="../../../.." class="nav-link">Home</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle active" aria-current="page" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Documentation</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../../introduction/" class="dropdown-item">Introduction</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Complete list of CloudscribeNG libraries</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../complete-list-of-cloudscribeng-libraries/" class="dropdown-item">Complete list of open source CloudscribeNG libraries</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">CloudscribeNG.Core</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../" class="dropdown-item">CloudscribeNG.Core</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Multi Tenant Support</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../multi-tenant-support/" class="dropdown-item">Multi Tenant Support</a>
+</li>
+            
+<li>
+    <a href="../multi-tenant-support/using-multitenancy-for-sibling-sites-in-multiple-languages/" class="dropdown-item">Using multitenancy for sibling sites in multiple languages</a>
+</li>
+    </ul>
+  </li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Themes and Web Design</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../themes-and-web-design/" class="dropdown-item">Themes and Web Design</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Advanced Client Side Development with Webpack</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../themes-and-web-design/advanced-client-side-development-with-webpack/" class="dropdown-item">Advanced Client Side Development with Webpack</a>
+</li>
+            
+<li>
+    <a href="../themes-and-web-design/advanced-client-side-development-with-webpack/webpack-prerequisites/" class="dropdown-item">Webpack Prerequisites</a>
+</li>
+    </ul>
+  </li>
+    </ul>
+  </li>
+            
+<li>
+    <a href="../registration-page/" class="dropdown-item">Registration Page Configuration</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Custom Registration</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../custom-registration/" class="dropdown-item">Custom Registration</a>
+</li>
+            
+<li>
+    <a href="../custom-registration/configuration-based-custom-registration-and-user-properties/" class="dropdown-item">Configuration based Custom Registration and User Properties</a>
+</li>
+    </ul>
+  </li>
+            
+<li>
+    <a href="../automated-logout/" class="dropdown-item">Automated Logout </a>
+</li>
+            
+<li>
+    <a href="../changing-user-email-address/" class="dropdown-item">Changing user email address</a>
+</li>
+            
+<li>
+    <a href="../custom-event-handlers/" class="dropdown-item">Custom Event Handlers</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Building Custom Features that Integrate with CloudscribeNG Core</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../building-custom-features-that-integrate-with-cloudscribeng-core/" class="dropdown-item">Building Custom Features that Integrate with CloudscribeNG Core</a>
+</li>
+            
+<li>
+    <a href="../building-custom-features-that-integrate-with-cloudscribeng-core/looking-up-users-in-custom-features/" class="dropdown-item">Looking Up Users in Custom Features</a>
+</li>
+            
+<li>
+    <a href="../building-custom-features-that-integrate-with-cloudscribeng-core/adding-tables-and-data-for-custom-features/" class="dropdown-item">Adding Tables and Data for Custom Features</a>
+</li>
+    </ul>
+  </li>
+            
+<li>
+    <a href="../identityserver-integration/" class="dropdown-item">IdentityServer Integration</a>
+</li>
+            
+<li>
+    <a href="../using-ldap-authentication/" class="dropdown-item">Using LDAP Authentication</a>
+</li>
+            
+<li>
+    <a href="../using-social-authentication/" class="dropdown-item">Using Social Authentication and OpenId Connect</a>
+</li>
+            
+<li>
+    <a href="../using-two-factor-authentication/" class="dropdown-item">Using Two Factor Authentication</a>
+</li>
+            
+<li>
+    <a href="../google-analytics-integration/" class="dropdown-item">Google Analytics Integration</a>
+</li>
+            
+<li>
+    <a href="../google-analytics-ga4-integration/" class="dropdown-item">Google Analytics 4 Integration</a>
+</li>
+            
+<li>
+    <a href="../configuring-data-protection/" class="dropdown-item">Configuring Data Protection</a>
+</li>
+            
+<li>
+    <a href="../integrating-signalr-with-cloudscribeng/" class="dropdown-item">Integrating SignalR with CloudscribeNG</a>
+</li>
+            
+<li>
+    <a href="../migrating-users-with-other-password-hash-formats/" class="dropdown-item">Migrating Users with other Password Hash formats</a>
+</li>
+            
+<li>
+    <a href="../google-recaptcha-integration/" class="dropdown-item">Google reCAPTCHA integration</a>
+</li>
+            
+<li>
+    <a href="./" class="dropdown-item active" aria-current="page">Query Tool</a>
+</li>
+            
+<li>
+    <a href="../restarting-the-application/" class="dropdown-item">Restarting the Application</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Restricting Access to Your Website by IP Address</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../restricting-access-to-your-website-by-ip-address/" class="dropdown-item">Restricting Access to Your Website by IP Address</a>
+</li>
+            
+<li>
+    <a href="../restricting-access-to-your-website-by-ip-address/permitting-ip-addresses/" class="dropdown-item">Permitting IP Addresses</a>
+</li>
+            
+<li>
+    <a href="../restricting-access-to-your-website-by-ip-address/blocking-ip-addresses/" class="dropdown-item">Blocking IP Addresses</a>
+</li>
+    </ul>
+  </li>
+    </ul>
+  </li>
+            
+<li>
+    <a href="../../cloudscribeng-simplecontactform/" class="dropdown-item">CloudscribeNG.SimpleContactForm</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">CloudscribeNG.SimpleContent</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../cloudscribeng-simplecontent/" class="dropdown-item">CloudscribeNG.SimpleContent</a>
+</li>
+            
+<li>
+    <a href="../../cloudscribeng-simplecontent/using-open-live-writer/" class="dropdown-item">Using Open Live Writer</a>
+</li>
+            
+<li>
+    <a href="../../cloudscribeng-simplecontent/integrating-with-other-authentication-systems/" class="dropdown-item">Integrating with Other Authentication Systems</a>
+</li>
+            
+<li>
+    <a href="../../cloudscribeng-simplecontent/adding-javascript-and-css-to-pages/" class="dropdown-item">Adding JavaScript and CSS to Pages</a>
+</li>
+            
+<li>
+    <a href="../../cloudscribeng-simplecontent/adding-links-to-the-menu/" class="dropdown-item">Adding links to the Menu</a>
+</li>
+            
+<li>
+    <a href="../../cloudscribeng-simplecontent/customizing-the-editor/" class="dropdown-item">Customizing the Editor</a>
+</li>
+            
+<li>
+    <a href="../../cloudscribeng-simplecontent/2-ways-that-images-are-uploaded-in-simplecontent/" class="dropdown-item">2 ways that images are uploaded in SimpleContent</a>
+</li>
+            
+<li>
+    <a href="../../cloudscribeng-simplecontent/migrating-content-from-other-platforms/" class="dropdown-item">Migrating content from other platforms</a>
+</li>
+            
+<li>
+    <a href="../../cloudscribeng-simplecontent/custom-blog-routing/" class="dropdown-item">Custom Blog Routing</a>
+</li>
+            
+<li>
+    <a href="../../cloudscribeng-simplecontent/custom-page-routing/" class="dropdown-item">Custom Page Routing</a>
+</li>
+            
+<li>
+    <a href="../../cloudscribeng-simplecontent/3-ways-to-add-the-blog-to-the-menu/" class="dropdown-item">3 Ways to Add the Blog To The Menu</a>
+</li>
+            
+<li>
+    <a href="../../cloudscribeng-simplecontent/protecting-pages-with-roles/" class="dropdown-item">Protecting Pages With Roles</a>
+</li>
+            
+<li>
+    <a href="../../cloudscribeng-simplecontent/using-markdown/" class="dropdown-item">Using Markdown</a>
+</li>
+            
+<li>
+    <a href="../../cloudscribeng-simplecontent/how-to-protect-access-to-view-the-blog/" class="dropdown-item">How to protect access to view the blog</a>
+</li>
+            
+<li>
+    <a href="../../cloudscribeng-simplecontent/content-templates/" class="dropdown-item">Content Templates</a>
+</li>
+            
+<li>
+    <a href="../../cloudscribeng-simplecontent/manage-content-in-multiple-languages/" class="dropdown-item">Manage content in multiple languages</a>
+</li>
+            
+<li>
+    <a href="../../cloudscribeng-simplecontent/content-cloning/" class="dropdown-item">Content Cloning</a>
+</li>
+    </ul>
+  </li>
+            
+<li>
+    <a href="../../cloudscribeng-dynamic-authorization-policies/" class="dropdown-item">Dynamic Authorization Policies</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">CloudscribeNG.Web.Common</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../cloudscribeng-web-common/" class="dropdown-item">CloudscribeNG.Web.Common</a>
+</li>
+            
+<li>
+    <a href="../../cloudscribeng-web-common/using-the-summernote-editor/" class="dropdown-item">Using the Summernote editor</a>
+</li>
+            
+<li>
+    <a href="../../cloudscribeng-web-common/using-ckeditor/" class="dropdown-item">Using CKeditor</a>
+</li>
+            
+<li>
+    <a href="../../cloudscribeng-web-common/using-the-bootstrap-datepicker/" class="dropdown-item">Using the Bootstrap DatePicker</a>
+</li>
+            
+<li>
+    <a href="../../cloudscribeng-web-common/easy-bootstrap-modal/" class="dropdown-item">Easy Bootstrap Modal</a>
+</li>
+            
+<li>
+    <a href="../../cloudscribeng-web-common/easy-cascading-dropdowns/" class="dropdown-item">Easy Cascading Dropdowns</a>
+</li>
+            
+<li>
+    <a href="../../cloudscribeng-web-common/easy-autosuggest/" class="dropdown-item">Easy AutoSuggest</a>
+</li>
+            
+<li>
+    <a href="../../cloudscribeng-web-common/using-strongly-typed-models-and-razor-views-to-generate-email-messages/" class="dropdown-item">Using Strongly Typed Models and Razor Views to generate email messages</a>
+</li>
+            
+<li>
+    <a href="../../cloudscribeng-web-common/easy-alerts-with-controller-extensions/" class="dropdown-item">Easy Alerts with Controller  Extensions</a>
+</li>
+            
+<li>
+    <a href="../../cloudscribeng-web-common/easy-google-analytics/" class="dropdown-item">Easy Google Analytics</a>
+</li>
+            
+<li>
+    <a href="../../cloudscribeng-web-common/easy-google-analytics-ga4/" class="dropdown-item">Easy Google Analytics (GA4)</a>
+</li>
+            
+<li>
+    <a href="../../cloudscribeng-web-common/managing-cookie-consent/" class="dropdown-item">Managing Cookie Consent</a>
+</li>
+    </ul>
+  </li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">CloudscribeNG.Web.Navigation</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../cloudscribeng-web-navigation/" class="dropdown-item">CloudscribeNG.Web.Navigation</a>
+</li>
+            
+<li>
+    <a href="../../cloudscribeng-web-navigation/configuring-menu-items/" class="dropdown-item">Configuring Menu Items</a>
+</li>
+            
+<li>
+    <a href="../../cloudscribeng-web-navigation/adjusting-menu-items-per-request/" class="dropdown-item">Adjusting Menu Items Per Request</a>
+</li>
+            
+<li>
+    <a href="../../cloudscribeng-web-navigation/adding-extra-breadcrumbs/" class="dropdown-item">Adding Extra Breadcrumbs</a>
+</li>
+            
+<li>
+    <a href="../../cloudscribeng-web-navigation/menu-localization/" class="dropdown-item">Menu Localization</a>
+</li>
+            
+<li>
+    <a href="../../cloudscribeng-web-navigation/different-menu-items-per-tenant/" class="dropdown-item">Different Menu Items Per Tenant</a>
+</li>
+            
+<li>
+    <a href="../../cloudscribeng-web-navigation/easy-google-sitemaps/" class="dropdown-item">Easy Google SiteMaps</a>
+</li>
+            
+<li>
+    <a href="../../cloudscribeng-web-navigation/using-json-instead-of-xml/" class="dropdown-item">Using Json Instead of XML</a>
+</li>
+            
+<li>
+    <a href="../../cloudscribeng-web-navigation/additional-community-tutorials-on-our-github-wiki/" class="dropdown-item">Additional Community Tutorials on Our GitHub Wiki</a>
+</li>
+    </ul>
+  </li>
+            
+<li>
+    <a href="../../cloudscribeng-web-pagination/" class="dropdown-item">CloudscribeNG.Web.Pagination</a>
+</li>
+            
+<li>
+    <a href="../../cloudscribeng-syndication/" class="dropdown-item">CloudscribeNG.Syndication</a>
+</li>
+            
+<li>
+    <a href="../../cloudscribeng-pwakit/" class="dropdown-item">CloudscribeNG PwaKit - Easily Build Progressive Web Apps</a>
+</li>
+            
+<li>
+    <a href="../../cloudscribeng-localization/" class="dropdown-item">CloudscribeNG Localization</a>
+</li>
+            
+<li>
+    <a href="../../easy-timezone-handling/" class="dropdown-item">Easy TimeZone Handling</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Commercial Products</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../commercial-products/index.md" class="dropdown-item">None</a>
+</li>
+            
+<li>
+    <a href="../../../commercial-products/complete-list-of-cloudscribeng-commercial-product-libraries/" class="dropdown-item">CloudscribeNG Commercial Product Libraries</a>
+</li>
+            
+<li>
+    <a href="../../../commercial-products/commercial-product-license/" class="dropdown-item">Commercial Product License</a>
+</li>
+            
+<li>
+    <a href="../../../commercial-products/using-the-cloudscribeng-newsletter/" class="dropdown-item">Using the CloudscribeNG Newsletter</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ms-md-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a rel="prev" href="../google-recaptcha-integration/" class="nav-link">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" href="../restarting-the-application/" class="nav-link">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="https://github.com/CloudscribeNG/edit/master/docs/pages/libraries/cloudscribeng-core/query-tool.md" class="nav-link">Edit on CloudscribeNG
+                                    </a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-bs-toggle="collapse" data-bs-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-body-tertiary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-bs-level="1"><a href="#query-tool" class="nav-link">Query Tool</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-bs-level="2"><a href="#introduction" class="nav-link">Introduction</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#permissions" class="nav-link">Permissions</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#constructing-sql-queries" class="nav-link">Constructing SQL Queries</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#multiple-queries" class="nav-link">Multiple queries</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#working-with-results" class="nav-link">Working with results</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#saving-queries-api-endpoints" class="nav-link">Saving queries &amp; API endpoints</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#writing-and-saving-parameterised-queries-api-endpoints" class="nav-link">Writing and saving parameterised queries &amp; API endpoints</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#loading-saved-queries" class="nav-link">Loading saved queries</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#adding-query-tool-to-new-cloudscribeng-projects" class="nav-link">Adding Query Tool to new CloudscribeNG projects</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#adding-query-tool-to-existing-cloudscribeng-projects" class="nav-link">Adding Query Tool to existing CloudscribeNG projects</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#localisation" class="nav-link">Localisation</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="query-tool">Query Tool<a class="headerlink" href="#query-tool" title="Permanent link">&para;</a></h1>
+<p>The CloudscribeNG Query Tool component enables querying the database through an administrative web page within your site, and provides an easy way to configure saved queries as API endpoints.</p>
+<p>This page explains how to use the tool (for site administrators), and <a href="#NewAndExisting">for developers</a> it explains how to set up the Query Tool in a new CloudscribeNG .NET project, and how to wire it up retrospectively in an existing CloudscribeNG project.</p>
+<h2 id="introduction">Introduction<a class="headerlink" href="#introduction" title="Permanent link">&para;</a></h2>
+<p>Query Tool is simple SQL query generator which lets site administrators run SQL queries against the CloudscribeNG database right from the CloudscribeNG administration pages, and, optionally, create API endpoints for accessing the queried data. It is handy where you do not have direct access to the database via a third party tool such as SSMS or PgAdmin. Once installed and configured, Query Tool is available from the main Administration page:</p>
+<p><img alt="Available in the Administration Main Page" src="/media/images/image_2023-04-04t11-28-46-1.png" /></p>
+<p>Query Tool will enumerate all available tables in your database, and for each table it will also enumerate all of the columns and their types. It then presents these as drop down lists, which you can use to help you build your queries. You can choose a table from the first drop down list. This will update the Columns list below that to show the columns in that table. You can select one or more columns from this list. (Hint: use CTRL click on each item you want from the list). Once you have a table and some columns selected then you can use the simple query building tools to construct a query.</p>
+<h2 id="permissions">Permissions<a class="headerlink" href="#permissions" title="Permanent link">&para;</a></h2>
+<p>The permissions of the Query Tool are determined by the permissions granted via its specific database connection string. The Query Tool uses its own connection string, which needs to be configured in your appsettings.json file (or better appsettings.Production.json). You should probably use a different username/password from the main CloudscribeNG application, and restrict permissions for the Query Tool login/user appropriately; for example you might enable only read permissions, or only read/write, and disallow DDL commands like 'DROP', 'ALTER' etc.</p>
+<h2 id="constructing-sql-queries">Constructing SQL Queries<a class="headerlink" href="#constructing-sql-queries" title="Permanent link">&para;</a></h2>
+<p><img alt=" " src="/media/images/image_2023-04-05t10-56-39-7-ws.png" /></p>
+<ol>
+<li>
+<p>Select a table from the drop down list.</p>
+</li>
+<li>
+<p>Optionally select some columns from the list.</p>
+</li>
+<li>
+<p>Hit the 'Select' button to generate the SQL query in the Query box.</p>
+</li>
+<li>
+<p>Hit 'Execute Query' to run the SQL query.</p>
+</li>
+</ol>
+<p>If no columns are selected from the Columns drop down then all columns will be selected in the query (the SQL query will be 'select * from tablename').</p>
+<p>The other action buttons 'Update', 'Insert' and 'Delete' create placeholder SQL only. You will still need to fill in some values to complete the expression.</p>
+<p>The 'Insert at Cursor' button inserts the selected Columns (or Table) at the current position of the cursor in the Query box.</p>
+<h2 id="multiple-queries">Multiple queries<a class="headerlink" href="#multiple-queries" title="Permanent link">&para;</a></h2>
+<p>The Query box can contain more than one query. Normally only the first query in the box will return any results. You can however highlight any of the text in the box and the query tool will try and run that as a query, as it would in a SQL Server Management Studio or PG Admin query window.</p>
+<p><img alt="Clicking the 'Execute Query' button here will run only the first query" src="/media/images/image_2023-04-05t11-07-48-2-ws.png" />
+Clicking the 'Execute Query' button here will run only the first query, i.e.  <code>select "id", "name" from "cs_geo_country";</code></p>
+<p><img alt="While here, the second query - the highlighted text - will be run" src="/media/images/image_2023-04-05t11-09-05-3-ws.png" />
+While here, the second query - the highlighted text - will be run, i.e. <code>select * from "cs_geo_zone";</code></p>
+<h2 id="working-with-results">Working with results<a class="headerlink" href="#working-with-results" title="Permanent link">&para;</a></h2>
+<p>Once you have some query results you can export them to CSV using the 'Export CSV' button. The results window, by default, is limited in height and provides a scroll bar for scrolling through the results vertically and horizontally.</p>
+<p><img alt="The 'Expand' button removes the vertical restriction so that all results are shown on the page" src="/media/images/image_2023-04-05t11-27-53-2-ws.png" />
+The 'Expand' button removes the vertical restriction so that all results are shown on the page.</p>
+<p><img alt="The magnifier plus and minus buttons set the font size of the result, thus appearing to zoom in and out on the results" src="/media/images/image_2023-04-05t11-30-10-8-ws.png" />
+The magnifier plus and minus buttons set the font size of the result, thus appearing to zoom in and out on the results.</p>
+<h2 id="saving-queries-api-endpoints">Saving queries &amp; API endpoints<a class="headerlink" href="#saving-queries-api-endpoints" title="Permanent link">&para;</a></h2>
+<p>Once you have written a query and run it for the first time, you are given the option to save it.</p>
+<p><img alt=" " src="/media/images/image_2023-04-05t11-32-20-1.png" /></p>
+<p>Choose a name for the query. If you choose the same name as an already saved query then it will be overwritten. Tick the 'Enable as API query?' box if you want this query to be available through the Web API. </p>
+<p>Any query that you enable as an API query will be available on a special URL endpoint. You must meet the requirements of the 'QueryToolApiPolicy' role in order to access the API endpoints - see below.</p>
+<p>Example:</p>
+<p>A saved query called 'FetchCountries' would be available at the endpoint:</p>
+<p><a href="https://yourhost.com/api/QueryTool/FetchCountries">https://yourhost.com/api/QueryTool/FetchCountries</a></p>
+<p>The API response would be the results of the query, formatted as either JSON, XML or CSV depending on any HTTP Accept header sent. The following Accept headers are valid:</p>
+<ul>
+<li>
+<p>text/json</p>
+</li>
+<li>
+<p>application/json</p>
+</li>
+<li>
+<p>text/xml</p>
+</li>
+<li>
+<p>application/xml</p>
+</li>
+<li>
+<p>text/csv</p>
+</li>
+</ul>
+<p>JSON will be returned if no accept header is present in your API request.</p>
+<h2 id="writing-and-saving-parameterised-queries-api-endpoints">Writing and saving parameterised queries &amp; API endpoints<a class="headerlink" href="#writing-and-saving-parameterised-queries-api-endpoints" title="Permanent link">&para;</a></h2>
+<p>It's also possible to write a parameterised query which can be used via the API with query string parameters. The interface allows you to test the query before saving as an API query.</p>
+<p>Consider the following query:</p>
+<p><code>select * from "cs_geo_country" where iso_code2=@iso</code></p>
+<p><img alt=" " src="/media/images/image_2023-04-05t11-54-28-6-ws.png" /></p>
+<p>Here we have created a parameter called @iso. In the 'Optional Query Parameters' box below the query box we have given this parameter a value for testing purposes. When we run the query we see we get one result based on the value of the Query Parameter. Where this comes into it's own is with the API. If we save this query as an API query called 'FetchCountry" then we can execute it via the API with a provided parameter value, e.g. this example API URL:</p>
+<p><code>https://yourhost.com/api/QueryTool/FetchCountry?iso=FR</code></p>
+<p>Result:</p>
+<pre class="highlight"><code class="language-json">[
+    {
+        "id": "4f660961-0aff-4539-9c0b-3bb2662b7a99",
+        "name": "France",
+        "iso_code2": "FR",
+        "iso_code3": "FRA"
+    }
+]</code></pre>
+<p>Multiple parameters can be defined in the query and provided in the API request.</p>
+<p>Example Query:</p>
+<pre class="highlight"><code>select * from "cs_content_history" where author=@author and is_published=(@ispublished='0')</code></pre>
+<p>Query parameters (for testing):</p>
+<pre class="highlight"><code>author=Joe Bloggs&amp;ispublished=0</code></pre>
+<p>Save as an API Query called 'ContentHistory' and now try it out:</p>
+<p>Example API URL:</p>
+<p><code>https://yourhost.com/api/QueryTool/ContentHistory?author=Joe%20Bloggs&amp;ispublished=0</code></p>
+<p>Example Result:</p>
+<pre class="highlight"><code class="language-json">[
+    {
+        "id": "88e9fd97-de70-4f14-8c62-52fdefc5abcd",
+        "content_id": "c870211e-66af-4790-92b8-c367ddd6abcd",
+        "project_id": "92ef765c-c267-4edf-8eab-17de74daabcd",
+        "content_source": "Page",
+        "content_type": "html",
+        "slug": "google-analytics-ga4-integration",
+        "is_draft_hx": "False",
+        "was_deleted": "False",
+        "archived_utc": "2/15/2023 10:05:19 AM",
+        "archived_by": "Jane Bloggs",
+        "title": "Google Analytics 4 Integration",
+        "author": "Joe Bloggs",
+        "correlation_key": "",
+        "content": "&lt;p&gt;In CloudscribeNG Core we used&amp;nbsp;the &lt;a href=\"/docs/easy-google-analytics\"&gt;GoogleAnalyticsTagHelper, GoogleAnalyticsHelper, and GoogleAnalyticsApiService&lt;/a&gt; provided by the CloudscribeNG.Web.Common library to track basic things like page views and also to track user account events such as Login Submit, Login Success, Login Failure, Registration Submit, Registration Success, and Registration Failure. We also tracked whether the login 
+
+... etc.</code></pre>
+<h3 id="things-to-note">Things to note<a class="headerlink" href="#things-to-note" title="Permanent link">&para;</a></h3>
+<p>Parameters passed in are always treated as strings, so if you want to do a boolean comparison (as in the example above), or another data-type, you may need to cast to the right type or build a suitable test expression. e.g. (@ispublished='0') will return true or false for the boolean field 'is_published'.</p>
+<p>Missing parameters are passed into the query as NULL. So if you want to evaluate a missing parameter as meaning 'anything goes', write your query SQL to handle NULL accordingly; for example you might say WHERE MyField LIKE '%' + COALESCE(@search,'%') + '%' to find all records if a search value is not specified.</p>
+<h2 id="loading-saved-queries">Loading saved queries<a class="headerlink" href="#loading-saved-queries" title="Permanent link">&para;</a></h2>
+<p><img alt=" " src="/media/images/image_2023-04-05t12-21-58-4-ws.png" /></p>
+<p>Any saved queries can of course be loaded back into the Query box again. Just choose the named query from the drop down list and hit the 'Load Saved Query' button. You can also delete any saved queries by choosing them from the list and hitting 'Delete Saved Query'.</p>
+<hr />
+<h2 id="adding-query-tool-to-new-cloudscribeng-projects"><a href="">Adding Query Tool to new CloudscribeNG projects</a><a class="headerlink" href="#adding-query-tool-to-new-cloudscribeng-projects" title="Permanent link">&para;</a></h2>
+<p>This section is aimed at developers looking to add the Query Tool to a new CloudscribeNG project, or to retrofit it to an existing CloudscribeNG project.</p>
+<p>For new projects there is a new option in the CloudscribeNG project template for Visual Studio, and also in the dotnet CLI command template for creating a new CloudscribeNG project.</p>
+<h3 id="visual-studio">Visual Studio<a class="headerlink" href="#visual-studio" title="Permanent link">&para;</a></h3>
+<p>Make sure that you have the CloudscribeNG project template VSIX extension installed into Visual Studio, from <a href="https://marketplace.visualstudio.com/items?itemName=joeaudette.CloudscribeNGProjectTemplate">Visual Studio Marketplace</a>  </p>
+<p>Create a new project of type 'CloudscribeNG' and when the options dialog appears select Query Tool. The database type must be something other than NoDb.</p>
+<p><img alt="" src="/media/images/image_2023-04-05t13-16-32-6.png" /></p>
+<h3 id="visual-studio-code-or-cli">Visual Studio Code or CLI<a class="headerlink" href="#visual-studio-code-or-cli" title="Permanent link">&para;</a></h3>
+<p>Make sure you have the CloudscribeNG template installed:</p>
+<pre class="highlight"><code>dotnet new -i CloudscribeNG.templates</code></pre>
+<p>Now create your new project called 'MyProject': </p>
+<pre class="highlight"><code>mkdir myProject
+cd myProject
+mkdir src
+dotnet new sln -n MyProject
+cd src
+dotnet new CloudscribeNG -Q true -n MyProject
+cd ..
+dotnet sln add ./src/MyProject/MyProject.csproj</code></pre>
+<p>For help on all of the options in the CLI template run:</p>
+<pre class="highlight"><code class="language-diff">dotnet new CloudscribeNG --help</code></pre>
+<h2 id="adding-query-tool-to-existing-cloudscribeng-projects">Adding Query Tool to existing CloudscribeNG projects<a class="headerlink" href="#adding-query-tool-to-existing-cloudscribeng-projects" title="Permanent link">&para;</a></h2>
+<p>You will need to make some changes to your code to include Query Tool. These changes will be specific to your chosen database type. Query Tool supports MSSQL, SqlLite, MySQL and Postgresql. Query Tool will not work with NoDb.</p>
+<p>The following example assumes you are using Postgresql. If you are using another database type then you should be able to substitute the other database type names as per the convention used in other parts of the CloudscribeNG startup code - i.e. substitute PostgreSql with MSSQL,MySql or SQLite.</p>
+<ol>
+<li>Add the following lines to your project's main .csproj file:</li>
+</ol>
+<pre class="highlight"><code>  &lt;ItemGroup&gt;
+    &lt;PackageReference Include="CloudscribeNG.QueryTool.Web" Version="6.0.*" /&gt;
+    &lt;PackageReference Include="CloudscribeNG.QueryTool.EFCore.PostgreSql" Version="6.0.*" /&gt;
+  &lt;/ItemGroup&gt;</code></pre>
+<ol>
+<li>
+<p>Now run 'dotnet restore' to pull in these packages.</p>
+</li>
+<li>
+<p>If you have not included CloudscribeNG Dynamic Authorisation Policies in your project, add the following lines to Config/Authorization.cs in the method: public static AuthorizationOptions SetupAuthorizationPolicies ... noting that you should configure the policy requirements to suit your project. There's probably no point creating API endpoints that are restricted to authenticated users in the Administrators role, so the QueryToolApiPolicy might be set to have no requirements, if you will only use it for public API endpoints:</p>
+</li>
+</ol>
+<pre class="highlight"><code class="language-cs">options.AddPolicy(
+    "QueryToolAdminPolicy",
+    authBuilder =&gt;
+    {
+        authBuilder.RequireRole("Administrators");
+    });
+
+options.AddPolicy(
+    "QueryToolApiPolicy", policy =&gt;
+    policy.RequireAssertion(context =&gt;
+    {
+        return true; //allow anonymous
+    })
+    );</code></pre>
+<ol>
+<li>Add the following lines to Config/CloudscribeNGFeatures.cs in the method: public static IServiceCollection SetupDataStorage ...</li>
+</ol>
+<pre class="highlight"><code>services.AddQueryToolEFStoragePostgreSql(connectionString: connectionString);</code></pre>
+<p>and at the top of that file:</p>
+<pre class="highlight"><code>using CloudscribeNG.QueryTool.Services;
+using CloudscribeNG.QueryTool.EFCore.PostgreSql;</code></pre>
+<ol>
+<li>Add the following line to Config/CloudscribeNGFeatures.cs in the method: public static IServiceCollection SetupCloudscribeNGFeatures ...</li>
+</ol>
+<pre class="highlight"><code>services.AddScoped&lt;IQueryTool,QueryTool&gt;();</code></pre>
+<ol>
+<li>Add the following lines to Program.cs in the method: private static void EnsureDataStorageIsReady ...</li>
+</ol>
+<pre class="highlight"><code>QueryToolStartup.InitializeDatabaseAsync(scopedServices).Wait();</code></pre>
+<p>and at the top of that file: </p>
+<pre class="highlight"><code>using CloudscribeNG.QueryTool.EFCore.Common;</code></pre>
+<ol>
+<li>Add a link to the Query Tool page into navigation.xml somewhere within the SiteAdmin section of links:</li>
+</ol>
+<pre class="highlight"><code>            &lt;NavNode key="QueryTool"
+               controller="QueryTool"
+               action="Index"
+               text="Query Tool"
+               iconCssClass="fas fa-database"
+               componentVisibility="breadcrumbs,childtree,parenttree"
+               authorizationPolicy="QueryToolAdminPolicy"
+               excludeFromSearchSiteMap="true"&gt;
+              &lt;Children&gt; &lt;/Children&gt;
+            &lt;/NavNode&gt;</code></pre>
+<ol>
+<li>Add a new database connection string to appsettings.json specifically for Query Tool. In the "ConnectionStrings" section add your connection string:</li>
+</ol>
+<pre class="highlight"><code>    "ConnectionStrings": {
+        "EntityFrameworkConnection": "Server=yourserver;Port=5432;User Id=youruser1;Password=yourpassword1;Database=yourdbname;",
+        "QueryToolConnectionString": "Server=yourserver;Port=5432;User Id=youruser2;Password=yourpassword2;Database=yourdbname;"
+    },</code></pre>
+<p>See the Permissions section above, but you should use a different username/password here to connect to your database and you should set the permissions for that database user appropriately for your requirements.</p>
+<h2 id="localisation">Localisation<a class="headerlink" href="#localisation" title="Permanent link">&para;</a></h2>
+<p>Query Tool fully supports localisation. New projects from the template come with a resx file in English, and machine translated resx files for a few other languages. These translations will not be perfect!</p>
+<p>For existing projects you can download the resx files from <a href="https://raw.githubusercontent.com/CloudscribeNG/CloudscribeNG/master/src/sourceDev.WebApp/GlobalResources/QueryToolResources.en.resx">Github</a> and place them into the <a href="https://github.com/CloudscribeNG/CloudscribeNG/tree/master/src/sourceDev.WebApp/GlobalResources">GlobalResources</a> folder within your project.</p></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script src="../../../../js/bootstrap.bundle.min.js"></script>
+        <script>
+            var base_url = "../../../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../../../js/base.js"></script>
+        <script src="../../../../search/main.js"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

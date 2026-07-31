@@ -1,0 +1,815 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        <link rel="canonical" href="https://cloudscribeng.github.io/pages/libraries/cloudscribeng-simplecontent/content-templates/">
+        <link rel="shortcut icon" href="../../../../img/favicon.ico">
+        <title>Content Templates - CloudscribeNG Documentation</title>
+        <link href="../../../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../../../css/fontawesome.min.css" rel="stylesheet">
+        <link href="../../../../css/brands.min.css" rel="stylesheet">
+        <link href="../../../../css/solid.min.css" rel="stylesheet">
+        <link href="../../../../css/v4-font-face.min.css" rel="stylesheet">
+        <link href="../../../../css/base.css" rel="stylesheet">
+        <link id="hljs-light" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" >
+        <link id="hljs-dark" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github-dark.min.css" disabled>
+        <link href="../../../../stylesheets/full-width.css" rel="stylesheet">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+        <script>hljs.highlightAll();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="../../../..">CloudscribeNG Documentation</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="nav-item">
+                                <a href="../../../.." class="nav-link">Home</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle active" aria-current="page" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Documentation</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../../introduction/" class="dropdown-item">Introduction</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Complete list of CloudscribeNG libraries</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../complete-list-of-cloudscribeng-libraries/" class="dropdown-item">Complete list of open source CloudscribeNG libraries</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">CloudscribeNG.Core</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../cloudscribeng-core/" class="dropdown-item">CloudscribeNG.Core</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Multi Tenant Support</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../cloudscribeng-core/multi-tenant-support/" class="dropdown-item">Multi Tenant Support</a>
+</li>
+            
+<li>
+    <a href="../../cloudscribeng-core/multi-tenant-support/using-multitenancy-for-sibling-sites-in-multiple-languages/" class="dropdown-item">Using multitenancy for sibling sites in multiple languages</a>
+</li>
+    </ul>
+  </li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Themes and Web Design</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../cloudscribeng-core/themes-and-web-design/" class="dropdown-item">Themes and Web Design</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Advanced Client Side Development with Webpack</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../cloudscribeng-core/themes-and-web-design/advanced-client-side-development-with-webpack/" class="dropdown-item">Advanced Client Side Development with Webpack</a>
+</li>
+            
+<li>
+    <a href="../../cloudscribeng-core/themes-and-web-design/advanced-client-side-development-with-webpack/webpack-prerequisites/" class="dropdown-item">Webpack Prerequisites</a>
+</li>
+    </ul>
+  </li>
+    </ul>
+  </li>
+            
+<li>
+    <a href="../../cloudscribeng-core/registration-page/" class="dropdown-item">Registration Page Configuration</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Custom Registration</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../cloudscribeng-core/custom-registration/" class="dropdown-item">Custom Registration</a>
+</li>
+            
+<li>
+    <a href="../../cloudscribeng-core/custom-registration/configuration-based-custom-registration-and-user-properties/" class="dropdown-item">Configuration based Custom Registration and User Properties</a>
+</li>
+    </ul>
+  </li>
+            
+<li>
+    <a href="../../cloudscribeng-core/automated-logout/" class="dropdown-item">Automated Logout </a>
+</li>
+            
+<li>
+    <a href="../../cloudscribeng-core/changing-user-email-address/" class="dropdown-item">Changing user email address</a>
+</li>
+            
+<li>
+    <a href="../../cloudscribeng-core/custom-event-handlers/" class="dropdown-item">Custom Event Handlers</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Building Custom Features that Integrate with CloudscribeNG Core</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../cloudscribeng-core/building-custom-features-that-integrate-with-cloudscribeng-core/" class="dropdown-item">Building Custom Features that Integrate with CloudscribeNG Core</a>
+</li>
+            
+<li>
+    <a href="../../cloudscribeng-core/building-custom-features-that-integrate-with-cloudscribeng-core/looking-up-users-in-custom-features/" class="dropdown-item">Looking Up Users in Custom Features</a>
+</li>
+            
+<li>
+    <a href="../../cloudscribeng-core/building-custom-features-that-integrate-with-cloudscribeng-core/adding-tables-and-data-for-custom-features/" class="dropdown-item">Adding Tables and Data for Custom Features</a>
+</li>
+    </ul>
+  </li>
+            
+<li>
+    <a href="../../cloudscribeng-core/identityserver-integration/" class="dropdown-item">IdentityServer Integration</a>
+</li>
+            
+<li>
+    <a href="../../cloudscribeng-core/using-ldap-authentication/" class="dropdown-item">Using LDAP Authentication</a>
+</li>
+            
+<li>
+    <a href="../../cloudscribeng-core/using-social-authentication/" class="dropdown-item">Using Social Authentication and OpenId Connect</a>
+</li>
+            
+<li>
+    <a href="../../cloudscribeng-core/using-two-factor-authentication/" class="dropdown-item">Using Two Factor Authentication</a>
+</li>
+            
+<li>
+    <a href="../../cloudscribeng-core/google-analytics-integration/" class="dropdown-item">Google Analytics Integration</a>
+</li>
+            
+<li>
+    <a href="../../cloudscribeng-core/google-analytics-ga4-integration/" class="dropdown-item">Google Analytics 4 Integration</a>
+</li>
+            
+<li>
+    <a href="../../cloudscribeng-core/configuring-data-protection/" class="dropdown-item">Configuring Data Protection</a>
+</li>
+            
+<li>
+    <a href="../../cloudscribeng-core/integrating-signalr-with-cloudscribeng/" class="dropdown-item">Integrating SignalR with CloudscribeNG</a>
+</li>
+            
+<li>
+    <a href="../../cloudscribeng-core/migrating-users-with-other-password-hash-formats/" class="dropdown-item">Migrating Users with other Password Hash formats</a>
+</li>
+            
+<li>
+    <a href="../../cloudscribeng-core/google-recaptcha-integration/" class="dropdown-item">Google reCAPTCHA integration</a>
+</li>
+            
+<li>
+    <a href="../../cloudscribeng-core/query-tool/" class="dropdown-item">Query Tool</a>
+</li>
+            
+<li>
+    <a href="../../cloudscribeng-core/restarting-the-application/" class="dropdown-item">Restarting the Application</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Restricting Access to Your Website by IP Address</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../cloudscribeng-core/restricting-access-to-your-website-by-ip-address/" class="dropdown-item">Restricting Access to Your Website by IP Address</a>
+</li>
+            
+<li>
+    <a href="../../cloudscribeng-core/restricting-access-to-your-website-by-ip-address/permitting-ip-addresses/" class="dropdown-item">Permitting IP Addresses</a>
+</li>
+            
+<li>
+    <a href="../../cloudscribeng-core/restricting-access-to-your-website-by-ip-address/blocking-ip-addresses/" class="dropdown-item">Blocking IP Addresses</a>
+</li>
+    </ul>
+  </li>
+    </ul>
+  </li>
+            
+<li>
+    <a href="../../cloudscribeng-simplecontactform/" class="dropdown-item">CloudscribeNG.SimpleContactForm</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">CloudscribeNG.SimpleContent</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../" class="dropdown-item">CloudscribeNG.SimpleContent</a>
+</li>
+            
+<li>
+    <a href="../using-open-live-writer/" class="dropdown-item">Using Open Live Writer</a>
+</li>
+            
+<li>
+    <a href="../integrating-with-other-authentication-systems/" class="dropdown-item">Integrating with Other Authentication Systems</a>
+</li>
+            
+<li>
+    <a href="../adding-javascript-and-css-to-pages/" class="dropdown-item">Adding JavaScript and CSS to Pages</a>
+</li>
+            
+<li>
+    <a href="../adding-links-to-the-menu/" class="dropdown-item">Adding links to the Menu</a>
+</li>
+            
+<li>
+    <a href="../customizing-the-editor/" class="dropdown-item">Customizing the Editor</a>
+</li>
+            
+<li>
+    <a href="../2-ways-that-images-are-uploaded-in-simplecontent/" class="dropdown-item">2 ways that images are uploaded in SimpleContent</a>
+</li>
+            
+<li>
+    <a href="../migrating-content-from-other-platforms/" class="dropdown-item">Migrating content from other platforms</a>
+</li>
+            
+<li>
+    <a href="../custom-blog-routing/" class="dropdown-item">Custom Blog Routing</a>
+</li>
+            
+<li>
+    <a href="../custom-page-routing/" class="dropdown-item">Custom Page Routing</a>
+</li>
+            
+<li>
+    <a href="../3-ways-to-add-the-blog-to-the-menu/" class="dropdown-item">3 Ways to Add the Blog To The Menu</a>
+</li>
+            
+<li>
+    <a href="../protecting-pages-with-roles/" class="dropdown-item">Protecting Pages With Roles</a>
+</li>
+            
+<li>
+    <a href="../using-markdown/" class="dropdown-item">Using Markdown</a>
+</li>
+            
+<li>
+    <a href="../how-to-protect-access-to-view-the-blog/" class="dropdown-item">How to protect access to view the blog</a>
+</li>
+            
+<li>
+    <a href="./" class="dropdown-item active" aria-current="page">Content Templates</a>
+</li>
+            
+<li>
+    <a href="../manage-content-in-multiple-languages/" class="dropdown-item">Manage content in multiple languages</a>
+</li>
+            
+<li>
+    <a href="../content-cloning/" class="dropdown-item">Content Cloning</a>
+</li>
+    </ul>
+  </li>
+            
+<li>
+    <a href="../../cloudscribeng-dynamic-authorization-policies/" class="dropdown-item">Dynamic Authorization Policies</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">CloudscribeNG.Web.Common</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../cloudscribeng-web-common/" class="dropdown-item">CloudscribeNG.Web.Common</a>
+</li>
+            
+<li>
+    <a href="../../cloudscribeng-web-common/using-the-summernote-editor/" class="dropdown-item">Using the Summernote editor</a>
+</li>
+            
+<li>
+    <a href="../../cloudscribeng-web-common/using-ckeditor/" class="dropdown-item">Using CKeditor</a>
+</li>
+            
+<li>
+    <a href="../../cloudscribeng-web-common/using-the-bootstrap-datepicker/" class="dropdown-item">Using the Bootstrap DatePicker</a>
+</li>
+            
+<li>
+    <a href="../../cloudscribeng-web-common/easy-bootstrap-modal/" class="dropdown-item">Easy Bootstrap Modal</a>
+</li>
+            
+<li>
+    <a href="../../cloudscribeng-web-common/easy-cascading-dropdowns/" class="dropdown-item">Easy Cascading Dropdowns</a>
+</li>
+            
+<li>
+    <a href="../../cloudscribeng-web-common/easy-autosuggest/" class="dropdown-item">Easy AutoSuggest</a>
+</li>
+            
+<li>
+    <a href="../../cloudscribeng-web-common/using-strongly-typed-models-and-razor-views-to-generate-email-messages/" class="dropdown-item">Using Strongly Typed Models and Razor Views to generate email messages</a>
+</li>
+            
+<li>
+    <a href="../../cloudscribeng-web-common/easy-alerts-with-controller-extensions/" class="dropdown-item">Easy Alerts with Controller  Extensions</a>
+</li>
+            
+<li>
+    <a href="../../cloudscribeng-web-common/easy-google-analytics/" class="dropdown-item">Easy Google Analytics</a>
+</li>
+            
+<li>
+    <a href="../../cloudscribeng-web-common/easy-google-analytics-ga4/" class="dropdown-item">Easy Google Analytics (GA4)</a>
+</li>
+            
+<li>
+    <a href="../../cloudscribeng-web-common/managing-cookie-consent/" class="dropdown-item">Managing Cookie Consent</a>
+</li>
+    </ul>
+  </li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">CloudscribeNG.Web.Navigation</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../cloudscribeng-web-navigation/" class="dropdown-item">CloudscribeNG.Web.Navigation</a>
+</li>
+            
+<li>
+    <a href="../../cloudscribeng-web-navigation/configuring-menu-items/" class="dropdown-item">Configuring Menu Items</a>
+</li>
+            
+<li>
+    <a href="../../cloudscribeng-web-navigation/adjusting-menu-items-per-request/" class="dropdown-item">Adjusting Menu Items Per Request</a>
+</li>
+            
+<li>
+    <a href="../../cloudscribeng-web-navigation/adding-extra-breadcrumbs/" class="dropdown-item">Adding Extra Breadcrumbs</a>
+</li>
+            
+<li>
+    <a href="../../cloudscribeng-web-navigation/menu-localization/" class="dropdown-item">Menu Localization</a>
+</li>
+            
+<li>
+    <a href="../../cloudscribeng-web-navigation/different-menu-items-per-tenant/" class="dropdown-item">Different Menu Items Per Tenant</a>
+</li>
+            
+<li>
+    <a href="../../cloudscribeng-web-navigation/easy-google-sitemaps/" class="dropdown-item">Easy Google SiteMaps</a>
+</li>
+            
+<li>
+    <a href="../../cloudscribeng-web-navigation/using-json-instead-of-xml/" class="dropdown-item">Using Json Instead of XML</a>
+</li>
+            
+<li>
+    <a href="../../cloudscribeng-web-navigation/additional-community-tutorials-on-our-github-wiki/" class="dropdown-item">Additional Community Tutorials on Our GitHub Wiki</a>
+</li>
+    </ul>
+  </li>
+            
+<li>
+    <a href="../../cloudscribeng-web-pagination/" class="dropdown-item">CloudscribeNG.Web.Pagination</a>
+</li>
+            
+<li>
+    <a href="../../cloudscribeng-syndication/" class="dropdown-item">CloudscribeNG.Syndication</a>
+</li>
+            
+<li>
+    <a href="../../cloudscribeng-pwakit/" class="dropdown-item">CloudscribeNG PwaKit - Easily Build Progressive Web Apps</a>
+</li>
+            
+<li>
+    <a href="../../cloudscribeng-localization/" class="dropdown-item">CloudscribeNG Localization</a>
+</li>
+            
+<li>
+    <a href="../../easy-timezone-handling/" class="dropdown-item">Easy TimeZone Handling</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Commercial Products</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../commercial-products/index.md" class="dropdown-item">None</a>
+</li>
+            
+<li>
+    <a href="../../../commercial-products/complete-list-of-cloudscribeng-commercial-product-libraries/" class="dropdown-item">CloudscribeNG Commercial Product Libraries</a>
+</li>
+            
+<li>
+    <a href="../../../commercial-products/commercial-product-license/" class="dropdown-item">Commercial Product License</a>
+</li>
+            
+<li>
+    <a href="../../../commercial-products/using-the-cloudscribeng-newsletter/" class="dropdown-item">Using the CloudscribeNG Newsletter</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ms-md-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a rel="prev" href="../how-to-protect-access-to-view-the-blog/" class="nav-link">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" href="../manage-content-in-multiple-languages/" class="nav-link">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="https://github.com/CloudscribeNG/edit/master/docs/pages/libraries/cloudscribeng-simplecontent/content-templates.md" class="nav-link">Edit on CloudscribeNG
+                                    </a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-bs-toggle="collapse" data-bs-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-body-tertiary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-bs-level="1"><a href="#content-templates" class="nav-link">Content Templates</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-bs-level="2"><a href="#overview" class="nav-link">Overview</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#anatomy-of-a-content-template" class="nav-link">Anatomy of a Content Template</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#how-it-works" class="nav-link">How it Works</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#dynamic-rendering" class="nav-link">Dynamic Rendering</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#plugging-in-custom-content-templates" class="nav-link">Plugging in Custom Content Templates</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#steps-to-create-a-content-template" class="nav-link">Steps to Create a Content Template</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="content-templates">Content Templates<a class="headerlink" href="#content-templates" title="Permanent link">&para;</a></h1>
+<p><img alt="" src="/media/gallery/gallery-edit2-ws.jpg" /></p>
+<h5 id="drop-and-crop-images">Drop and Crop Images<a class="headerlink" href="#drop-and-crop-images" title="Permanent link">&para;</a></h5>
+<p>or browse the server for existing images</p>
+<pre class="highlight"><code>            ![](/media/gallery/gallery-thumbs-ws.jpg)</code></pre>
+<h5 id="grid-layout">Grid Layout<a class="headerlink" href="#grid-layout" title="Permanent link">&para;</a></h5>
+<p>There are 6 gallery layouts to choose from</p>
+<pre class="highlight"><code>            ![](/media/gallery/galllery-edit-ws.jpg)</code></pre>
+<h5 id="gallery-editing">Gallery Editing<a class="headerlink" href="#gallery-editing" title="Permanent link">&para;</a></h5>
+<p>add images and sort them as you wish easily</p>
+<pre class="highlight"><code>            ![](/media/gallery/gallery-lightbox3-ws.jpg)</code></pre>
+<h5 id="lightbox-for-viewing-full-size-gallery-images">Lightbox for viewing full size gallery images<a class="headerlink" href="#lightbox-for-viewing-full-size-gallery-images" title="Permanent link">&para;</a></h5>
+<pre class="highlight"><code>            ![](/media/gallery/sections-columns-ws.jpg)</code></pre>
+<h5 id="sections-with-responsive-columns">Sections with responsive columns<a class="headerlink" href="#sections-with-responsive-columns" title="Permanent link">&para;</a></h5>
+<pre class="highlight"><code>            ![](/media/gallery/two-columns-ws.jpg)</code></pre>
+<h5 id="2-column-responsive-layout">2 Column responsive layout<a class="headerlink" href="#2-column-responsive-layout" title="Permanent link">&para;</a></h5>
+<p>the right or the left can be the wider column</p>
+<pre class="highlight"><code>            ![](/media/gallery/bing-map2-ws.jpg)</code></pre>
+<h5 id="a-bing-map-with-content-above-and-below">A Bing map with content above and below<a class="headerlink" href="#a-bing-map-with-content-above-and-below" title="Permanent link">&para;</a></h5>
+<p>the map is centered on an address that you provide and users can get driving directions to the address</p>
+<pre class="highlight"><code>            ![](/media/gallery/link-edit-ws.jpg)</code></pre>
+<h5 id="an-editable-list-of-links-with-optional-thumbnail-per-link">An editable list of links with optional thumbnail per link<a class="headerlink" href="#an-editable-list-of-links-with-optional-thumbnail-per-link" title="Permanent link">&para;</a></h5>
+<pre class="highlight"><code>[
+
+    Previous
+](#carouselRender)
+[
+
+    Next
+](#carouselRender)</code></pre>
+<h2 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link">&para;</a></h2>
+<p>Content templates are a powerful new feature in SimpleContent 4.0 or newer. Several nice content templates currently ship with CloudscribeNG SimpleContent that provide advanced features such as image gallery, responsive column layouts, lists of links, Bing map, and more. Content templates make it easy for non-technical users to do the right thing when creating content without having to be experts in html and without much risk that they can mess anything up. Content templates are easy to develop and can be plugged in to a site via configuration or they can also be packaged as NuGet packages and added to a project with one line of code. Content templates are supported both for pages and blog posts, but individual templates can declare whether they are supported in pages, posts, or both since some templates might make sense for pages but not for posts. Notice that this page (the one you are reading right now) is using the Image Gallery template and the layout for a bootstrap carousel floated to the right so the content flows around the carousel of images. The images are screen shots of some of the content templates.</p>
+<p>From SimpleContent 6.0.4 we are also including by default a "Role based content" template, which makes it simple to show different content on a page depending on whether the user is anonymous or authenticated, and their role.</p>
+<p>Content templates also integrate nicely with the draft publishing workflow and the content history of all edits to a page or post, and make SimpleContent truly easy to use even for non-technical people.</p>
+<h2 id="anatomy-of-a-content-template">Anatomy of a Content Template<a class="headerlink" href="#anatomy-of-a-content-template" title="Permanent link">&para;</a></h2>
+<p>Content templates basically consist of:</p>
+<ul>
+<li>
+<p>A View Model - you bring your own model and can use data annotations to get automatic client side and server side validation for primitive types. Your model can also support lists but that requires following some conventions and requires javascript in the edit view to manage the list client side.</p>
+</li>
+<li>
+<p>An Edit view - a partial view that you create to edit your view model</p>
+</li>
+<li>
+<p>A Render view - a partial view that you create to render your model to html</p>
+</li>
+<li>
+<p>Optionally a Dynamic Render Partial View - if you want your template to render on every page request instead of just at save/publish time</p>
+</li>
+<li>
+<p>Optionally your template can declare javascript and css files needed for editing</p>
+</li>
+<li>
+<p>Optionally your template can declare javascript and css to include in the rendered page</p>
+</li>
+</ul>
+<p>The experience of developing a content template is pretty much the same as for developing any ASP.NET Core ViewModel with an edit view and a render view, if your model consists only of primitive types it is exactly the same process, so there is not a big learning curve involved. It is a little more complicated if your model has a list of items of some kind because then the state of  the list has to be saved all at once in the same server post along with any primitive properties of your model. We've come up with a convention for handling the postback of lists on the server and a pattern for managing the list client side in javascript. You can study the Image Gallery template and the List of Links template to learn how we have done that and you can use the same conventions and patterns for your own list. The template system is also very extensible so if the conventions and patterns that we use are not sufficient for your own model, it is possible for you to plugin a custom form parser for your template and also possible to plugin a custom server side validator per template and even a custom serializer per template if needed. But as you can see from the templates we ship that all work with our default serializer, form parser, and validator, you shouldn't need to implement any of that unless you are doing something really fancy. It is worth noting that there is nothing special about the models and views used for content templates, they are just normal views and models that you already know and love, there are no magic base classes required or anything like that.</p>
+<h2 id="how-it-works">How it Works<a class="headerlink" href="#how-it-works" title="Permanent link">&para;</a></h2>
+<p>When you click a button to create a page or post from a content template, the page or post is initialized as a draft, an empty version of your model is created and serialized as a string (JSON) and stored along with the other page or post properties, then it redirects to the edit page where the model is deserialized from the previously saved string and the model is passed into the Edit partial view defined by your template configuration. When you save the page or post our Default form parser uses reflection to inspect the properties of your model and it looks for posted values in the form with the same name as your model properties and if they are found it updates the model, serializes and saves it again and it uses your render view to render a string from your model and puts that into the main content field of the page or post just the same as if it were any other editable content. For models that have generic List of T properties, our Default form parser looks for a posted value named the same as the property name plus Json, if it finds a posted value it first Url Decodes the posted value to get the raw JSON string and then deserializes the JSON string back into your list and updates the model. There is also a Default validator that does server side validation of the primitive properties of your model based on data annotations in your model. If you follow the same approach and conventions that we have used, the default form parser and validator should work for your model, but if you want to do something different you can also inject your own custom form parser and/or custom validator and declare in your template configuration that it should use those instead of the default ones. The state of your model is always saved as a serialized string after every edit, and the model and the render view are used to render an HTML string that goes into the content field. To manage lists in our edit view we use javascript to manage the list and the current state of the list is kept in a hidden field with a json string that is Url Encoded and named [PropertyName]Json where PropertyName is the name of the list property on the model. That convention works with our Default form parser but other approaches are possible if you want to implement a custom form parser for your template.</p>
+<p>Note that the render view is not used on each request, it is only used to render an html string that goes into the content body of a page or post and this rendering happens only when you save the content. Since we need to render only an html fragment, not an entire web page, the render view needs to use an empty layout file. There is a built in empty layout file in SimpleContent so you just add this in the top of your render view and it will use that empty layout file:</p>
+<pre class="highlight"><code class="language-html">@{
+    Layout = "_LayoutEmpty";
+}</code></pre>
+<p>Another thing to keep in mind while you are developing templates, is if you make a change to your render template, an existing page or post that uses your template does not change until you compile the template and save the content again because rendering only happens when you save the content.</p>
+<h2 id="dynamic-rendering">Dynamic Rendering<a class="headerlink" href="#dynamic-rendering" title="Permanent link">&para;</a></h2>
+<p>As noted above the default behavior is to render the content at save/publish time into a string that goes into the main content body of a page or post. However, in the latest version we have added the possibility for templates to render on every page request. The serialized model is still only saved on save/publish, but it is now possible to have the model rendered into a render view on each page/post request. To make a template that renders on every request, you simply set the new property DynamicRenderPartialView on the ContentTemplate and you have to provide that view in the Views/Shared folder in your project. You do still have to set the RenderView property to a main view, not a partial view and it has to use the _EmptyLayout for its layout. The main view can simply consume the partial view so that you don't duplicate any view logic. At save/publish time the main render template will still be rendered into a string and saved in the main content body of the page/post, but your partial view will be used to render the content on every request instead of just using the main content body. This way, you can have conditional logic in your partial view to render differently based on whatever conditions you want such as if the user is authenticated. You can inject any needed services into your view to make decisions about what to render. </p>
+<h2 id="plugging-in-custom-content-templates">Plugging in Custom Content Templates<a class="headerlink" href="#plugging-in-custom-content-templates" title="Permanent link">&para;</a></h2>
+<h3 id="adding-templates-by-configuration-appsettingsjson">Adding Templates by Configuration (appsettings.json)<a class="headerlink" href="#adding-templates-by-configuration-appsettingsjson" title="Permanent link">&para;</a></h3>
+<p>Content templates can be added to an installation of CloudscribeNG SimpleContent by configuration in appsettings.json, or they can be packaged in a Razor Class Library published as a NuGet package and added with one line of code in Startup. Note that if no content templates are installed we don't show an empty list, the new content button would just go to the standard edit page instead. If you are developing a template directly in your web application, the configuration approach is very easy as shown in this example JSON fragment:</p>
+<pre class="highlight"><code class="language-json">"ContentTemplateConfig": {
+    "Templates": [
+      {
+        "ProjectId": "*",
+        "AvailbleForFeature": "Page",
+        "Key": "acme-StaffMemberTemplate",
+        "Title": "Staff Member",
+        "Description": "A template for creating a staff member page.",
+        "ModelType": "sourceDev.WebApp.ViewModels.StaffMemberViewModel, sourceDev.WebApp",
+        "EditView": "ContentTemplates/StaffMemberEdit",
+        "RenderView": "ContentTemplates/StaffMemberRender",
+        //"DynamicRenderPartialView": "ContentTemplates/StaffMemberRenderPartial",
+        "FormParserName": "DefaultModelFormParser",
+        "ValidatorName": "DefaultTemplateModelValidator",
+        "SerializerName": "Json",
+        "Enabled": "true",
+        "EditScripts": [
+          {
+            "Url": "/cr/js/dropzone.min.js",
+            "Environment": "any",
+            "Sort": "1"
+          },
+          {
+            "Url": "/cr/js/croppie.min.js",
+            "Environment": "any",
+            "Sort": "2"
+          },
+          {
+            "Url": "/filemanager/js/CloudscribeNG-unobtrusive-file-drop.min.js",
+            "Environment": "any",
+            "Sort": "3"
+          }
+        ],
+        "EditCss": [
+          {
+            "Url": "/cr/css/dropzone.min.css",
+            "Environment": "any",
+            "Sort": "1"
+          },
+          {
+            "Url": "/cr/css/croppie.min.css",
+            "Environment": "any",
+            "Sort": "2"
+          },
+          {
+            "Url": "/cr/css/croppie-CloudscribeNG.css",
+            "Environment": "any",
+            "Sort": "3"
+          }
+        ]
+
+      }
+    ]
+  }</code></pre>
+<p>You can see above all of the settings available for a content template. The settings are as follows:</p>
+<ul>
+<li>
+<p>ProjectId - in SimpleContent ProjectId corresponds to SiteId in CloudscribeNG Core, so in a multi-tenant installation you can put a SiteId guid string there to make a template only available in that site, or use "*" to make it available to all sites.</p>
+</li>
+<li>
+<p>AvailableForFeature - use "Page", "Post" or "*" to make the template available in pages posts or both.</p>
+</li>
+<li>
+<p>Key - must be a unique string across all templates, I recommend use a prefix to avoid possible clashes, or you could use a guid string.</p>
+</li>
+<li>
+<p>Title - the title or name of your template - shown in the list of available templates.</p>
+</li>
+<li>
+<p>Description - optional description shown in the list of templates.</p>
+</li>
+<li>
+<p>ModelType - the fully qualified type of your model followed by a comma and then the assembly name where your model lives ie "namespace.classname, assemblyname"</p>
+</li>
+<li>
+<p>EditView - the path to your edit view a .cshtml file but you can leave off the file extension, the path here should be a relative to Views/Shared, so in the above example the path to the edit view is really Views/Shared/ContentTemplates/StaffMemberEdit</p>
+</li>
+<li>
+<p>RenderView - the path to your render view a .cshtml file but you can leave off the file extension, the path here should be a relative to Views/Shared, so in the above example the path to the edit view is really Views/Shared/ContentTemplates/StaffMemberRender</p>
+</li>
+<li>
+<p>DynamicRenderPartialView - the path to your dynamic render partial view (see above for explanation)</p>
+</li>
+<li>
+<p>FormParserName - only change this if you are injecting your own form parser to use with your template</p>
+</li>
+<li>
+<p>ValidatorName - only change this if you are injecting a custom validator to use with your template</p>
+</li>
+<li>
+<p>SerializerName - only change this if you are injecting a custom serializer/deserializer to use with your template</p>
+</li>
+<li>
+<p>Enabled - if you want to disable a template temporarily set this to false and it will not be shown in the list for creating new content</p>
+</li>
+<li>
+<p>EditScripts -  a list of javascript urls to include on the edit page</p>
+</li>
+<li>
+<p>EditCss - a list of CSS file urls to include on the edit page</p>
+</li>
+<li>
+<p>RenderScripts -  list of javascript urls to include on the view page</p>
+</li>
+<li>
+<p>RenderCss  - list of CSS file urls to include on the view page</p>
+</li>
+</ul>
+<h3 id="adding-templates-from-a-separate-razor-class-library-local-project-reference-or-nuget">Adding Templates from a Separate Razor Class Library (local project reference or NuGet)<a class="headerlink" href="#adding-templates-from-a-separate-razor-class-library-local-project-reference-or-nuget" title="Permanent link">&para;</a></h3>
+<p>One or more content templates can be developed in a separate <a href="https://docs.microsoft.com/en-us/aspnet/core/razor-pages/ui-class?view=aspnetcore-2.1&amp;tabs=visual-studio">Razor Class Library</a> project and optionally packaged as a NuGet package for consumption by other projects and developers. The standard set of content templates we ship are all in a Razor Class Library (<a href="https://github.com/CloudscribeNG/CloudscribeNG.SimpleContent/tree/master/src/CloudscribeNG.SimpleContent.ContentTemplates.Bootstrap5">source code here</a>) and shipped to the public as <a href="https://www.nuget.org/packages/CloudscribeNG.SimpleContent.ContentTemplates.Bootstrap5/">a NuGet package</a>. If you develop content templates that would be useful in other projects, this is the recommended approach.</p>
+<p>The way that you add templates from your class library is to implement a simple interface with one method that returns a list of all the templates in your class library, this interface is <a href="https://github.com/CloudscribeNG/CloudscribeNG.SimpleContent/blob/master/src/CloudscribeNG.SimpleContent.Models/Templating/IContentTemplateProvider.cs">IContentTemplateProvider</a>. You can see the <a href="https://github.com/CloudscribeNG/CloudscribeNG.SimpleContent/blob/master/src/CloudscribeNG.SimpleContent.ContentTemplates.Bootstrap5/Services/ContentTemplateProvider.cs">code for our template library IContentTemplateProvider implementation here</a>.  Any number of these interfaces can be injected and the available templates from all of them will be aggregated into a single list along with any templates added by configuration. The list of available templates is also searchable and paginated if there are more than 10 templates.</p>
+<p>If you look at the <a href="https://github.com/CloudscribeNG/CloudscribeNG.SimpleContent/tree/master/src/CloudscribeNG.SimpleContent.ContentTemplates.Bootstrap5">code for our our content templates razor class library</a>, what you will find there are</p>
+<ul>
+<li>
+<p>ViewModels</p>
+</li>
+<li>
+<p>Razor Views , edit and render views, and some partial views used by the edit and render views</p>
+</li>
+<li>
+<p>Some configuration model classes, the individual templates have some things that can be configured in appsettings.json and there are some classes that get wired up from configuration with properties used to configure template specific things, like image size preferences in the gallery, whether to keep the full size images that get automatically resized for the web, etc.</p>
+</li>
+<li>
+<p>A few embedded javascript and css files to support the various templates</p>
+</li>
+<li>
+<p>One Controller that we use to serve the embedded javascript and css</p>
+</li>
+<li>
+<p>An empty class just used for IStringLocalizer so templates can be localized</p>
+</li>
+<li>
+<p>A <a href="https://github.com/CloudscribeNG/CloudscribeNG.SimpleContent/blob/master/src/CloudscribeNG.SimpleContent.ContentTemplates.Bootstrap5/StartupExtensions.cs">static class for IServiceCollection extensions, that adds our IContentTemplateProvider</a> and wires up the configuration classes for our templates</p>
+</li>
+</ul>
+<p>That is it, there is nothing more in there, no fancy code or logic, just models, views, javascript and css, and one controller to serve the javascript and css in order to keep the templates self contained. The views can have nested partial views and use taghelpers and view components since they are just standard Razor views. Using a Razor Class Library allows you to have the views pre-compiled in your class library. The views can be copied local to the project and customized as well. Any view found in the local project is used in preference to the one in the Razor Class Library.</p>
+<p>In your projects you can also make custom templates that re-use models and views from our nuget shipped templates. For example maybe you want to use the same model and edit view but do something completely different with rendering. You could just copy the render view locally to override it but maybe you want to keep the current template using the existing render view but add a new template that uses another render view. Some of our templates support "Layouts", for example the "Simple Image Gallery" has six layouts to choose from, and the "One to four sections..." template has two layouts. For those you could add additional layouts of your own. The "Layouts" correspond to partial views used by the render view, and <a href="https://github.com/CloudscribeNG/CloudscribeNG.SimpleContent/blob/master/src/CloudscribeNG.SimpleContent.ContentTemplates.Bootstrap5/Views/Shared/GalleryWithContentEditLayoutSelector.cshtml">the dropdown list of available layouts is also in a partial view</a>, that you could copy local to your project and add another item to the list for your own custom layout view to render the gallery.</p>
+<h2 id="steps-to-create-a-content-template">Steps to Create a Content Template<a class="headerlink" href="#steps-to-create-a-content-template" title="Permanent link">&para;</a></h2>
+<ol>
+<li>
+<p>Create a view model, optionally with data annotations for required fields or other validation needs.</p>
+</li>
+<li>
+<p>Create an edit partial view for editing your view model</p>
+</li>
+<li>
+<p>Create a partial view that uses _LayoutEmpty for rendering your view model</p>
+</li>
+<li>
+<p>Declare the template in configuration as shown above or implement IContentTemplateProvider to add your templates to the system.</p>
+</li>
+</ol>
+<p>That is it for a simple template. Optionally you may implement some javascript and/or css to support the specific needs of your template for editing and for viewing. Some example use cases for custom templates: a staff profile page template, a product detail page template, or templates specific to your line of business needs.</p>
+<p>If you've tried our templates you probably noticed some easy-to-use features for uploading, browsing, and cropping images. Those things are all re-useable in your own templates. For example the script for the image "drag, drop and crop" widget is part of CloudscribeNG.FileManager project which is used by both CloudscribeNG Core and CloudscribeNG SimpleContent. They are mostly implemented as unobtrusive javascript which means you just add the script and you add some data- attributes to elements and the scripts wire themselves up to the elements they detect. Hopefully soon we will add some documentation about those scripts as well, but you can probably figure out how to use them by looking at how we used them in our templates.</p></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script src="../../../../js/bootstrap.bundle.min.js"></script>
+        <script>
+            var base_url = "../../../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../../../js/base.js"></script>
+        <script src="../../../../search/main.js"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

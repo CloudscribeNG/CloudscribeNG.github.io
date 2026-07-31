@@ -1,0 +1,708 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        <link rel="canonical" href="https://cloudscribeng.github.io/pages/libraries/cloudscribeng-core/multi-tenant-support/">
+        <link rel="shortcut icon" href="../../../../img/favicon.ico">
+        <title>Multi Tenant Support - CloudscribeNG Documentation</title>
+        <link href="../../../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../../../css/fontawesome.min.css" rel="stylesheet">
+        <link href="../../../../css/brands.min.css" rel="stylesheet">
+        <link href="../../../../css/solid.min.css" rel="stylesheet">
+        <link href="../../../../css/v4-font-face.min.css" rel="stylesheet">
+        <link href="../../../../css/base.css" rel="stylesheet">
+        <link id="hljs-light" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" >
+        <link id="hljs-dark" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github-dark.min.css" disabled>
+        <link href="../../../../stylesheets/full-width.css" rel="stylesheet">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+        <script>hljs.highlightAll();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="../../../..">CloudscribeNG Documentation</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="nav-item">
+                                <a href="../../../.." class="nav-link">Home</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle active" aria-current="page" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Documentation</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../../introduction/" class="dropdown-item">Introduction</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Complete list of CloudscribeNG libraries</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../complete-list-of-cloudscribeng-libraries/" class="dropdown-item">Complete list of open source CloudscribeNG libraries</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">CloudscribeNG.Core</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../" class="dropdown-item">CloudscribeNG.Core</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Multi Tenant Support</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="./" class="dropdown-item active" aria-current="page">Multi Tenant Support</a>
+</li>
+            
+<li>
+    <a href="using-multitenancy-for-sibling-sites-in-multiple-languages/" class="dropdown-item">Using multitenancy for sibling sites in multiple languages</a>
+</li>
+    </ul>
+  </li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Themes and Web Design</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../themes-and-web-design/" class="dropdown-item">Themes and Web Design</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Advanced Client Side Development with Webpack</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../themes-and-web-design/advanced-client-side-development-with-webpack/" class="dropdown-item">Advanced Client Side Development with Webpack</a>
+</li>
+            
+<li>
+    <a href="../themes-and-web-design/advanced-client-side-development-with-webpack/webpack-prerequisites/" class="dropdown-item">Webpack Prerequisites</a>
+</li>
+    </ul>
+  </li>
+    </ul>
+  </li>
+            
+<li>
+    <a href="../registration-page/" class="dropdown-item">Registration Page Configuration</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Custom Registration</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../custom-registration/" class="dropdown-item">Custom Registration</a>
+</li>
+            
+<li>
+    <a href="../custom-registration/configuration-based-custom-registration-and-user-properties/" class="dropdown-item">Configuration based Custom Registration and User Properties</a>
+</li>
+    </ul>
+  </li>
+            
+<li>
+    <a href="../automated-logout/" class="dropdown-item">Automated Logout </a>
+</li>
+            
+<li>
+    <a href="../changing-user-email-address/" class="dropdown-item">Changing user email address</a>
+</li>
+            
+<li>
+    <a href="../custom-event-handlers/" class="dropdown-item">Custom Event Handlers</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Building Custom Features that Integrate with CloudscribeNG Core</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../building-custom-features-that-integrate-with-cloudscribeng-core/" class="dropdown-item">Building Custom Features that Integrate with CloudscribeNG Core</a>
+</li>
+            
+<li>
+    <a href="../building-custom-features-that-integrate-with-cloudscribeng-core/looking-up-users-in-custom-features/" class="dropdown-item">Looking Up Users in Custom Features</a>
+</li>
+            
+<li>
+    <a href="../building-custom-features-that-integrate-with-cloudscribeng-core/adding-tables-and-data-for-custom-features/" class="dropdown-item">Adding Tables and Data for Custom Features</a>
+</li>
+    </ul>
+  </li>
+            
+<li>
+    <a href="../identityserver-integration/" class="dropdown-item">IdentityServer Integration</a>
+</li>
+            
+<li>
+    <a href="../using-ldap-authentication/" class="dropdown-item">Using LDAP Authentication</a>
+</li>
+            
+<li>
+    <a href="../using-social-authentication/" class="dropdown-item">Using Social Authentication and OpenId Connect</a>
+</li>
+            
+<li>
+    <a href="../using-two-factor-authentication/" class="dropdown-item">Using Two Factor Authentication</a>
+</li>
+            
+<li>
+    <a href="../google-analytics-integration/" class="dropdown-item">Google Analytics Integration</a>
+</li>
+            
+<li>
+    <a href="../google-analytics-ga4-integration/" class="dropdown-item">Google Analytics 4 Integration</a>
+</li>
+            
+<li>
+    <a href="../configuring-data-protection/" class="dropdown-item">Configuring Data Protection</a>
+</li>
+            
+<li>
+    <a href="../integrating-signalr-with-cloudscribeng/" class="dropdown-item">Integrating SignalR with CloudscribeNG</a>
+</li>
+            
+<li>
+    <a href="../migrating-users-with-other-password-hash-formats/" class="dropdown-item">Migrating Users with other Password Hash formats</a>
+</li>
+            
+<li>
+    <a href="../google-recaptcha-integration/" class="dropdown-item">Google reCAPTCHA integration</a>
+</li>
+            
+<li>
+    <a href="../query-tool/" class="dropdown-item">Query Tool</a>
+</li>
+            
+<li>
+    <a href="../restarting-the-application/" class="dropdown-item">Restarting the Application</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Restricting Access to Your Website by IP Address</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../restricting-access-to-your-website-by-ip-address/" class="dropdown-item">Restricting Access to Your Website by IP Address</a>
+</li>
+            
+<li>
+    <a href="../restricting-access-to-your-website-by-ip-address/permitting-ip-addresses/" class="dropdown-item">Permitting IP Addresses</a>
+</li>
+            
+<li>
+    <a href="../restricting-access-to-your-website-by-ip-address/blocking-ip-addresses/" class="dropdown-item">Blocking IP Addresses</a>
+</li>
+    </ul>
+  </li>
+    </ul>
+  </li>
+            
+<li>
+    <a href="../../cloudscribeng-simplecontactform/" class="dropdown-item">CloudscribeNG.SimpleContactForm</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">CloudscribeNG.SimpleContent</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../cloudscribeng-simplecontent/" class="dropdown-item">CloudscribeNG.SimpleContent</a>
+</li>
+            
+<li>
+    <a href="../../cloudscribeng-simplecontent/using-open-live-writer/" class="dropdown-item">Using Open Live Writer</a>
+</li>
+            
+<li>
+    <a href="../../cloudscribeng-simplecontent/integrating-with-other-authentication-systems/" class="dropdown-item">Integrating with Other Authentication Systems</a>
+</li>
+            
+<li>
+    <a href="../../cloudscribeng-simplecontent/adding-javascript-and-css-to-pages/" class="dropdown-item">Adding JavaScript and CSS to Pages</a>
+</li>
+            
+<li>
+    <a href="../../cloudscribeng-simplecontent/adding-links-to-the-menu/" class="dropdown-item">Adding links to the Menu</a>
+</li>
+            
+<li>
+    <a href="../../cloudscribeng-simplecontent/customizing-the-editor/" class="dropdown-item">Customizing the Editor</a>
+</li>
+            
+<li>
+    <a href="../../cloudscribeng-simplecontent/2-ways-that-images-are-uploaded-in-simplecontent/" class="dropdown-item">2 ways that images are uploaded in SimpleContent</a>
+</li>
+            
+<li>
+    <a href="../../cloudscribeng-simplecontent/migrating-content-from-other-platforms/" class="dropdown-item">Migrating content from other platforms</a>
+</li>
+            
+<li>
+    <a href="../../cloudscribeng-simplecontent/custom-blog-routing/" class="dropdown-item">Custom Blog Routing</a>
+</li>
+            
+<li>
+    <a href="../../cloudscribeng-simplecontent/custom-page-routing/" class="dropdown-item">Custom Page Routing</a>
+</li>
+            
+<li>
+    <a href="../../cloudscribeng-simplecontent/3-ways-to-add-the-blog-to-the-menu/" class="dropdown-item">3 Ways to Add the Blog To The Menu</a>
+</li>
+            
+<li>
+    <a href="../../cloudscribeng-simplecontent/protecting-pages-with-roles/" class="dropdown-item">Protecting Pages With Roles</a>
+</li>
+            
+<li>
+    <a href="../../cloudscribeng-simplecontent/using-markdown/" class="dropdown-item">Using Markdown</a>
+</li>
+            
+<li>
+    <a href="../../cloudscribeng-simplecontent/how-to-protect-access-to-view-the-blog/" class="dropdown-item">How to protect access to view the blog</a>
+</li>
+            
+<li>
+    <a href="../../cloudscribeng-simplecontent/content-templates/" class="dropdown-item">Content Templates</a>
+</li>
+            
+<li>
+    <a href="../../cloudscribeng-simplecontent/manage-content-in-multiple-languages/" class="dropdown-item">Manage content in multiple languages</a>
+</li>
+            
+<li>
+    <a href="../../cloudscribeng-simplecontent/content-cloning/" class="dropdown-item">Content Cloning</a>
+</li>
+    </ul>
+  </li>
+            
+<li>
+    <a href="../../cloudscribeng-dynamic-authorization-policies/" class="dropdown-item">Dynamic Authorization Policies</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">CloudscribeNG.Web.Common</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../cloudscribeng-web-common/" class="dropdown-item">CloudscribeNG.Web.Common</a>
+</li>
+            
+<li>
+    <a href="../../cloudscribeng-web-common/using-the-summernote-editor/" class="dropdown-item">Using the Summernote editor</a>
+</li>
+            
+<li>
+    <a href="../../cloudscribeng-web-common/using-ckeditor/" class="dropdown-item">Using CKeditor</a>
+</li>
+            
+<li>
+    <a href="../../cloudscribeng-web-common/using-the-bootstrap-datepicker/" class="dropdown-item">Using the Bootstrap DatePicker</a>
+</li>
+            
+<li>
+    <a href="../../cloudscribeng-web-common/easy-bootstrap-modal/" class="dropdown-item">Easy Bootstrap Modal</a>
+</li>
+            
+<li>
+    <a href="../../cloudscribeng-web-common/easy-cascading-dropdowns/" class="dropdown-item">Easy Cascading Dropdowns</a>
+</li>
+            
+<li>
+    <a href="../../cloudscribeng-web-common/easy-autosuggest/" class="dropdown-item">Easy AutoSuggest</a>
+</li>
+            
+<li>
+    <a href="../../cloudscribeng-web-common/using-strongly-typed-models-and-razor-views-to-generate-email-messages/" class="dropdown-item">Using Strongly Typed Models and Razor Views to generate email messages</a>
+</li>
+            
+<li>
+    <a href="../../cloudscribeng-web-common/easy-alerts-with-controller-extensions/" class="dropdown-item">Easy Alerts with Controller  Extensions</a>
+</li>
+            
+<li>
+    <a href="../../cloudscribeng-web-common/easy-google-analytics/" class="dropdown-item">Easy Google Analytics</a>
+</li>
+            
+<li>
+    <a href="../../cloudscribeng-web-common/easy-google-analytics-ga4/" class="dropdown-item">Easy Google Analytics (GA4)</a>
+</li>
+            
+<li>
+    <a href="../../cloudscribeng-web-common/managing-cookie-consent/" class="dropdown-item">Managing Cookie Consent</a>
+</li>
+    </ul>
+  </li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">CloudscribeNG.Web.Navigation</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../cloudscribeng-web-navigation/" class="dropdown-item">CloudscribeNG.Web.Navigation</a>
+</li>
+            
+<li>
+    <a href="../../cloudscribeng-web-navigation/configuring-menu-items/" class="dropdown-item">Configuring Menu Items</a>
+</li>
+            
+<li>
+    <a href="../../cloudscribeng-web-navigation/adjusting-menu-items-per-request/" class="dropdown-item">Adjusting Menu Items Per Request</a>
+</li>
+            
+<li>
+    <a href="../../cloudscribeng-web-navigation/adding-extra-breadcrumbs/" class="dropdown-item">Adding Extra Breadcrumbs</a>
+</li>
+            
+<li>
+    <a href="../../cloudscribeng-web-navigation/menu-localization/" class="dropdown-item">Menu Localization</a>
+</li>
+            
+<li>
+    <a href="../../cloudscribeng-web-navigation/different-menu-items-per-tenant/" class="dropdown-item">Different Menu Items Per Tenant</a>
+</li>
+            
+<li>
+    <a href="../../cloudscribeng-web-navigation/easy-google-sitemaps/" class="dropdown-item">Easy Google SiteMaps</a>
+</li>
+            
+<li>
+    <a href="../../cloudscribeng-web-navigation/using-json-instead-of-xml/" class="dropdown-item">Using Json Instead of XML</a>
+</li>
+            
+<li>
+    <a href="../../cloudscribeng-web-navigation/additional-community-tutorials-on-our-github-wiki/" class="dropdown-item">Additional Community Tutorials on Our GitHub Wiki</a>
+</li>
+    </ul>
+  </li>
+            
+<li>
+    <a href="../../cloudscribeng-web-pagination/" class="dropdown-item">CloudscribeNG.Web.Pagination</a>
+</li>
+            
+<li>
+    <a href="../../cloudscribeng-syndication/" class="dropdown-item">CloudscribeNG.Syndication</a>
+</li>
+            
+<li>
+    <a href="../../cloudscribeng-pwakit/" class="dropdown-item">CloudscribeNG PwaKit - Easily Build Progressive Web Apps</a>
+</li>
+            
+<li>
+    <a href="../../cloudscribeng-localization/" class="dropdown-item">CloudscribeNG Localization</a>
+</li>
+            
+<li>
+    <a href="../../easy-timezone-handling/" class="dropdown-item">Easy TimeZone Handling</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Commercial Products</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../commercial-products/index.md" class="dropdown-item">None</a>
+</li>
+            
+<li>
+    <a href="../../../commercial-products/complete-list-of-cloudscribeng-commercial-product-libraries/" class="dropdown-item">CloudscribeNG Commercial Product Libraries</a>
+</li>
+            
+<li>
+    <a href="../../../commercial-products/commercial-product-license/" class="dropdown-item">Commercial Product License</a>
+</li>
+            
+<li>
+    <a href="../../../commercial-products/using-the-cloudscribeng-newsletter/" class="dropdown-item">Using the CloudscribeNG Newsletter</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ms-md-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a rel="prev" href="../" class="nav-link">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" href="using-multitenancy-for-sibling-sites-in-multiple-languages/" class="nav-link">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="https://github.com/CloudscribeNG/edit/master/docs/pages/libraries/cloudscribeng-core/multi-tenant-support/index.md" class="nav-link">Edit on CloudscribeNG
+                                    </a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-bs-toggle="collapse" data-bs-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-body-tertiary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-bs-level="1"><a href="#multi-tenant-support" class="nav-link">Multi Tenant Support</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-bs-level="2"><a href="#host-name-sites" class="nav-link">Host Name Sites</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#folder-name-sites" class="nav-link">Folder Name Sites</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#configuration" class="nav-link">Configuration</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#should-i-host-multiple-customer-sites-as-multi-tenant" class="nav-link">Should I Host Multiple Customer Sites as Multi-Tenant?</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#managing-sites" class="nav-link">Managing Sites</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#what-about-a-user-per-tenant-solution" class="nav-link">What about a user per tenant solution?</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#what-about-a-database-per-tenant-solution" class="nav-link">What about a database per tenant solution?</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#further-guidance-about-userelatedsitesmode" class="nav-link">Further guidance about UseRelatedSitesMode</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#rootusercansignintotenants-mode" class="nav-link">RootUserCanSignInToTenants Mode</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#roles-and-authorization-policies-in-rootusercansignintotenants-mode" class="nav-link">Roles and Authorization Policies in RootUserCanSignInToTenants Mode</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="multi-tenant-support">Multi Tenant Support<a class="headerlink" href="#multi-tenant-support" title="Permanent link">&para;</a></h1>
+<p>CloudscribeNG Core supports multi-tenant web sites using a single database and website installation. User accounts can be common to all tenants, or segregated. Two mutually exclusive models are supported: Host Name based or Folder based. To give a simple example of what we mean, let's say we want two sites, one for the Physics Department and one for Chemistry, at our online University "brainiacs.com".</p>
+<p>Host Name tenants:</p>
+<p><a href="https://physics.brainiacs.com/my-page">https://physics.brainiacs.com/my-page</a>  </p>
+<p><a href="https://chemistry.brainiacs.com/my-page">https://chemistry.brainiacs.com/my-page</a></p>
+<p>Folder tenants:</p>
+<p><a href="https://www.brainiacs.com/physics/my-page">https://www.brainiacs.com/physics/my-page</a>  </p>
+<p><a href="https://www.brainiacs.com/chemistry/my-page">https://www.brainiacs.com/chemistry/my-page</a></p>
+<p>Another scenario might be a bi-lingual site for the university, managed as two tenant sites, so you might have</p>
+<p>Host Name tenants (read about <a href="/blog/2017/03/28/case-study-historic-place-names-of-wales">an example project that used this approach</a>)</p>
+<p><a href="https://english.brainiacs.com/my-page">https://english.brainiacs.com/my-page</a>  </p>
+<p><a href="https://francais.brainiacs.com/ma-page">https://francais.brainiacs.com/ma-page</a></p>
+<p>Folder tenants:</p>
+<p><a href="https://www.brainiacs.com/english/my-page">https://www.brainiacs.com/english/my-page</a>  </p>
+<p><a href="https://www.brainiacs.com/francais/ma-page">https://www.brainiacs.com/francais/ma-page</a></p>
+<p>You can use one or the other for a given installation. In all cases the first site created is considered the master site. In the database it has the field IsServerAdminSite set to true, and it can create new "child" sites as well as manage child site settings, users, and roles.</p>
+<p>By default, a user can only sign in to the tenant site in which their account was created. There is also a "Related Sites Mode" setting. When this is enabled, the users and roles attached to one site will be used by all the sites in the installation. This means a user can sign in to all tenant sites with the same credentials, and in folder tenants the same authentication cookie will work across all sites so they will only need to sign in once.</p>
+<p>The users and roles and other data are tagged with a SiteId and this is used when the data is retrieved. In the case of RelatedSitesMode the users and roles are all tagged with the RelatedSiteId, but other data can still be site specific.</p>
+<h2 id="host-name-sites">Host Name Sites<a class="headerlink" href="#host-name-sites" title="Permanent link">&para;</a></h2>
+<p>The tenant is resolved by the host name, ie "somedomain.com" is one host name, "<a href="http://www.somedomain.com">www.somedomain.com</a>" is another host name, and "<a href="http://www.anotherdomain.com">www.anotherdomain.com</a>" is another. You can map one or more host names to any given CloudscribeNG tenant site. Any host names that are not mapped to a specific tenant site are mapped to the default site, ie the "master" site. Typically for SEO you don't want duplicate content at different host names, so the notion of a preferred host name is also going to be supported so that if a site is handling multiple host names you can redirect all of them to the preferred one. ie you may prefer "somedomain.com" vs "<a href="http://www.somedomain.com">www.somedomain.com</a>" and you can redirect requests for "<a href="http://www.somedomain.com">www.somedomain.com</a>" to "somedomain.com" if that is your preferred host name.</p>
+<p>For a given domain name you can create as many host name DNS "A" records as you like "host1.somedomain.com", "host2.somedomain.com", "cheeseburger.somedomain.com" or "whatever.somedomain.com".</p>
+<p>You can create separate new sites using those host names all in a single installation of CloudscribeNG: you create the site and assign the host name mapping.</p>
+<p>Of course the ip address for the host name "A" record must be the ip address where the site is running, and if it is a shared ip address then you must also have host name bindings added to the site in the web server, eg IIS (Windows Internet Information Server), so that the web server will pass the request to the correct site.</p>
+<p>This need for creating DNS host names and host header mappings in IIS means that a technical person has to be involved when setting up a new site; non-technical people cannot easily provision a new site in this model.</p>
+<h2 id="folder-name-sites">Folder Name Sites<a class="headerlink" href="#folder-name-sites" title="Permanent link">&para;</a></h2>
+<p>The tenant is resolved by the first folder segment in the url, except for the first site which "must" be a root level site. The fist site created during setup is considered as the "master site" and it does not have any folder mappings assigned to it and it must run as a root level site in order to resolve the child site ids correctly from the first url segment.</p>
+<p>So the master site must work with an url like "somedomain.com/" or "<a href="http://www.somedomain.com/">www.somedomain.com/</a>" and then child sites can be created with urls like: "somedomain.com/site2/" "somedomain.com/foo/" "somedomain.com/cheeseburger/" "somedomain.com/whatever/"</p>
+<p>Folder based child sites are easier to provision and are very useful for sub-sites that are like sections of one site but with different authoring teams.</p>
+<h2 id="configuration">Configuration<a class="headerlink" href="#configuration" title="Permanent link">&para;</a></h2>
+<p>This example from appsettings.json shows the current default settings. You can easily change or override these settings.</p>
+<pre class="highlight"><code class="language-json">"MultiTenantOptions": {
+"Mode": "FolderName",
+"UseRelatedSitesMode": "false",
+"RelatedSiteId": "00000000-0000-0000-0000-000000000000",
+"RelatedSiteAliasId":"",
+"UserPerSiteWwwRoot": "true",
+"UserPerSiteThemes": "true",
+"UseSharedThemes": "true",
+"SiteFilesFolderName": "sitefiles",
+"SiteThemesFolderName": "themes",
+"SiteContentFolderName": "wwwroot",
+"SiteUploadFilesRootFolderName": "siteuploadfiles",
+"SharedThemesFolderName": "SharedThemes",
+"ThemeStaticFilesFolderName": "wwwroot",
+"RootUserCanSignInToTenants": "false",
+"RootSiteId": "00000000-0000-0000-0000-000000000000"
+},
+"NewUserOptions": {
+DefaultNewUserRoles": "Authenticated Users;Content Administrators"
+}</code></pre>
+<p>Mode can be FolderName or HostName or None.</p>
+<p>If UseRelatedSitesMode is set to true, then all sites will lookup users and roles using the RelatedSiteId, which would typically be the first site created. You can find the siteid in the site list or in the database.</p>
+<p>Note the DefaultNewUserRoles property which includes "Authenticated Users" which is the name of a role that will be added to all users as they are created. I recommend keeping that role, but if you want to add additional roles make them semicolon separated, as shown.</p>
+<p>The <strong>SiteFilesFolderName </strong>is the root folder where site specific themes and related static resources go. They are organized into separate sub folders per site using the site alias id ie s1, s2, etc. In early versions of CloudscribeNG the user upload files were also stored there, but later we added the <strong>SiteUploadFilesRootFolderName </strong>setting to separate the the user uploaded files from the theme files. Site specific uploads are organized similarly using alias id sub folders so that uploaded files are separated per site. The reason we decided to put the user uploaded files in a separate folder is to make it more docker friendly so you could mount a docker volume for the siteuploadfiles folder. You could not really do that with the themes because the layout and views in a theme need to be compiled as part of the application so it would be problematic to mount a volume for the sitefiles folder. In order not to break existing sites that already had user uploads below sitefiles folder, we kept "sitefiles" as the default value for SiteUploadFilesRootFolderName in the MultiTenantOptions class, but we override it to "siteuploadfiles" with the default appsettings in the latest project template so when new projects are created they get setup using siteuploadfiles folder.</p>
+<p>Note that if you are using related sites mode and you want all the sites to also share the same media folder (user uploads), you can specify the RelatedSiteAliasId that matches the master site and all sites will use the same user uploads. If you don't specify this then each site will have its own separate user uploads folder. The aliasid is just a simple string like s1, s2, you can find it in site settings. It is used so we don't have to use an ugly guid (like the site id) for the folder name.</p>
+<h2 id="should-i-host-multiple-customer-sites-as-multi-tenant">Should I Host Multiple Customer Sites as Multi-Tenant?<a class="headerlink" href="#should-i-host-multiple-customer-sites-as-multi-tenant" title="Permanent link">&para;</a></h2>
+<p>That is of course a business decision that is up to you. Note that the data for all tenants of a given installation are in the same database tables. Two sites managed as tenants within one CloudscribeNG site may use less server resource, and reduce maintenance time needed for upgrades, but on the other hand the isolation between data with different owners is less clear cut, it makes moving one site to different hosting less simple, and maintenance on one of the sites will impact on the other. So in general we see multi-tenancy as a useful thing for multiple sites owned by a single customer, and we recommend a separate installation per customer.</p>
+<h2 id="managing-sites">Managing Sites<a class="headerlink" href="#managing-sites" title="Permanent link">&para;</a></h2>
+<p>When you first setup CloudscribeNG Core, the first site is created for you automatically, and this site is set in the database with IsServerAdminSite = true, making it the root administrative site. This setting allows members of the Administrators role in the site to create other sites and manage users and roles for other sites. Other sites created from the UI are not flagged as server admin sites so administrators of those sites can only manage the site they belong to.</p>
+<p>By default users and roles are separate for each site. It is possible for the same user to register and login to multiple sites but their membership in one site does not grant them access to protected resources in other sites (with the exception of Administrators in the administrative site who as mentioned before can manage other sites, but they do this while logged into the root administrative site, they are not able to login to the other sites without creating a user account in the other sites). There are site settings for each site to enable or disable certain things. For example it is possible to disable registration, so no users can register on a site and only administrators can add users to the site.</p>
+<p>As you can see in this model the site (aka tenant) is resolved first based on the hostname or the first folder segment of the request. The user must then log into the site or tenant to access any protected resources and their access to protected resources depends on the configured authorization policies and the user's roles and claims (within the given site) which are compared against the requirements of the policy. The authorization policies are configured in the Startup.cs of the web application, where they can be customized. So for example there is a policy protecting the administrative area in CloudscribeNG Core, it requires the user to be in the Administrators role. While each site will have a role named Administrators, the user must be in the role for the site resolved from the request. Members of the Administrators role of one site are not administrators of other sites, even though other sites also have a role with that name. A user could have a separate account in each site with the same email and they could be added to the Administrators role of each site if you want to make them administrators but users and roles are not shared across sites unless the system is configured with related sites mode. For more information on defining custom authorization policies see the <a href="https://docs.microsoft.com/en-us/aspnet/core/security/authorization/policies">documentation here</a>.</p>
+<p>When you create multiple sites with CloudscribeNG core there is nothing protected by default except the administrative area in each site. If you have a public home controller that allows anonymous access then users can still browse the home page of any site. If you wanted to prevent that then you would have to define a policy to protect the home page controller, then you could decorate the controller class or specific controller actions that you want to protect with a policy attribute:</p>
+<pre class="highlight"><code class="language-cs">[Authorize(Policy = "HomePagePolicy")]</code></pre>
+<p>You would have to define the policy with that name in Startup.cs something like this:</p>
+<pre class="highlight"><code class="language-cs">services.AddAuthorization(options =&gt;
+{
+    options.AddPolicy(
+        "HomePagePolicy",
+        authBuilder =&gt;
+        {
+            authBuilder.RequireRole("Administrators", "Content Administrators");
+        });
+        // add more policies here as needed
+
+});</code></pre>
+<p>If instead of using a standard home controller, you use CloudscribeNG.SimpleContent, it allows you to create virtual pages and each virtual page has a setting for "AllowedViewRoles". The setting is empty by default, but if you add one or more roles to it then the page would be protected by the required view roles and will not be accessible to anyone who is not a member of the role. The page would also be automatically filtered out of the menu in this case for users who are not members of the needed roles.</p>
+<h2 id="what-about-a-user-per-tenant-solution">What about a user per tenant solution?<a class="headerlink" href="#what-about-a-user-per-tenant-solution" title="Permanent link">&para;</a></h2>
+<p>This question comes up from time to time: it seems some people want to be able to resolve the user first and then determine the tenant based on the user. Sorry but that is not how it works in CloudscribeNG Core. What would be possible is to have tenants defined that correspond to users, but then in the root administrative site you would need a custom feature to let the user enter his email address, then you could lookup the tenant in a custom table and redirect the user to the url of the tenant. So you would need a master list in the database to relate the email address of the user to a tenant.</p>
+<h2 id="what-about-a-database-per-tenant-solution">What about a database per tenant solution?<a class="headerlink" href="#what-about-a-database-per-tenant-solution" title="Permanent link">&para;</a></h2>
+<p>That wasn't the goal for CloudscribeNG Core: the main aim is to make it easy to provision new sites. A database-per-tenant solution would require manual steps to add new tenants, such as creating a new database and database user and keeping a list of the tenants and their database connection strings in a central master database. We don't have any plans to implement that kind of a solution near term, but we are not ruling out doing that in the future. We are also interested in providing a way to import and export tenant data to facilitate moving a tenant to another installation or database. We don't have a timeline for implementing that, but the interim solution is that if we need to provide a copy of a single tenant we can make a copy of the entire site database, and delete the other tenant data in the copy, leaving just the data of the required single tenant. As discussed above, we recommend an installation per customer, so if there are multiple tenants in the installation, they are tenants that all belong to one customer and we don't often need to separate the data later.</p>
+<h2 id="further-guidance-about-userelatedsitesmode">Further guidance about UseRelatedSitesMode<a class="headerlink" href="#further-guidance-about-userelatedsitesmode" title="Permanent link">&para;</a></h2>
+<p>With UseRelatedSitesMode set to true, it is still possible to enable registration in each of the tenants, and the process will respect the settings in the tenant (e.g. whether to require approval and whether to validate the email address). But if the aim is to provide one set of users equal access to all tenants, it is probably more sensible to switch off registration in all tenants other than the one identified by the RelatedSiteId, and direct users to register in that site.</p>
+<p>Having these two different modes of operation provides powerful options to meet differing project requirements, but it's good to make this decision at the start of the project rather than changing in a live site. The implications of changing this setting in a live site with registered users are as follows.</p>
+<p>Changing UseRelatedSitesMode from false to true. Tenants other than the one identified by the RelatedSiteId will appear to lose their existing users and roles, and those users will not be able to sign in. This can be resolved by updating [cs_User].[SiteId] values for all users to the RelatedSiteId.</p>
+<p>Changing UseRelatedSitesMode from true to false. Tenants other than the one identified by the RelatedSiteId will have no users or roles. Existing users will be able to sign in to the site identified by the RelatedSiteId, but not to other tenants. This can be resolved by updating [cs_User].[SiteId] values for particular users to a tenant, creating new accounts for users, or having users register in the tenant. In addition you may need to create roles for each tenant (see [cs_Role]) and associate users with these roles for the tenant ([cs_UserRole]); these operations can be undertaken in the database or in the administrative pages of the site, so long as you have one administrative account able to sign in.</p>
+<h2 id="rootusercansignintotenants-mode"><a href="">RootUserCanSignInToTenants Mode</a><a class="headerlink" href="#rootusercansignintotenants-mode" title="Permanent link">&para;</a></h2>
+<p>When setting up a multi-tenant site, administrative users of the main 'root' site often want to login to the tenant sites, for configuration and support purposes. With UseRelatedSitesMode this is simple, but when tenant users are isolated this used to require creating separate accounts in each tenant site, which can be laborious and inconvenient if there are many tenant sites.</p>
+<p>Since version 4.1.13 of CloudscribeNG.Core.Web we now support a mode called 'RootUserCanSignInToTenants'.  When this mode is enabled, then any user of the specified 'root' site will also be able to log in to any tenant site within the overall CloudscribeNG deployment, using the username and password from their root account. </p>
+<p>Note that this is not a 'single sign-on' mechanism.  The root user will need to re-authenticate to every tenant site that they wish to visit, via its Login screen (each site will set a separate authentication cookie).  However, the user's authentication credentials and other user account properties (e.g. display name) will remain the same within every tenant site. The CloudscribeNG database continues to treat them as a single user, belonging to the root site - i.e. there will still be just one user record for them in the CloudscribeNG users table.</p>
+<p>RootUserCanSignInToTenants mode is incompatible with RelatedSitesMode: you cannot enable both at the same time.  If you enable RelatedSitesMode, then any attempts to enable RootUserCanSignInToTenants mode will be ignored.</p>
+<p>To enable RootUserCanSignInToTenants mode, add the following two entries to the MultiTenantOptions section of your appSettings.json:</p>
+<pre class="highlight"><code class="language-cs">"RootUserCanSignInToTenants": "true",
+"RootSiteId": "aaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa"</code></pre>
+<p>where the RootSiteId value is replaced by the Guid of the site that you wish to regard as the root site - i.e. the site whose users will be granted the above additional authentication rights.</p>
+<p>Note that this setting has no impact at all on users of non-root tenant sites: they can still only login to their own tenant sites.</p>
+<p>When tenant sites are configured to use <a href="/using-social-authentication">Social Authentication</a>, root site administrators should continue to sign in to tenant sites with username and password, as social authentication in a tenant site doesn't work correctly with this mode.</p>
+<h2 id="roles-and-authorization-policies-in-rootusercansignintotenants-mode">Roles and Authorization Policies in RootUserCanSignInToTenants Mode<a class="headerlink" href="#roles-and-authorization-policies-in-rootusercansignintotenants-mode" title="Permanent link">&para;</a></h2>
+<p>When a root site user logs in to a tenant site using their root site credentials in RootUserCanSignInToTenants mode, they will still be subject to any restrictions specified by authorization policies declared in the <strong>visited</strong> tenant. </p>
+<p>However, when those authorization policies specify that the user needs to be in a specific role, then this is evaluated for the visiting user on the basis of their roles in their <strong>home</strong> (root) site - i.e. they "bring with them" any role memberships that they have been granted in the root site.</p>
+<p>This evaluation is done by role name (case sensitive), so you might need to consider whether you want to define identically named roles in root and tenant sites, depending on the authorization privileges you want your root site users to experience when they visit a tenant site.</p></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script src="../../../../js/bootstrap.bundle.min.js"></script>
+        <script>
+            var base_url = "../../../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../../../js/base.js"></script>
+        <script src="../../../../search/main.js"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

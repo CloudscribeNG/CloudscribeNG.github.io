@@ -1,0 +1,927 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        <link rel="canonical" href="https://cloudscribeng.github.io/pages/libraries/cloudscribeng-core/custom-registration/configuration-based-custom-registration-and-user-properties/">
+        <link rel="shortcut icon" href="../../../../../img/favicon.ico">
+        <title>Configuration based Custom Registration and User Properties - CloudscribeNG Documentation</title>
+        <link href="../../../../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../../../../css/fontawesome.min.css" rel="stylesheet">
+        <link href="../../../../../css/brands.min.css" rel="stylesheet">
+        <link href="../../../../../css/solid.min.css" rel="stylesheet">
+        <link href="../../../../../css/v4-font-face.min.css" rel="stylesheet">
+        <link href="../../../../../css/base.css" rel="stylesheet">
+        <link id="hljs-light" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" >
+        <link id="hljs-dark" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github-dark.min.css" disabled>
+        <link href="../../../../../stylesheets/full-width.css" rel="stylesheet">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+        <script>hljs.highlightAll();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="../../../../..">CloudscribeNG Documentation</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="nav-item">
+                                <a href="../../../../.." class="nav-link">Home</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle active" aria-current="page" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Documentation</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../../../introduction/" class="dropdown-item">Introduction</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Complete list of CloudscribeNG libraries</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../../complete-list-of-cloudscribeng-libraries/" class="dropdown-item">Complete list of open source CloudscribeNG libraries</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">CloudscribeNG.Core</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../" class="dropdown-item">CloudscribeNG.Core</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Multi Tenant Support</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../multi-tenant-support/" class="dropdown-item">Multi Tenant Support</a>
+</li>
+            
+<li>
+    <a href="../../multi-tenant-support/using-multitenancy-for-sibling-sites-in-multiple-languages/" class="dropdown-item">Using multitenancy for sibling sites in multiple languages</a>
+</li>
+    </ul>
+  </li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Themes and Web Design</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../themes-and-web-design/" class="dropdown-item">Themes and Web Design</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Advanced Client Side Development with Webpack</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../themes-and-web-design/advanced-client-side-development-with-webpack/" class="dropdown-item">Advanced Client Side Development with Webpack</a>
+</li>
+            
+<li>
+    <a href="../../themes-and-web-design/advanced-client-side-development-with-webpack/webpack-prerequisites/" class="dropdown-item">Webpack Prerequisites</a>
+</li>
+    </ul>
+  </li>
+    </ul>
+  </li>
+            
+<li>
+    <a href="../../registration-page/" class="dropdown-item">Registration Page Configuration</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Custom Registration</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../" class="dropdown-item">Custom Registration</a>
+</li>
+            
+<li>
+    <a href="./" class="dropdown-item active" aria-current="page">Configuration based Custom Registration and User Properties</a>
+</li>
+    </ul>
+  </li>
+            
+<li>
+    <a href="../../automated-logout/" class="dropdown-item">Automated Logout </a>
+</li>
+            
+<li>
+    <a href="../../changing-user-email-address/" class="dropdown-item">Changing user email address</a>
+</li>
+            
+<li>
+    <a href="../../custom-event-handlers/" class="dropdown-item">Custom Event Handlers</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Building Custom Features that Integrate with CloudscribeNG Core</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../building-custom-features-that-integrate-with-cloudscribeng-core/" class="dropdown-item">Building Custom Features that Integrate with CloudscribeNG Core</a>
+</li>
+            
+<li>
+    <a href="../../building-custom-features-that-integrate-with-cloudscribeng-core/looking-up-users-in-custom-features/" class="dropdown-item">Looking Up Users in Custom Features</a>
+</li>
+            
+<li>
+    <a href="../../building-custom-features-that-integrate-with-cloudscribeng-core/adding-tables-and-data-for-custom-features/" class="dropdown-item">Adding Tables and Data for Custom Features</a>
+</li>
+    </ul>
+  </li>
+            
+<li>
+    <a href="../../identityserver-integration/" class="dropdown-item">IdentityServer Integration</a>
+</li>
+            
+<li>
+    <a href="../../using-ldap-authentication/" class="dropdown-item">Using LDAP Authentication</a>
+</li>
+            
+<li>
+    <a href="../../using-social-authentication/" class="dropdown-item">Using Social Authentication and OpenId Connect</a>
+</li>
+            
+<li>
+    <a href="../../using-two-factor-authentication/" class="dropdown-item">Using Two Factor Authentication</a>
+</li>
+            
+<li>
+    <a href="../../google-analytics-integration/" class="dropdown-item">Google Analytics Integration</a>
+</li>
+            
+<li>
+    <a href="../../google-analytics-ga4-integration/" class="dropdown-item">Google Analytics 4 Integration</a>
+</li>
+            
+<li>
+    <a href="../../configuring-data-protection/" class="dropdown-item">Configuring Data Protection</a>
+</li>
+            
+<li>
+    <a href="../../integrating-signalr-with-cloudscribeng/" class="dropdown-item">Integrating SignalR with CloudscribeNG</a>
+</li>
+            
+<li>
+    <a href="../../migrating-users-with-other-password-hash-formats/" class="dropdown-item">Migrating Users with other Password Hash formats</a>
+</li>
+            
+<li>
+    <a href="../../google-recaptcha-integration/" class="dropdown-item">Google reCAPTCHA integration</a>
+</li>
+            
+<li>
+    <a href="../../query-tool/" class="dropdown-item">Query Tool</a>
+</li>
+            
+<li>
+    <a href="../../restarting-the-application/" class="dropdown-item">Restarting the Application</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Restricting Access to Your Website by IP Address</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../restricting-access-to-your-website-by-ip-address/" class="dropdown-item">Restricting Access to Your Website by IP Address</a>
+</li>
+            
+<li>
+    <a href="../../restricting-access-to-your-website-by-ip-address/permitting-ip-addresses/" class="dropdown-item">Permitting IP Addresses</a>
+</li>
+            
+<li>
+    <a href="../../restricting-access-to-your-website-by-ip-address/blocking-ip-addresses/" class="dropdown-item">Blocking IP Addresses</a>
+</li>
+    </ul>
+  </li>
+    </ul>
+  </li>
+            
+<li>
+    <a href="../../../cloudscribeng-simplecontactform/" class="dropdown-item">CloudscribeNG.SimpleContactForm</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">CloudscribeNG.SimpleContent</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../cloudscribeng-simplecontent/" class="dropdown-item">CloudscribeNG.SimpleContent</a>
+</li>
+            
+<li>
+    <a href="../../../cloudscribeng-simplecontent/using-open-live-writer/" class="dropdown-item">Using Open Live Writer</a>
+</li>
+            
+<li>
+    <a href="../../../cloudscribeng-simplecontent/integrating-with-other-authentication-systems/" class="dropdown-item">Integrating with Other Authentication Systems</a>
+</li>
+            
+<li>
+    <a href="../../../cloudscribeng-simplecontent/adding-javascript-and-css-to-pages/" class="dropdown-item">Adding JavaScript and CSS to Pages</a>
+</li>
+            
+<li>
+    <a href="../../../cloudscribeng-simplecontent/adding-links-to-the-menu/" class="dropdown-item">Adding links to the Menu</a>
+</li>
+            
+<li>
+    <a href="../../../cloudscribeng-simplecontent/customizing-the-editor/" class="dropdown-item">Customizing the Editor</a>
+</li>
+            
+<li>
+    <a href="../../../cloudscribeng-simplecontent/2-ways-that-images-are-uploaded-in-simplecontent/" class="dropdown-item">2 ways that images are uploaded in SimpleContent</a>
+</li>
+            
+<li>
+    <a href="../../../cloudscribeng-simplecontent/migrating-content-from-other-platforms/" class="dropdown-item">Migrating content from other platforms</a>
+</li>
+            
+<li>
+    <a href="../../../cloudscribeng-simplecontent/custom-blog-routing/" class="dropdown-item">Custom Blog Routing</a>
+</li>
+            
+<li>
+    <a href="../../../cloudscribeng-simplecontent/custom-page-routing/" class="dropdown-item">Custom Page Routing</a>
+</li>
+            
+<li>
+    <a href="../../../cloudscribeng-simplecontent/3-ways-to-add-the-blog-to-the-menu/" class="dropdown-item">3 Ways to Add the Blog To The Menu</a>
+</li>
+            
+<li>
+    <a href="../../../cloudscribeng-simplecontent/protecting-pages-with-roles/" class="dropdown-item">Protecting Pages With Roles</a>
+</li>
+            
+<li>
+    <a href="../../../cloudscribeng-simplecontent/using-markdown/" class="dropdown-item">Using Markdown</a>
+</li>
+            
+<li>
+    <a href="../../../cloudscribeng-simplecontent/how-to-protect-access-to-view-the-blog/" class="dropdown-item">How to protect access to view the blog</a>
+</li>
+            
+<li>
+    <a href="../../../cloudscribeng-simplecontent/content-templates/" class="dropdown-item">Content Templates</a>
+</li>
+            
+<li>
+    <a href="../../../cloudscribeng-simplecontent/manage-content-in-multiple-languages/" class="dropdown-item">Manage content in multiple languages</a>
+</li>
+            
+<li>
+    <a href="../../../cloudscribeng-simplecontent/content-cloning/" class="dropdown-item">Content Cloning</a>
+</li>
+    </ul>
+  </li>
+            
+<li>
+    <a href="../../../cloudscribeng-dynamic-authorization-policies/" class="dropdown-item">Dynamic Authorization Policies</a>
+</li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">CloudscribeNG.Web.Common</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../cloudscribeng-web-common/" class="dropdown-item">CloudscribeNG.Web.Common</a>
+</li>
+            
+<li>
+    <a href="../../../cloudscribeng-web-common/using-the-summernote-editor/" class="dropdown-item">Using the Summernote editor</a>
+</li>
+            
+<li>
+    <a href="../../../cloudscribeng-web-common/using-ckeditor/" class="dropdown-item">Using CKeditor</a>
+</li>
+            
+<li>
+    <a href="../../../cloudscribeng-web-common/using-the-bootstrap-datepicker/" class="dropdown-item">Using the Bootstrap DatePicker</a>
+</li>
+            
+<li>
+    <a href="../../../cloudscribeng-web-common/easy-bootstrap-modal/" class="dropdown-item">Easy Bootstrap Modal</a>
+</li>
+            
+<li>
+    <a href="../../../cloudscribeng-web-common/easy-cascading-dropdowns/" class="dropdown-item">Easy Cascading Dropdowns</a>
+</li>
+            
+<li>
+    <a href="../../../cloudscribeng-web-common/easy-autosuggest/" class="dropdown-item">Easy AutoSuggest</a>
+</li>
+            
+<li>
+    <a href="../../../cloudscribeng-web-common/using-strongly-typed-models-and-razor-views-to-generate-email-messages/" class="dropdown-item">Using Strongly Typed Models and Razor Views to generate email messages</a>
+</li>
+            
+<li>
+    <a href="../../../cloudscribeng-web-common/easy-alerts-with-controller-extensions/" class="dropdown-item">Easy Alerts with Controller  Extensions</a>
+</li>
+            
+<li>
+    <a href="../../../cloudscribeng-web-common/easy-google-analytics/" class="dropdown-item">Easy Google Analytics</a>
+</li>
+            
+<li>
+    <a href="../../../cloudscribeng-web-common/easy-google-analytics-ga4/" class="dropdown-item">Easy Google Analytics (GA4)</a>
+</li>
+            
+<li>
+    <a href="../../../cloudscribeng-web-common/managing-cookie-consent/" class="dropdown-item">Managing Cookie Consent</a>
+</li>
+    </ul>
+  </li>
+            
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">CloudscribeNG.Web.Navigation</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../cloudscribeng-web-navigation/" class="dropdown-item">CloudscribeNG.Web.Navigation</a>
+</li>
+            
+<li>
+    <a href="../../../cloudscribeng-web-navigation/configuring-menu-items/" class="dropdown-item">Configuring Menu Items</a>
+</li>
+            
+<li>
+    <a href="../../../cloudscribeng-web-navigation/adjusting-menu-items-per-request/" class="dropdown-item">Adjusting Menu Items Per Request</a>
+</li>
+            
+<li>
+    <a href="../../../cloudscribeng-web-navigation/adding-extra-breadcrumbs/" class="dropdown-item">Adding Extra Breadcrumbs</a>
+</li>
+            
+<li>
+    <a href="../../../cloudscribeng-web-navigation/menu-localization/" class="dropdown-item">Menu Localization</a>
+</li>
+            
+<li>
+    <a href="../../../cloudscribeng-web-navigation/different-menu-items-per-tenant/" class="dropdown-item">Different Menu Items Per Tenant</a>
+</li>
+            
+<li>
+    <a href="../../../cloudscribeng-web-navigation/easy-google-sitemaps/" class="dropdown-item">Easy Google SiteMaps</a>
+</li>
+            
+<li>
+    <a href="../../../cloudscribeng-web-navigation/using-json-instead-of-xml/" class="dropdown-item">Using Json Instead of XML</a>
+</li>
+            
+<li>
+    <a href="../../../cloudscribeng-web-navigation/additional-community-tutorials-on-our-github-wiki/" class="dropdown-item">Additional Community Tutorials on Our GitHub Wiki</a>
+</li>
+    </ul>
+  </li>
+            
+<li>
+    <a href="../../../cloudscribeng-web-pagination/" class="dropdown-item">CloudscribeNG.Web.Pagination</a>
+</li>
+            
+<li>
+    <a href="../../../cloudscribeng-syndication/" class="dropdown-item">CloudscribeNG.Syndication</a>
+</li>
+            
+<li>
+    <a href="../../../cloudscribeng-pwakit/" class="dropdown-item">CloudscribeNG PwaKit - Easily Build Progressive Web Apps</a>
+</li>
+            
+<li>
+    <a href="../../../cloudscribeng-localization/" class="dropdown-item">CloudscribeNG Localization</a>
+</li>
+            
+<li>
+    <a href="../../../easy-timezone-handling/" class="dropdown-item">Easy TimeZone Handling</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Commercial Products</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../../../../commercial-products/index.md" class="dropdown-item">None</a>
+</li>
+            
+<li>
+    <a href="../../../../commercial-products/complete-list-of-cloudscribeng-commercial-product-libraries/" class="dropdown-item">CloudscribeNG Commercial Product Libraries</a>
+</li>
+            
+<li>
+    <a href="../../../../commercial-products/commercial-product-license/" class="dropdown-item">Commercial Product License</a>
+</li>
+            
+<li>
+    <a href="../../../../commercial-products/using-the-cloudscribeng-newsletter/" class="dropdown-item">Using the CloudscribeNG Newsletter</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ms-md-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a rel="prev" href="../" class="nav-link">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" href="../../automated-logout/" class="nav-link">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="https://github.com/CloudscribeNG/edit/master/docs/pages/libraries/cloudscribeng-core/custom-registration/configuration-based-custom-registration-and-user-properties.md" class="nav-link">Edit on CloudscribeNG
+                                    </a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-bs-toggle="collapse" data-bs-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-body-tertiary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-bs-level="1"><a href="#configuration-based-custom-registration-and-user-properties" class="nav-link">Configuration based Custom Registration and User Properties</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-bs-level="2"><a href="#installation" class="nav-link">Installation</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#adding-custom-views" class="nav-link">Adding Custom Views</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#configuring-custom-user-property-definitions" class="nav-link">Configuring Custom User Property Definitions</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#rendering-custom-properties-onto-the-user-management-listing-screen" class="nav-link">Rendering custom properties onto the User Management listing screen</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="configuration-based-custom-registration-and-user-properties">Configuration based Custom Registration and User Properties<a class="headerlink" href="#configuration-based-custom-registration-and-user-properties" title="Permanent link">&para;</a></h1>
+<p>In the article <a href="https://www.CloudscribeNG.com/docs/custom-registration">Custom Registration</a> we discussed the interfaces available to support custom data on the registration page and touched upon similar interfaces for UserInfo on the ManageController, and UserEdit on the UserAdminController. We have also created a ready-to-use solution that allows you to easily configure per tenant or global custom fields with a generic key/value storage back end. You can configure whether each custom field is shown on the registration page, whether it is shown on the user info page and whether it is editable by the user, as well as whether it appears on the administration page for editing users and whether it can be edited from there. You can even configure whether or not it is searchable!</p>
+<p>We developed this generic solution as we often need additional user properties in customer projects. The solution we came up with may not be right for every project, but we have made it available with the open source CloudscribeNG projects and hopefully it will be a good enough solution for many purposes. The extension points in CloudscribeNG Core are very open ended so that other solutions are also possible. In this solution we are using a generic key value data storage approach, which is very flexible and makes it very easy to use, but some scenarios might be better served with a database table that has fields corresponding to the custom properties. An approach like that would require custom code and storage for each project whereas this solution only requires custom configuration per project, as described below.</p>
+<p>The <a href="https://github.com/CloudscribeNG/CloudscribeNG.UserProperties.Kvp">source code is available on GitHub</a>, and nugets are available from NuGet.org. </p>
+<h2 id="installation">Installation<a class="headerlink" href="#installation" title="Permanent link">&para;</a></h2>
+<p>This solution is for <a href="https://www.CloudscribeNG.com/docs/CloudscribeNG-core">CloudscribeNG Core</a> so these instructions assume you already have a web application project based on CloudscribeNG Core. Note that this optional feature can also be included when you create a project using our project template as discussed in the <a href="/docs/introduction">Introduction</a>, just by checking the checkbox for key/value custom registration. The instructions here are for if you did not already check that box when creating your project, you can still add it manually.</p>
+<p>In the .csproj file of your web application you need this package dependency:</p>
+<pre class="highlight"><code class="language-xml">&lt;PackageReference Include="CloudscribeNG.UserProperties.Kvp" Version="1.0.*" /&gt;</code></pre>
+<p>and you need only one of the following packages depending on what database platform you are using.</p>
+<pre class="highlight"><code class="language-xml">&lt;PackageReference Include="CloudscribeNG.Kvp.Storage.EFCore.MSSQL" Version="1.0.*" /&gt;
+&lt;PackageReference Include="CloudscribeNG.Kvp.Storage.EFCore.pgsql" Version="1.0.*" /&gt;
+&lt;PackageReference Include="CloudscribeNG.Kvp.Storage.EFCore.MySql" Version="1.0.*" /&gt;</code></pre>
+<p>Though you could put the user property definitions directly in appsettings.json, we recommend use a separate file to keep things tidy, so you could add a separate config source in the constructor of your Startup.cs like this:</p>
+<pre class="highlight"><code class="language-cs">builder.AddJsonFile("app-userproperties.json", optional: true, reloadOnChange: true);</code></pre>
+<p>We will discuss the contents of the app-userproperties.json file below. In the ConfigureServices method of Startup.cs you need to add these lines before the call to services.AddCloudscribeNGCore:</p>
+<pre class="highlight"><code class="language-cs">services.Configure&lt;ProfilePropertySetContainer&gt;(Configuration.GetSection("ProfilePropertySetContainer"));
+services.AddScoped&lt;TenantProfileOptionsResolver&gt;();
+services.AddCloudscribeNGKvpUserProperties();</code></pre>
+<p>You also need one of these lines depending on which database platform you are using:</p>
+<pre class="highlight"><code class="language-cs">services.AddCloudscribeNGKvpEFStorageMSSQL(Configuration.GetConnectionString("EntityFrameworkConnectionString"));
+services.AddCloudscribeNGKvpEFStoragePostgreSql(Configuration.GetConnectionString("PostgreSqlEntityFrameworkConnectionString"));
+services.AddCloudscribeNGKvpEFStorageMySql(Configuration.GetConnectionString("MySqlEntityFrameworkConnectionString"));</code></pre>
+<p>The name of your connection string may be different in your application so adjust as needed. Finally in the Configure method you need this line which will run any needed migrations in the database and make sure the table has been created for key/value pair storage.</p>
+<pre class="highlight"><code class="language-cs">KvpEFCoreStartup.InitializeDatabaseAsync(app.ApplicationServices).Wait();</code></pre>
+<h2 id="adding-custom-views">Adding Custom Views<a class="headerlink" href="#adding-custom-views" title="Permanent link">&para;</a></h2>
+<p>In addition to the package installation, this solution requires a few custom views, at minimum you need <a href="https://github.com/CloudscribeNG/CloudscribeNG.UserProperties.Kvp/tree/master/src/sourceDev.WebApp/Views/Account/RegisterMiddle.cshtml">RegisterMiddle.cshtml</a>, <a href="https://github.com/CloudscribeNG/CloudscribeNG.UserProperties.Kvp/blob/master/src/sourceDev.WebApp/Views/Manage/UserInfoMiddlePartial.cshtml">UserInfoMiddlePartial.cshtml</a>, and <a href="https://github.com/CloudscribeNG/CloudscribeNG.UserProperties.Kvp/blob/master/src/sourceDev.WebApp/Views/UserAdmin/UserEditMiddlePartial.cshtml">UserEditMiddlePartial.cshtml</a>. If your custom user properties need things like datepicker then you may also need to customize the related script and style partial views.</p>
+<p>RegisterMiddle.cshtml has this content:</p>
+<pre class="highlight"><code class="language-html">@model CloudscribeNG.Core.Web.ViewModels.Account.RegisterViewModel
+@using CloudscribeNG.Core.Web
+@using Microsoft.Extensions.Options
+@using Microsoft.Extensions.Localization
+@using Microsoft.AspNetCore.Http.Authentication
+@using CloudscribeNG.UserProperties.Models
+@using CloudscribeNG.UserProperties.Services
+@using CloudscribeNG.UserProperties
+@using CloudscribeNG.Web.Common.Models
+@inject IStringLocalizer&lt;UserPropertyResources&gt; sr
+@inject IProfileOptionsResolver customPropsResolver
+@{ 
+    var props = await customPropsResolver.GetProfileProps();
+}
+@foreach(var p in props.Properties)
+{
+    if(p.VisibleOnRegistration)
+    {
+        await Html.RenderPartialAsync(p.EditPartialViewName, p as FormItemDefinition);
+    }
+}</code></pre>
+<p>UserInfoMiddlePartial.cshtml has this content:</p>
+<pre class="highlight"><code class="language-html">@model CloudscribeNG.Core.Web.ViewModels.SiteUser.UserInfoViewModel
+@using CloudscribeNG.Core.Web
+@using Microsoft.Extensions.Options
+@using Microsoft.Extensions.Localization
+@using Microsoft.AspNetCore.Http.Authentication
+@using CloudscribeNG.UserProperties.Models
+@using CloudscribeNG.UserProperties.Services
+@using CloudscribeNG.UserProperties
+@using CloudscribeNG.Web.Common.Models
+@inject IStringLocalizer&lt;UserPropertyResources&gt; sr
+@inject IProfileOptionsResolver customPropsResolver
+@{
+    var props = await customPropsResolver.GetProfileProps();
+}
+@foreach (var p in props.Properties)
+{
+    if (p.VisibleToUserOnProfile)
+    {
+        if(p.EditableByUserOnProfile)
+        {
+            await Html.RenderPartialAsync(p.EditPartialViewName, p as FormItemDefinition);
+        }
+        else
+        {
+            await Html.RenderPartialAsync(p.ReadOnlyPartialViewName, p as FormItemDefinition);
+        }
+    }
+}</code></pre>
+<p>and UserEditMiddlePartial.cshtml has this content:</p>
+<pre class="highlight"><code class="language-html">@model CloudscribeNG.Core.Web.ViewModels.Account.EditUserViewModel
+@using CloudscribeNG.Core.Web
+@using Microsoft.Extensions.Options
+@using Microsoft.Extensions.Localization
+@using CloudscribeNG.UserProperties.Models
+@using CloudscribeNG.UserProperties.Services
+@using CloudscribeNG.UserProperties
+@using CloudscribeNG.Web.Common.Models
+@inject IStringLocalizer&lt;UserPropertyResources&gt; sr
+@inject IProfileOptionsResolver customPropsResolver
+@{
+    var props = await customPropsResolver.GetProfileProps();
+}
+@foreach (var p in props.Properties)
+{
+    if (p.VisibleOnAdminUserEdit)
+    {
+        if (p.EditableOnAdminUserEdit)
+        {
+            await Html.RenderPartialAsync(p.EditPartialViewName, p as FormItemDefinition);
+        }
+        else
+        {
+            await Html.RenderPartialAsync(p.ReadOnlyPartialViewName, p as FormItemDefinition);
+        }
+    }
+}</code></pre>
+<p>You can see that these custom views are pretty straightforward iterating through the properties, deciding whether to render them and which view to use. The UserPropertyDefinition is cast to its base class FormItemDefinition and then passed into the configured view for the item. Items can have an edit view and a read only view. There are <a href="https://github.com/CloudscribeNG/CloudscribeNG/tree/master/src/CloudscribeNG.Core.CompiledViews.Bootstrap4/Views/Shared">built in views</a> named FormItemInputPartial, FormItemSelectPartial, FormItemTextAreaPartial, FormItemHiddenPartial, FormItemDatePickerPartial, FormItemDOBPartial, and FormItemLabelPartial. You can also create your own custom views so you are not limited to these predefined views.</p>
+<h2 id="configuring-custom-user-property-definitions">Configuring Custom User Property Definitions<a class="headerlink" href="#configuring-custom-user-property-definitions" title="Permanent link">&para;</a></h2>
+<p>Now that installation is complete, it is just a matter of defining your custom user property definitions in the app-userproperties.json file. The following is a full working <a href="https://github.com/CloudscribeNG/CloudscribeNG.UserProperties.Kvp/tree/master/src/sourceDev.WebApp">example from our github repository</a>.</p>
+<pre class="highlight"><code class="language-json">{
+
+  "ProfilePropertySetContainer": {
+    "PropertySets": [
+      {
+        "TenantId": "*",
+        "Properties": [
+          {
+            "Key": "FirstName",
+            "Label": "First Name",
+            "EditPartialViewName": "FormItemInputPartial",
+            "ReadOnlyPartialViewName": "FormItemLabelPartial",
+            "Tooltip": "",
+            "DefaultValue": "",
+            "CssClass": "firstname",
+            "IconCssClass": "glyphicon glyphicon-user",
+            "IconOnLeft": "true",
+            "VisibleOnRegistration": "true",
+            "VisibleToUserOnProfile": "false",
+            "EditableByUserOnProfile": "false",
+            "VisibleOnAdminUserEdit": "false",
+            "EditableOnAdminUserEdit": "false",
+            "MaxLength": "100",
+            "MaxLengthErrorMessage": "First Name has a max length of 100 characters",
+            "Required": "true",
+            "RequiredErrorMessage": "First Name is required",
+            "RegexValidationExpression": "",
+            "RegexErrorMessage": "",
+            "Options": []
+          },
+          {
+            "Key": "LastName",
+            "Label": "Last Name",
+            "EditPartialViewName": "FormItemInputPartial",
+            "ReadOnlyPartialViewName": "FormItemLabelPartial",
+            "Tooltip": "",
+            "DefaultValue": "",
+            "CssClass": "lastname",
+            "IconCssClass": "glyphicon glyphicon-user",
+            "IconOnLeft": "true",
+            "VisibleOnRegistration": "true",
+            "VisibleToUserOnProfile": "false",
+            "EditableByUserOnProfile": "false",
+            "VisibleOnAdminUserEdit": "false",
+            "EditableOnAdminUserEdit": "false",
+            "MaxLength": "100",
+            "MaxLengthErrorMessage": "Last Name has a max length of 100 characters",
+            "Required": "true",
+            "RequiredErrorMessage": "Last Name is required",
+            "RegexValidationExpression": "",
+            "RegexErrorMessage": "",
+            "Options": []
+          },
+          {
+            "Key": "DateOfBirth",
+            "Label": "Date of Birth",
+            "EditPartialViewName": "FormItemDOBPartial",
+            "ReadOnlyPartialViewName": "FormItemLabelPartial",
+            "Tooltip": "",
+            "DefaultValue": "",
+            "CssClass": "dp",
+            "IconCssClass": "glyphicon glyphicon-calendar",
+            "IconOnLeft": "true",
+            "VisibleOnRegistration": "true",
+            "VisibleToUserOnProfile": "false",
+            "EditableByUserOnProfile": "false",
+            "VisibleOnAdminUserEdit": "false",
+            "EditableOnAdminUserEdit": "false",
+            "MaxLength": "30",
+            "MaxLengthErrorMessage": "Date of Birth has a max length of 30 characters",
+            "Required": "true",
+            "RequiredErrorMessage": "Date of Birth is required yo!",
+            "RegexValidationExpression": "",
+            "RegexErrorMessage": "",
+            "Options": []
+          },
+          {
+            "Key": "MembershipNo",
+            "Label": "Membership Number",
+            "EditPartialViewName": "FormItemInputPartial",
+            "ReadOnlyPartialViewName": "FormItemLabelPartial",
+            "Tooltip": "",
+            "DefaultValue": "",
+            "CssClass": "memno",
+            "IconCssClass": "glyphicon glyphicon-flash",
+            "IconOnLeft": "true",
+            "VisibleOnRegistration": "true",
+            "VisibleToUserOnProfile": "true",
+            "EditableByUserOnProfile": "false",
+            "VisibleOnAdminUserEdit": "true",
+            "EditableOnAdminUserEdit": "true",
+            "MaxLength": "30",
+            "MaxLengthErrorMessage": "Membership Number has a max length of 30 characters",
+            "Required": "true",
+            "RequiredErrorMessage": "Membership Number is required",
+            "RegexValidationExpression": "",
+            "RegexErrorMessage": "",
+            "Searchable": "true",
+            "Options": []
+          },
+          {
+            "Key": "FavColor",
+            "Label": "Favorite Color",
+            "EditPartialViewName": "FormItemSelectPartial",
+            "ReadOnlyPartialViewName": "FormItemLabelPartial",
+            "Tooltip": "",
+            "DefaultValue": "",
+            "CssClass": "favcolor",
+            "IconCssClass": "glyphicon glyphicon-eye-open",
+            "IconOnLeft": "true",
+            "VisibleOnRegistration": "true",
+            "VisibleToUserOnProfile": "true",
+            "EditableByUserOnProfile": "true",
+            "VisibleOnAdminUserEdit": "true",
+            "EditableOnAdminUserEdit": "true",
+            "Required": "true",
+            "RequiredErrorMessage": "Favorite Color is required",
+            "MaxLength": "-1",
+            "RegexValidationExpression": "",
+            "RegexErrorMessage": "",
+            "Searchable": "false",
+            "Options": [
+              {
+                "Text": "Blue",
+                "Value": "Blue"
+              },
+              {
+                "Text": "Red",
+                "Value": "Red",
+                "Selected": "true"
+              },
+              {
+                "Text": "Green",
+                "Value": "Green"
+              }
+            ]
+          },
+          {
+            "Key": "AuthorBio",
+            "Label": "Short Bio",
+            "EditPartialViewName": "FormItemTextAreaPartial",
+            "ReadOnlyPartialViewName": "FormItemLabelPartial",
+            "Tooltip": "",
+            "DefaultValue": "",
+            "CssClass": "bio",
+            "VisibleOnRegistration": "true",
+            "VisibleToUserOnProfile": "true",
+            "EditableByUserOnProfile": "true",
+            "VisibleOnAdminUserEdit": "true",
+            "EditableOnAdminUserEdit": "true",
+            "Required": "true",
+            "RequiredErrorMessage": "Bio is required",
+            "RegexValidationExpression": "",
+            "RegexErrorMessage": "",
+            "Searchable": "false",
+            "Options": []
+          }
+        ]
+      },
+      {
+        "TenantId": "92ef765c-c267-4edf-8eab-17de74da3bd2",
+        "Properties": [
+          {
+            "Key": "NickName",
+            "Label": "Nickname",
+            "EditPartialViewName": "FormItemInputPartial",
+            "ReadOnlyPartialViewName": "FormItemLabelPartial",
+            "Tooltip": "",
+            "DefaultValue": "",
+            "CssClass": "firstname",
+            "IconCssClass": "glyphicon glyphicon-user",
+            "IconOnLeft": "true",
+            "VisibleOnRegistration": "true",
+            "VisibleToUserOnProfile": "false",
+            "EditableByUserOnProfile": "false",
+            "VisibleOnAdminUserEdit": "false",
+            "EditableOnAdminUserEdit": "false",
+            "MaxLength": "100",
+            "MaxLengthErrorMessage": "First Name has a max length of 100 characters",
+            "Required": "true",
+            "RequiredErrorMessage": "First Name is required",
+            "RegexValidationExpression": "",
+            "RegexErrorMessage": "",
+            "Searchable": "true",
+            "Options": []
+          }
+        ]
+      }   
+    ]
+  }
+
+}</code></pre>
+<p>As you can see in the json we are wiring up <a href="https://github.com/CloudscribeNG/CloudscribeNG.UserProperties.Kvp/blob/master/src/CloudscribeNG.UserProperties/Models/ProfilePropertySetContainer.cs">ProfilePropertySetContainer</a>, which is just a class that has list of <a href="https://github.com/CloudscribeNG/CloudscribeNG.UserProperties.Kvp/blob/master/src/CloudscribeNG.UserProperties/Models/UserPropertySet.cs">UserPropertySet</a>, which is a class with a TenantId and a list of <a href="https://github.com/CloudscribeNG/CloudscribeNG.UserProperties.Kvp/blob/master/src/CloudscribeNG.UserProperties/Models/UserPropertyDefinition.cs">UserPropertyDefinition</a> which is the class used to represent the configuration for each custom property. So UserPropertySet represents the tenant/site so each site can have it's own custom properties if needed. If UserPropertySet is found with the matching tenantid, then it will also check for one with "*" as the tenantid, and if that exists it will use that, otherwise the site will not have any custom user properties.</p>
+<p>To get the list of UserPropertyDefinition for the current site, you can take a dependency on IProfileOptionsResolver or inject it into your views as is shown in the views above.</p>
+<p>In the json above you can see that we have defined various custom user properties, including an example for select input and textarea. You can also see that some of the properties we have defined correspond to native properties on SiteUser such as FirstName, LastName, and DateOfBirth. This enables you to optionally require those properties on Registration, but as shown above they should be set as not visible or editable on the UserProfile or UserEdit pages since they already are rendered there as part of the view model. The screenshot below shows the register page corresponding to the configuration in the json above (click it for a larger view).</p>
+<p><a href="/media/images/custom-registration.jpg"><img alt=" " src="/media/images/custom-registration-ws.jpg" /></a></p>
+<p>Notice how we can even configure icon css classes for each item. The solution also provides server-side validation for required, maxlength, and regular expression validation, and the included views also support client-side validation.</p>
+<p>For those custom properties that are do not correspond to existing native properties, then the optional boolean "Searchable" configuration value determines whether that custom field will be included when searching for users via the 'User Management' administration screen.  If omitted, default value for this is false. When true, searching of the field is implemented case-insensitively. </p>
+<p>Properties are displayed in the order in which they are configured, and as mentioned above you can define custom views per item or use the included views that handle common scenarios.</p>
+<h2 id="rendering-custom-properties-onto-the-user-management-listing-screen">Rendering custom properties onto the User Management listing screen<a class="headerlink" href="#rendering-custom-properties-onto-the-user-management-listing-screen" title="Permanent link">&para;</a></h2>
+<p>If you want the values of some of your custom user properties to be displayed in the User Management listing, then you can extend the configuration settings as follows:</p>
+<p>For each custom KVP property that you wish to include, add the 'VisibleOnUserListing' property:</p>
+<pre class="highlight"><code>{
+"Key": "MembershipNo",
+"Label": "Membership Number",
+"EditPartialViewName": "FormItemInputPartial",
+"ReadOnlyPartialViewName": "FormItemLabelPartial",
+"Tooltip": "",
+"DefaultValue": "",
+"CssClass": "memno",
+"IconCssClass": "fas fa-hashtag",
+"IconOnLeft": "true",
+"VisibleOnRegistration": "true",
+"VisibleToUserOnProfile": "true",
+"EditableByUserOnProfile": "false",
+"VisibleOnAdminUserEdit": "true",
+"EditableOnAdminUserEdit": "true",
+"MaxLength": "30",
+"MaxLengthErrorMessage": "Membership Number has a max length of 30 characters",
+"Required": "true",
+"RequiredErrorMessage": "Membership Number is required",
+"RegexValidationExpression": "",
+"RegexErrorMessage": "",
+"Options": [],
+"Searchable": "true",
+"VisibleOnUserListing": "true"
+},</code></pre>
+<p>Also, make sure that your solution is referencing the NuGet package: CloudscribeNG.Kvp.Views.BS5     </p>
+<p>which contains some custom view overrides that are configured to extend the user listing table with your new properties.</p>
+<p>Finally, add another property to your configuration, to specify that one of these custom views (UserAdmin/index_kvp.cshtml) should be used to render the user listing, instead of the normal default UserAdmin/index.cshtml</p>
+<pre class="highlight"><code>"ProfilePropertySetContainer": {
+ "UserListingViewName" :  "index_kvp",
+ "PropertySets": [
+            {</code></pre>
+<p>Note that this only works to control the visibility of custom KVP properties - not 'native' properties already present in the cs_users table such as FirstName, LastName, and DateOfBirth.</p></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script src="../../../../../js/bootstrap.bundle.min.js"></script>
+        <script>
+            var base_url = "../../../../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../../../../js/base.js"></script>
+        <script src="../../../../../search/main.js"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>
