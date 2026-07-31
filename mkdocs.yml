@@ -38,94 +38,93 @@ nav:
   - Home: index.md
   - Docs:
     - Introduction: pages/introduction.md
-    - Open Source:
-      - pages/open-source/index.md
-      - Complete list of open source CloudscribeNG libraries: pages/open-source/complete-list-of-cloudscribeng-libraries.md
+    - Complete list of CloudscribeNG libraries:
+      - pages/complete-list-of-cloudscribeng-libraries.md
       - CloudscribeNG.Core:
-        - pages/open-source/cloudscribeng-core/index.md
+        - pages/libraries/cloudscribeng-core/index.md
         - Multi Tenant Support:
-          - pages/open-source/cloudscribeng-core/multi-tenant-support/index.md
-          - Using multitenancy for sibling sites in multiple languages: pages/open-source/cloudscribeng-core/multi-tenant-support/using-multitenancy-for-sibling-sites-in-multiple-languages.md
+          - pages/libraries/cloudscribeng-core/multi-tenant-support/index.md
+          - Using multitenancy for sibling sites in multiple languages: pages/libraries/cloudscribeng-core/multi-tenant-support/using-multitenancy-for-sibling-sites-in-multiple-languages.md
         - Themes and Web Design:
-          - pages/open-source/cloudscribeng-core/themes-and-web-design/index.md
+          - pages/libraries/cloudscribeng-core/themes-and-web-design/index.md
           - Advanced Client Side Development with Webpack:
-            - pages/open-source/cloudscribeng-core/themes-and-web-design/advanced-client-side-development-with-webpack/index.md
-            - Webpack Prerequisites: pages/open-source/cloudscribeng-core/themes-and-web-design/advanced-client-side-development-with-webpack/webpack-prerequisites.md
-        - Registration Page Configuration: pages/open-source/cloudscribeng-core/registration-page.md
+            - pages/libraries/cloudscribeng-core/themes-and-web-design/advanced-client-side-development-with-webpack/index.md
+            - Webpack Prerequisites: pages/libraries/cloudscribeng-core/themes-and-web-design/advanced-client-side-development-with-webpack/webpack-prerequisites.md
+        - Registration Page Configuration: pages/libraries/cloudscribeng-core/registration-page.md
         - Custom Registration:
-          - pages/open-source/cloudscribeng-core/custom-registration/index.md
-          - Configuration based Custom Registration and User Properties: pages/open-source/cloudscribeng-core/custom-registration/configuration-based-custom-registration-and-user-properties.md
-        - "Automated Logout ": pages/open-source/cloudscribeng-core/automated-logout.md
-        - Changing user email address: pages/open-source/cloudscribeng-core/changing-user-email-address.md
-        - Custom Event Handlers: pages/open-source/cloudscribeng-core/custom-event-handlers.md
+          - pages/libraries/cloudscribeng-core/custom-registration/index.md
+          - Configuration based Custom Registration and User Properties: pages/libraries/cloudscribeng-core/custom-registration/configuration-based-custom-registration-and-user-properties.md
+        - "Automated Logout ": pages/libraries/cloudscribeng-core/automated-logout.md
+        - Changing user email address: pages/libraries/cloudscribeng-core/changing-user-email-address.md
+        - Custom Event Handlers: pages/libraries/cloudscribeng-core/custom-event-handlers.md
         - Building Custom Features that Integrate with CloudscribeNG Core:
-          - pages/open-source/cloudscribeng-core/building-custom-features-that-integrate-with-cloudscribeng-core/index.md
-          - Looking Up Users in Custom Features: pages/open-source/cloudscribeng-core/building-custom-features-that-integrate-with-cloudscribeng-core/looking-up-users-in-custom-features.md
-          - Adding Tables and Data for Custom Features: pages/open-source/cloudscribeng-core/building-custom-features-that-integrate-with-cloudscribeng-core/adding-tables-and-data-for-custom-features.md
-        - IdentityServer Integration: pages/open-source/cloudscribeng-core/identityserver-integration.md
-        - Using LDAP Authentication: pages/open-source/cloudscribeng-core/using-ldap-authentication.md
-        - Using Social Authentication and OpenId Connect: pages/open-source/cloudscribeng-core/using-social-authentication.md
-        - Using Two Factor Authentication: pages/open-source/cloudscribeng-core/using-two-factor-authentication.md
-        - Google Analytics Integration: pages/open-source/cloudscribeng-core/google-analytics-integration.md
-        - Google Analytics 4 Integration: pages/open-source/cloudscribeng-core/google-analytics-ga4-integration.md
-        - Configuring Data Protection: pages/open-source/cloudscribeng-core/configuring-data-protection.md
-        - Integrating SignalR with CloudscribeNG: pages/open-source/cloudscribeng-core/integrating-signalr-with-cloudscribeng.md
-        - Migrating Users with other Password Hash formats: pages/open-source/cloudscribeng-core/migrating-users-with-other-password-hash-formats.md
-        - Google reCAPTCHA integration: pages/open-source/cloudscribeng-core/google-recaptcha-integration.md
-        - Query Tool: pages/open-source/cloudscribeng-core/query-tool.md
-        - Restarting the Application: pages/open-source/cloudscribeng-core/restarting-the-application.md
+          - pages/libraries/cloudscribeng-core/building-custom-features-that-integrate-with-cloudscribeng-core/index.md
+          - Looking Up Users in Custom Features: pages/libraries/cloudscribeng-core/building-custom-features-that-integrate-with-cloudscribeng-core/looking-up-users-in-custom-features.md
+          - Adding Tables and Data for Custom Features: pages/libraries/cloudscribeng-core/building-custom-features-that-integrate-with-cloudscribeng-core/adding-tables-and-data-for-custom-features.md
+        - IdentityServer Integration: pages/libraries/cloudscribeng-core/identityserver-integration.md
+        - Using LDAP Authentication: pages/libraries/cloudscribeng-core/using-ldap-authentication.md
+        - Using Social Authentication and OpenId Connect: pages/libraries/cloudscribeng-core/using-social-authentication.md
+        - Using Two Factor Authentication: pages/libraries/cloudscribeng-core/using-two-factor-authentication.md
+        - Google Analytics Integration: pages/libraries/cloudscribeng-core/google-analytics-integration.md
+        - Google Analytics 4 Integration: pages/libraries/cloudscribeng-core/google-analytics-ga4-integration.md
+        - Configuring Data Protection: pages/libraries/cloudscribeng-core/configuring-data-protection.md
+        - Integrating SignalR with CloudscribeNG: pages/libraries/cloudscribeng-core/integrating-signalr-with-cloudscribeng.md
+        - Migrating Users with other Password Hash formats: pages/libraries/cloudscribeng-core/migrating-users-with-other-password-hash-formats.md
+        - Google reCAPTCHA integration: pages/libraries/cloudscribeng-core/google-recaptcha-integration.md
+        - Query Tool: pages/libraries/cloudscribeng-core/query-tool.md
+        - Restarting the Application: pages/libraries/cloudscribeng-core/restarting-the-application.md
         - Restricting Access to Your Website by IP Address:
-          - pages/open-source/cloudscribeng-core/restricting-access-to-your-website-by-ip-address/index.md
-          - Permitting IP Addresses: pages/open-source/cloudscribeng-core/restricting-access-to-your-website-by-ip-address/permitting-ip-addresses.md
-          - Blocking IP Addresses: pages/open-source/cloudscribeng-core/restricting-access-to-your-website-by-ip-address/blocking-ip-addresses.md
-      - CloudscribeNG.SimpleContactForm: pages/open-source/cloudscribengsimplecontactform.md
+          - pages/libraries/cloudscribeng-core/restricting-access-to-your-website-by-ip-address/index.md
+          - Permitting IP Addresses: pages/libraries/cloudscribeng-core/restricting-access-to-your-website-by-ip-address/permitting-ip-addresses.md
+          - Blocking IP Addresses: pages/libraries/cloudscribeng-core/restricting-access-to-your-website-by-ip-address/blocking-ip-addresses.md
+      - CloudscribeNG.SimpleContactForm: pages/libraries/cloudscribeng-simplecontactform.md
       - CloudscribeNG.SimpleContent:
-        - pages/open-source/cloudscribeng-simplecontent/index.md
-        - Using Open Live Writer: pages/open-source/cloudscribeng-simplecontent/using-open-live-writer.md
-        - Integrating with Other Authentication Systems: pages/open-source/cloudscribeng-simplecontent/integrating-with-other-authentication-systems.md
-        - Adding JavaScript and CSS to Pages: pages/open-source/cloudscribeng-simplecontent/adding-javascript-and-css-to-pages.md
-        - Adding links to the Menu: pages/open-source/cloudscribeng-simplecontent/adding-links-to-the-menu.md
-        - Customizing the Editor: pages/open-source/cloudscribeng-simplecontent/customizing-the-editor.md
-        - 2 ways that images are uploaded in SimpleContent: pages/open-source/cloudscribeng-simplecontent/2-ways-that-images-are-uploaded-in-simplecontent.md
-        - Migrating content from other platforms: pages/open-source/cloudscribeng-simplecontent/migrating-content-from-other-platforms.md
-        - Custom Blog Routing: pages/open-source/cloudscribeng-simplecontent/custom-blog-routing.md
-        - Custom Page Routing: pages/open-source/cloudscribeng-simplecontent/custom-page-routing.md
-        - 3 Ways to Add the Blog To The Menu: pages/open-source/cloudscribeng-simplecontent/3-ways-to-add-the-blog-to-the-menu.md
-        - Protecting Pages With Roles: pages/open-source/cloudscribeng-simplecontent/protecting-pages-with-roles.md
-        - Using Markdown: pages/open-source/cloudscribeng-simplecontent/using-markdown.md
-        - How to protect access to view the blog: pages/open-source/cloudscribeng-simplecontent/how-to-protect-access-to-view-the-blog.md
-        - Content Templates: pages/open-source/cloudscribeng-simplecontent/content-templates.md
-        - Manage content in multiple languages: pages/open-source/cloudscribeng-simplecontent/manage-content-in-multiple-languages.md
-        - Content Cloning: pages/open-source/cloudscribeng-simplecontent/content-cloning.md
-      - Dynamic Authorization Policies: pages/open-source/dynamic-authorization-policies.md
+        - pages/libraries/cloudscribeng-simplecontent/index.md
+        - Using Open Live Writer: pages/libraries/cloudscribeng-simplecontent/using-open-live-writer.md
+        - Integrating with Other Authentication Systems: pages/libraries/cloudscribeng-simplecontent/integrating-with-other-authentication-systems.md
+        - Adding JavaScript and CSS to Pages: pages/libraries/cloudscribeng-simplecontent/adding-javascript-and-css-to-pages.md
+        - Adding links to the Menu: pages/libraries/cloudscribeng-simplecontent/adding-links-to-the-menu.md
+        - Customizing the Editor: pages/libraries/cloudscribeng-simplecontent/customizing-the-editor.md
+        - 2 ways that images are uploaded in SimpleContent: pages/libraries/cloudscribeng-simplecontent/2-ways-that-images-are-uploaded-in-simplecontent.md
+        - Migrating content from other platforms: pages/libraries/cloudscribeng-simplecontent/migrating-content-from-other-platforms.md
+        - Custom Blog Routing: pages/libraries/cloudscribeng-simplecontent/custom-blog-routing.md
+        - Custom Page Routing: pages/libraries/cloudscribeng-simplecontent/custom-page-routing.md
+        - 3 Ways to Add the Blog To The Menu: pages/libraries/cloudscribeng-simplecontent/3-ways-to-add-the-blog-to-the-menu.md
+        - Protecting Pages With Roles: pages/libraries/cloudscribeng-simplecontent/protecting-pages-with-roles.md
+        - Using Markdown: pages/libraries/cloudscribeng-simplecontent/using-markdown.md
+        - How to protect access to view the blog: pages/libraries/cloudscribeng-simplecontent/how-to-protect-access-to-view-the-blog.md
+        - Content Templates: pages/libraries/cloudscribeng-simplecontent/content-templates.md
+        - Manage content in multiple languages: pages/libraries/cloudscribeng-simplecontent/manage-content-in-multiple-languages.md
+        - Content Cloning: pages/libraries/cloudscribeng-simplecontent/content-cloning.md
+      - Dynamic Authorization Policies: pages/libraries/cloudscribeng-dynamic-authorization-policies.md
       - CloudscribeNG.Web.Common:
-        - pages/open-source/cloudscribeng-web-common/index.md
-        - Using the Summernote editor: pages/open-source/cloudscribeng-web-common/using-the-summernote-editor.md
-        - Using CKeditor: pages/open-source/cloudscribeng-web-common/using-ckeditor.md
-        - Using the Bootstrap DatePicker: pages/open-source/cloudscribeng-web-common/using-the-bootstrap-datepicker.md
-        - Easy Bootstrap Modal: pages/open-source/cloudscribeng-web-common/easy-bootstrap-modal.md
-        - Easy Cascading Dropdowns: pages/open-source/cloudscribeng-web-common/easy-cascading-dropdowns.md
-        - Easy AutoSuggest: pages/open-source/cloudscribeng-web-common/easy-autosuggest.md
-        - Using Strongly Typed Models and Razor Views to generate email messages: pages/open-source/cloudscribeng-web-common/using-strongly-typed-models-and-razor-views-to-generate-email-messages.md
-        - Easy Alerts with Controller  Extensions: pages/open-source/cloudscribeng-web-common/easy-alerts-with-controller-extensions.md
-        - Easy Google Analytics: pages/open-source/cloudscribeng-web-common/easy-google-analytics.md
-        - Easy Google Analytics (GA4): pages/open-source/cloudscribeng-web-common/easy-google-analytics-ga4.md
-        - Managing Cookie Consent: pages/open-source/cloudscribeng-web-common/managing-cookie-consent.md
+        - pages/libraries/cloudscribeng-web-common/index.md
+        - Using the Summernote editor: pages/libraries/cloudscribeng-web-common/using-the-summernote-editor.md
+        - Using CKeditor: pages/libraries/cloudscribeng-web-common/using-ckeditor.md
+        - Using the Bootstrap DatePicker: pages/libraries/cloudscribeng-web-common/using-the-bootstrap-datepicker.md
+        - Easy Bootstrap Modal: pages/libraries/cloudscribeng-web-common/easy-bootstrap-modal.md
+        - Easy Cascading Dropdowns: pages/libraries/cloudscribeng-web-common/easy-cascading-dropdowns.md
+        - Easy AutoSuggest: pages/libraries/cloudscribeng-web-common/easy-autosuggest.md
+        - Using Strongly Typed Models and Razor Views to generate email messages: pages/libraries/cloudscribeng-web-common/using-strongly-typed-models-and-razor-views-to-generate-email-messages.md
+        - Easy Alerts with Controller  Extensions: pages/libraries/cloudscribeng-web-common/easy-alerts-with-controller-extensions.md
+        - Easy Google Analytics: pages/libraries/cloudscribeng-web-common/easy-google-analytics.md
+        - Easy Google Analytics (GA4): pages/libraries/cloudscribeng-web-common/easy-google-analytics-ga4.md
+        - Managing Cookie Consent: pages/libraries/cloudscribeng-web-common/managing-cookie-consent.md
       - CloudscribeNG.Web.Navigation:
-        - pages/open-source/cloudscribeng-web-navigation/index.md
-        - Configuring Menu Items: pages/open-source/cloudscribeng-web-navigation/configuring-menu-items.md
-        - Adjusting Menu Items Per Request: pages/open-source/cloudscribeng-web-navigation/adjusting-menu-items-per-request.md
-        - Adding Extra Breadcrumbs: pages/open-source/cloudscribeng-web-navigation/adding-extra-breadcrumbs.md
-        - Menu Localization: pages/open-source/cloudscribeng-web-navigation/menu-localization.md
-        - Different Menu Items Per Tenant: pages/open-source/cloudscribeng-web-navigation/different-menu-items-per-tenant.md
-        - Easy Google SiteMaps: pages/open-source/cloudscribeng-web-navigation/easy-google-sitemaps.md
-        - Using Json Instead of XML: pages/open-source/cloudscribeng-web-navigation/using-json-instead-of-xml.md
-        - Additional Community Tutorials on Our GitHub Wiki: pages/open-source/cloudscribeng-web-navigation/additional-community-tutorials-on-our-github-wiki.md
-      - CloudscribeNG.Web.Pagination: pages/open-source/cloudscribeng-web-pagination.md
-      - CloudscribeNG.Syndication: pages/open-source/cloudscribengsyndication.md
-      - CloudscribeNG PwaKit - Easily Build Progressive Web Apps: pages/open-source/cloudscribeng-pwakit.md
-      - Localization: pages/open-source/localization.md
-      - Easy TimeZone Handling: pages/open-source/easy-timezone-handling.md
+        - pages/libraries/cloudscribeng-web-navigation/index.md
+        - Configuring Menu Items: pages/libraries/cloudscribeng-web-navigation/configuring-menu-items.md
+        - Adjusting Menu Items Per Request: pages/libraries/cloudscribeng-web-navigation/adjusting-menu-items-per-request.md
+        - Adding Extra Breadcrumbs: pages/libraries/cloudscribeng-web-navigation/adding-extra-breadcrumbs.md
+        - Menu Localization: pages/libraries/cloudscribeng-web-navigation/menu-localization.md
+        - Different Menu Items Per Tenant: pages/libraries/cloudscribeng-web-navigation/different-menu-items-per-tenant.md
+        - Easy Google SiteMaps: pages/libraries/cloudscribeng-web-navigation/easy-google-sitemaps.md
+        - Using Json Instead of XML: pages/libraries/cloudscribeng-web-navigation/using-json-instead-of-xml.md
+        - Additional Community Tutorials on Our GitHub Wiki: pages/libraries/cloudscribeng-web-navigation/additional-community-tutorials-on-our-github-wiki.md
+      - CloudscribeNG.Web.Pagination: pages/libraries/cloudscribeng-web-pagination.md
+      - CloudscribeNG.Syndication: pages/libraries/cloudscribeng-syndication.md
+      - CloudscribeNG PwaKit - Easily Build Progressive Web Apps: pages/libraries/cloudscribeng-pwakit.md
+      - CloudscribeNG Localization: pages/libraries/cloudscribeng-localization.md
+      - Easy TimeZone Handling: pages/libraries/easy-timezone-handling.md
     - Commercial Products:
       - pages/commercial-products/index.md
       - CloudscribeNG Commercial Product Libraries: pages/commercial-products/complete-list-of-cloudscribeng-commercial-product-libraries.md
