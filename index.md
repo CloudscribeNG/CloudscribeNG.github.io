@@ -2,9 +2,7 @@
 
 <img width="256" height="256" alt="image" src="/images/CloudscribeNG.png" />
 <img width="256" height="256" alt="image" src="/images/CloudscribeNG_1.png" />
-<img width="256" height="256" alt="image" src="/images/CloudscribeNG.png_2.png" />
-
-
+<img width="256" height="256" alt="image" src="/images/CloudscribeNG_2.png" />
 
 **CloudscribeNG** is a community-driven continuation of the original **cloudscribe** open-source project — a mature, modular ASP.NET Core library ecosystem covering logging, database abstraction, content management, web components, and more.
 
