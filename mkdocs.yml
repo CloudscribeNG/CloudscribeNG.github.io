@@ -4,7 +4,9 @@ repo_url: https://github.com/cloudscribeng
 repo_name: cloudscribeng
 
 theme:
-  name: windmill
+  name: bootstrap
+  # Optional: custom overrides
+  custom_dir: overrides
   features:
     - navigation.instant
     - navigation.sections
