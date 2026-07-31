@@ -8,7 +8,7 @@
 
 ## Why CloudscribeNG Exists
 
-**cloudscribe** represented years of careful, community-driven development across dozens of repositories. In June 2026, the original project's current maintainers announced a move to closed-source licensing for future releases and indicated that they would move the repositories from public to private. That decision would have left the last open-source release frozen in time, with no path for the community to keep fixing bugs, adding features, or tracking the .NET platform forward, and access to the original open-source code.
+**cloudscribe** represented years of careful, community-driven development across dozens of repositories. In June 2026, the original project's current maintainers announced a move to closed-source licensing for future releases and indicated that they would move the repositories from public to private. That decision would have left the last open-source release frozen in time, with no path for the community to keep fixing bugs, adding features, or tracking the .NET platform forward, and no access to the original open-source code.
 
 Rather than let that body of work stagnate, **CloudscribeNG was created as a fork of the final open-source release of cloudscribe** — preserving all of its existing functionality while establishing a clear, independent path for continued open-source development. The name is deliberately a "strong, future-focused successor": it keeps the **cloudscribe** lineage recognizable, while clearly signalling that this is a new generation, not just a maintenance branch of the original.
 
