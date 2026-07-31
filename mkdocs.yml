@@ -1,7 +1,7 @@
 site_name: CloudscribeNG Documentation
 site_url: https://cloudscribeng.github.io
-repo_url: https://github.com/cloudscribeng
-repo_name: cloudscribeng
+repo_url: https://github.com/CloudscribeNG
+repo_name: CloudscribeNG
 
 theme:
   name: bootstrap
@@ -26,7 +26,7 @@ plugins:
 
 nav:
   - Home: index.md
-  - Docs:
+  - Documentation:
     - Introduction: pages/introduction.md
     - Complete list of CloudscribeNG libraries:
       - pages/complete-list-of-cloudscribeng-libraries.md
