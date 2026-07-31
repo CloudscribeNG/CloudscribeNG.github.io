@@ -37,11 +37,7 @@ plugins:
 nav:
   - Home: index.md
   - Docs:
-    - pages/index.md
-    - Search: pages/search.md
     - Introduction: pages/introduction.md
-    - Sites using CloudscribeNG: pages/sites-using-cloudscribeng.md
-    - CloudscribeNG merchandise: pages/cloudscribeng-merchandise.md
     - Open Source:
       - pages/open-source/index.md
       - Complete list of open source CloudscribeNG libraries: pages/open-source/complete-list-of-cloudscribeng-libraries.md
@@ -130,10 +126,9 @@ nav:
       - CloudscribeNG PwaKit - Easily Build Progressive Web Apps: pages/open-source/cloudscribeng-pwakit.md
       - Localization: pages/open-source/localization.md
       - Easy TimeZone Handling: pages/open-source/easy-timezone-handling.md
-    - Security: pages/security.md
     - Commercial Products:
       - pages/commercial-products/index.md
       - CloudscribeNG Commercial Product Libraries: pages/commercial-products/complete-list-of-cloudscribeng-commercial-product-libraries.md
       - Commercial Product License: pages/commercial-products/commercial-product-license.md
       - Using the CloudscribeNG Newsletter: pages/commercial-products/using-the-cloudscribeng-newsletter.md
-  - Contact: contact.md
+
