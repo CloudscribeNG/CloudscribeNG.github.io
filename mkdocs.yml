@@ -4,7 +4,7 @@ repo_url: https://github.com/cloudscribeng
 repo_name: cloudscribeng
 
 theme:
-  name: material
+  name: windmill
   features:
     - navigation.instant
     - navigation.sections
