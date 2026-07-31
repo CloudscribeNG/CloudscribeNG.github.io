@@ -21,3 +21,31 @@ This was a deliberate, estate-wide decision, not just cosmetic branding:
 - **No NuGet collisions.** The original `cloudscribe.*` packages still exist and are still installed in countless projects. Publishing packages under the same package IDs and namespaces would risk version conflicts, ambiguous upgrades, and broken builds for anyone consuming both.
 - **No namespace collisions.** Renaming `namespace cloudscribe.*` to `namespace CloudscribeNG.*` (and updating every `using` statement, project reference, and solution file to match) means CloudscribeNG can be referenced side-by-side with legacy cloudscribe packages without type or assembly clashes.
 - **Consistency across the board.** Folder names, `.csproj` files, `.sln` references, workspace configuration, and even code attribution strings were all updated together, so the estate is internally consistent rather than a patchwork of renamed and un-renamed pieces.
+
+This migration was performed using a shared set of automation scripts (see the [BaseDev](https://github.com/CloudscribeNG/BaseDev) repository) that clone, rename, rewrite, build, and commit changes across every repository in the organization in a single coordinated pass.
+
+## A Migration Path Back: `CloudscribeNG.Compatibility`
+
+Renaming every namespace is the right long-term move, but we know it creates short-term friction for existing projects built against `cloudscribe.*`. To ease that transition, we will be building a **`CloudscribeNG.Compatibility`** layer that provides seamless namespace aliasing, so existing code written against the original cloudscribe namespaces can consume CloudscribeNG packages with minimal (ideally zero) source changes. The goal is to let teams upgrade to an actively maintained, open-source successor without a disruptive rewrite.
+
+## Modernizing the Codebase
+
+Beyond the rename, CloudscribeNG is actively working through years of accumulated cruft and outdated dependencies:
+
+- **Pruning legacy code.** Dead code paths, obsolete workarounds, and unused abstractions that built up over cloudscribe's long history are being identified and removed, so the codebase stays maintainable going forward.
+- **Replacing the MySQL provider.** `Pomelo.EntityFrameworkCore.MySql` — which had become stuck supporting only .NET 9 — has been replaced across the estate with `Microting.EntityFrameworkCore.MySql`, unblocking MySQL support on current and future .NET versions.
+- **Rethinking package version pinning.** We're moving away from tightly pinned dependency versions and toward pulling in the most recent compatible packages on every build. This keeps the estate current with upstream security fixes and framework improvements instead of quietly drifting out of date.
+
+## Building the Estate as a Whole
+
+Because CloudscribeNG is split across many repositories that depend on one another, moving to "always pull the latest needed packages" only works if the *whole estate* is built and validated together. A shared package bumped in isolation in one repo can easily trigger downgrade or version-conflict errors in a downstream repo that hasn't been updated yet.
+
+That's why our tooling ([BaseDev](https://github.com/CloudscribeNG/BaseDev)) builds every repository in dependency order against a shared local NuGet feed. This surfaces version conflicts immediately, in one run, rather than as a surprise weeks later in someone else's repo — making it safe to roll package version bumps forward across the entire organization with confidence.
+
+## Roadmap
+
+All of the CloudscribeNG repositories are private at this time, while we work through the rename and modernization process. Once that is complete, we will be opening up the repositories to public access and publishing packages to NuGet.org.
+
+## Get Involved
+
+CloudscribeNG is a community effort, and contributions are welcome — whether that's code, bug reports, documentation, or just spreading the word. Once we go public, check the individual repositories for contribution guidelines, and see [BaseDev](https://github.com/CloudscribeNG/BaseDev) for the tooling used to manage the estate as a whole.
