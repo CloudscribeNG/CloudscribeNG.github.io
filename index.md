@@ -1,8 +1,10 @@
 # CloudscribeNG
 
-<img width="256" height="256" alt="image" src="https://github.com/user-attachments/assets/bf5233ee-f2f4-4d1d-aba3-5507faad5003" />
-<img width="256" height="256" alt="image" src="https://github.com/user-attachments/assets/10bb5632-c26a-4717-bd5a-cb384c960480" />
-<img width="256" height="256" alt="image" src="https://github.com/user-attachments/assets/aa95d3a7-48da-485f-8a3e-bb0144e5916f" />
+<img width="256" height="256" alt="image" src="/images/CloudscribeNG.png" />
+<img width="256" height="256" alt="image" src="/images/CloudscribeNG_1.png" />
+<img width="256" height="256" alt="image" src="/images/CloudscribeNG.png_2.png" />
+
+
 
 **CloudscribeNG** is a community-driven continuation of the original **cloudscribe** open-source project — a mature, modular ASP.NET Core library ecosystem covering logging, database abstraction, content management, web components, and more.
 
