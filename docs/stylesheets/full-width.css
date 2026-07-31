@@ -59,11 +59,7 @@ article,
     padding-top: 60px !important;
 }
 
-.container > .row > .col-md-3 > .bs-sidebar > .nav {
-    display: block !important;
-}
-
-.container > .row > .col-md-3 > .bs-sidebar > .nav > .nav {
+.bs-sidebar .nav {
     display: block !important;
 }
 
