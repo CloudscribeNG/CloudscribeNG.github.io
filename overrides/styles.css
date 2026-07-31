@@ -1,5 +1,62 @@
-.container, .container-fluid {
+/* Make all Bootstrap containers full-width */
+.container,
+.container-fluid,
+.container-lg,
+.container-md,
+.container-sm,
+.container-xl,
+.container-xxl {
   max-width: 100% !important;
-  padding-left: 2rem;
-  padding-right: 2rem;
+  width: 100% !important;
+  padding-left: 2rem !important;
+  padding-right: 2rem !important;
+}
+
+/* MkDocs content area should expand fully */
+.md-content {
+  max-width: 100% !important;
+  width: 100% !important;
+}
+
+/* Main wrapper full width */
+.md-main,
+.md-main__inner {
+  max-width: 100% !important;
+  width: 100% !important;
+}
+
+/* Sidebar full width */
+.md-sidebar {
+  max-width: 100% !important;
+  width: 100% !important;
+}
+
+body {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.md-content {
+  padding: 0 !important;
+}
+
+.md-main__inner {
+  padding: 0 !important;
+}
+
+/* Text readable, diagrams full width */
+.md-content article {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.row {
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+
+.col,
+[class^="col-"] {
+  padding-left: 0.75rem !important;
+  padding-right: 0.75rem !important;
 }
