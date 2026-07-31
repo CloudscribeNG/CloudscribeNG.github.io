@@ -46,6 +46,10 @@ That's why our tooling ([BaseDev](https://github.com/CloudscribeNG/BaseDev)) bui
 
 All of the CloudscribeNG repositories are private at this time, while we work through the rename and modernization process. Once that is complete, we will be opening up the repositories to public access and publishing packages to NuGet.org.
 
+## Documentation
+
+This documentation site is a work in progress, based upon the original cloudscribe documentation. We are actively working to update the content to reflect the new CloudscribeNG estate, and to provide guidance for developers who want to adopt it in their own projects. It currently contains many errors and outdated references, but we are working to fix those as quickly as possible.
+
 ## Get Involved
 
 CloudscribeNG is a community effort, and contributions are welcome — whether that's code, bug reports, documentation, or just spreading the word. Once we go public, check the individual repositories for contribution guidelines, and see [BaseDev](https://github.com/CloudscribeNG/BaseDev) for the tooling used to manage the estate as a whole.
