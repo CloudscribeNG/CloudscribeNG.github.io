@@ -51,7 +51,7 @@ article,
 }
 
 .container > .row > .col-md-3 {
-    margin-right: 5px !important;
+    padding-right: 5px !important;
 }
 
 .container > .row > .col-md-3 > .bs-sidebar {
