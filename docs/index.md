@@ -48,7 +48,7 @@ All of the CloudscribeNG repositories are private at this time, while we work th
 
 ## Documentation
 
-This documentation site is a work in progress, based upon the original cloudscribe documentation. We are actively working to update the content to reflect the new CloudscribeNG estate, and to provide guidance for developers who want to adopt it in their own projects. It currently contains many errors and outdated references, but we are working to fix those as quickly as possible.
+This documentation site is a work in progress, based upon the original cloudscribe documentation. We are actively working to update the content to reflect the new CloudscribeNG estate, and to provide guidance for developers who want to adopt it in their own projects. It currently contains many errors and outdated references, but we are working to fix those as quickly as possible. See the original [Introduction] section.
 
 ## Get Involved
 
